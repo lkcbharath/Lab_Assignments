@@ -1,0 +1,7 @@
+Roll No|Name|Sem|English|Math|Computers
+171129|Bharath|3|90|85|80
+151220|Adwesh|7|64|75|71
+161345|Neeraja|5|98|65|70
+161364|Subramaniam|5|74|83|81
+181727|Rahul|1|100|99|93
+a|a|a|a|a|a

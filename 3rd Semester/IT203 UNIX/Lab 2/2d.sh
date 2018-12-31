@@ -1,0 +1,1 @@
+users | wc -w
