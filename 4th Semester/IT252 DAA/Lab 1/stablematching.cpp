@@ -29,8 +29,21 @@ bool proposedToAll(int arr[], int n){
 
 int main(){
 
-	
 	int n = 5,i,j,m,w,m_curr;
+
+	string line;
+
+  
+
+	// ifstream myfile ("input.txt");
+ //    if (myfile.is_open()){
+ //    	while (getline (myfile,line)){
+ //    		if (line!=""){
+ //      			cout << line << '\n';
+ //    		}
+ //      }
+ //    myfile.close();
+ //  	}
 
 	queue <int> q;
 
@@ -44,18 +57,18 @@ int main(){
 
 	// assume to be inversed;
 	int men_pref_list[n][n] = {
-		{1,2,0,4,3},
-		{1,3,2,4,0},
-		{4,0,1,3,2},
-		{4,0,2,1,3},
-		{2,1,3,4,0}};
+		{1,0,3,4,2},
+		{3,1,0,2,4},
+		{1,4,2,3,0},
+		{0,3,2,1,4},
+		{1,3,0,4,2}};
 
-	int women_pref_list[n][n] = {
-		{1,2,0,4,3},
-		{1,3,2,4,0},
-		{1,0,4,3,2},
-		{0,4,2,1,3},
-		{2,1,3,4,0}};
+	int women_rank_list[n][n] = {
+		{1,2,4,3,0},
+		{3,1,0,2,4},
+		{4,0,1,2,3},
+		{0,4,3,2,1},
+		{4,1,3,0,2}};
 
 	
 
@@ -68,13 +81,12 @@ int main(){
 		m_curr = husband[w];
 
 		if (m_curr==-1){
-			cout << m << w << endl;
 			wife[m] = w;
 			husband[w] = m;
 			q.pop();
 		}
 
-		else if (women_pref_list[w][m] < women_pref_list[w][m_curr]){
+		else if (women_rank_list[w][m] < women_rank_list[w][m_curr]){
 			q.pop();
 			wife[m] = w;
 			husband[w] = m;
@@ -83,6 +95,10 @@ int main(){
 		}
 
 		++count[m];
+	}
+
+	for (i=0;i<n;++i){
+		cout << i << wife[i] << endl;
 	}
 
 
