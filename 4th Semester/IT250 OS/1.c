@@ -22,12 +22,12 @@ int main()
    printf("Enter name of target file\n");
    gets(target_file);
  
-   int dir = mkdir(target_file,0777);
+   // int dir = mkdir(target_file,0777);
    
-   if (dir){
-      printf("error");
-      exit(0);
-   }
+   // if (dir){
+   //    printf("error");
+   //    exit(0);
+   // }
 
    target = fopen(target_file, "w+");
  
