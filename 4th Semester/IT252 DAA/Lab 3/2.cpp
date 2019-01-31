@@ -13,7 +13,7 @@ void maxSubArray(int* a, int n){
             start = i+1;
             curr_max = 0;
         }
-        
+
         else if(curr_max > prev_max){
             end = i;
             start_o = start;
@@ -27,7 +27,7 @@ void maxSubArray(int* a, int n){
 
 int main(){
 	int i;
-	int arr[] = {-2,10,-4,12,-9};
+	int arr[] = {3,2,-1,100};
 	int n = sizeof(arr)/sizeof(arr[0]);
 	int sum[n];
 	maxSubArray(arr,n);
