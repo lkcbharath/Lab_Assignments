@@ -136,6 +136,5 @@ int main(){
 	}
 
 	outputfile.close();
-
 	return 0;
 }
