@@ -270,16 +270,6 @@ int init_module()
  */
 void cleanup_module()
 {
-	int ret;
+	unregister_chrdev(MAJOR_NUM, DEVICE_NAME);
 
-	/* 
-	 * Unregister the device 
-	 */
-	ret = unregister_chrdev(MAJOR_NUM, DEVICE_NAME);
-
-	/* 
-	 * If there's an error, report it 
-	 */
-	if (ret < 0)
-		printk(KERN_ALERT "Error: unregister_chrdev: %d\n", ret);
 }
