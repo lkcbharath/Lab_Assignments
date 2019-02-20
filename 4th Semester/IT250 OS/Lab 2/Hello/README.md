@@ -6,4 +6,4 @@ For info:
 $ lsmod
 
 To unload:
-$ rmmod hello.ko
+$ rmmod hello
