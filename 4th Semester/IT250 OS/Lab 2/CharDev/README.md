@@ -1,8 +1,8 @@
 To execute:
 $ make
-$ sudo insmod chardev.c
+$ sudo insmod chardev.ko
 $ dmesg
-(Note down major number MN)
+I was assigned major number MN...
 $ sudo mknod /dev/(yourfilename) c $MN 0
 $ cat /dev/(yourfilename)
 
@@ -10,4 +10,4 @@ For info:
 $ lsmod
 
 To unload:
-$ rmmod hello.ko
+$ rmmod hello
