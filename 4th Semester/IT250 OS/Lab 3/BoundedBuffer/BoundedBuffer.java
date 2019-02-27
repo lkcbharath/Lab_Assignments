@@ -61,7 +61,7 @@ public class BoundedBuffer
 		// Create a list shared by producer and consumer 
 		// Size of list is 2. 
 		LinkedList<Integer> list = new LinkedList<>(); 
-		int capacity = 2; 
+		int capacity = 3; 
 
 		// Function called by producer thread 
 		public void produce() throws InterruptedException 
