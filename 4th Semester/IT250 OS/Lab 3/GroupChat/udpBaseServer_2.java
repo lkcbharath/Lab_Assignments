@@ -11,7 +11,7 @@ public class udpBaseServer_2
 { 
 	public static void main(String[] args) throws IOException 
 	{ 
-		Scanner sc = new Scanner(System.in); 
+		// Scanner sc = new Scanner(System.in); 
 		// Step 1 : Create a socket to listen at port 1234 
 		DatagramSocket ds_server = new DatagramSocket(1234); 
 		DatagramSocket ds_client = new DatagramSocket();
