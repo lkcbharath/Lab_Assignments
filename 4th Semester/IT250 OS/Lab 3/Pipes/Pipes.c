@@ -7,8 +7,6 @@
 char* msg1 = "hello, world #1"; 
 char* msg2 = "hello, world #2"; 
 char* msg3 = "hello, world #3";
-char* parent = "from parent";
-char* child = "from child";
 
 int main() 
 { 
