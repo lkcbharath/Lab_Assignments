@@ -23,8 +23,6 @@ int main()
 	if ((pid = fork()) > 0) { 
 		printf("Parent Process\n");
 		write(p[1], msg1, MSGSIZE); 
-		write(p[1], msg2, MSGSIZE);
-		write(p[1], msg3, MSGSIZE);
 		printf("Finished writing in Parent Process\n");
 		// Adding this line will 
 		// not hang the program 
@@ -44,9 +42,7 @@ int main()
 		printf("Child Process\n");
 		// Adding this line will 
 		// not hang the program
-		write(q[1], msg1, MSGSIZE); 
-		write(q[1], msg2, MSGSIZE);
-		write(q[1], msg3, MSGSIZE); 
+		write(q[1], msg2, MSGSIZE); 
 		printf("Finished writing in Child Process\n");
 		close(q[1]); 
 		close(p[1]); 
