@@ -92,6 +92,8 @@ def main():
     sjf(processes)
     rr(processes,5)
 
+    print("In this example, SJF is best, as it has least average waiitng and turnaround time.")
+
 
 
 if __name__ == '__main__':
