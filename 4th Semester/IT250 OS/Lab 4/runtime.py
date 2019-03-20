@@ -61,17 +61,15 @@ def rr(p,quantum):
                 else:
                     t += rem_burst_times[i]
                     wait_times[i] = t - p[i]
-                    rem_burst_times[i]  = 0
+                    rem_burst_times[i] = 0
         if done:
             break
-    
-    turn_times = [(p[i] + wait_times[i]) for i in range(n)]
 
     sum_wait = 0
     sum_turn = 0
     for i in range(n):
         sum_wait += wait_times[i]
-        sum_turn += turn_times[i]
+        sum_turn += p[i] + wait_times[i]
     
     sum_wait = (sum_wait)/n
     sum_turn = (sum_turn)/n
@@ -81,12 +79,7 @@ def rr(p,quantum):
 
 def main():
     # processes = list(input("Enter the Burst times of processes"))
-    processes = []
-    processes.append(10)
-    processes.append(29)
-    processes.append(3)
-    processes.append(7)
-    processes.append(12)
+    processes = [10,29,3,7,12]
 
     fcfs(processes)
     sjf(processes)

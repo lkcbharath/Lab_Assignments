@@ -70,7 +70,7 @@ void put_fork(int phnum)
 	state[phnum] = THINKING; 
 
 	printf("Philosopher %d putting fork %d and %d down\n", 
-		phnum + 1, LEFT + 1, phnum + 1); 
+		phnum, LEFT, phnum); 
 	printf("Philosopher %d is thinking\n", phnum); 
 
 	test(LEFT); 
