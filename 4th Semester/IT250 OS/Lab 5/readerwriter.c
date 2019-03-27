@@ -17,13 +17,14 @@ void intialize()
 void * reader (void * param)
 {
     int waittime;
+    int i = (int)param;
     waittime = rand() % 5;
-    printf("\nReader is trying to enter");
+    printf("\nReader %d is trying to enter",i);
     pthread_mutex_lock(&x);
     readcount++;
     if(readcount==1)
         pthread_mutex_lock(&wsem);
-    printf("\n%d Reader is inside ",readcount);
+    printf("\n%d reader(s) are inside",readcount);
     pthread_mutex_unlock(&x);
     sleep(waittime);
     pthread_mutex_lock(&x);
@@ -31,19 +32,20 @@ void * reader (void * param)
     if(readcount==0)
         pthread_mutex_unlock(&wsem);
     pthread_mutex_unlock(&x);
-    printf("\nReader is Leaving");
+    printf("\nReader %d is Leaving",i);
 }   
 
 void * writer (void * param)
 {
     int waittime;
+    int i = (int)param;
     waittime=rand() % 3;
-    printf("\nWriter is trying to enter");
+    printf("\nWriter %d is trying to enter",i);
     pthread_mutex_lock(&wsem);
-    printf("\nWrite has entered");
+    printf("\nWriter %d has entered",i);
     sleep(waittime);
     pthread_mutex_unlock(&wsem);    
-    printf("\nWriter is leaving");
+    printf("\nWriter %d is leaving",i);
     sleep(30);
     exit(0);
 }
@@ -56,9 +58,9 @@ int main()
     printf("\nEnter the no of writers: ");
     scanf("%d",&n2);
     for(i=0;i<n1;i++)
-        pthread_create(&tid,NULL,reader,NULL);  
+        pthread_create(&tid,NULL,reader,(void *)i);  
     for(i=0;i<n2;i++)
-        pthread_create(&tid,NULL,writer,NULL);
+        pthread_create(&tid,NULL,writer,(void *)i);
     sleep(30);
     exit(0);
 }
