@@ -4,6 +4,9 @@
 #include<stdlib.h>
 
 pthread_mutex_t x,wsem;
+
+sem_t read,write; 
+
 pthread_t tid;
 int readcount;
 
@@ -52,6 +55,8 @@ void * writer (void * param)
 
 int main()
 {
+    sem_init(&read, 0, 1);
+    sem_init(&write, 0, 1);
     int n1,n2,i;    
     printf("\nEnter the no of readers: ");
     scanf("%d",&n1);
