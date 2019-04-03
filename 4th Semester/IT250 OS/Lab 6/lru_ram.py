@@ -37,7 +37,8 @@ def main():
     # frame_size = 4
     # ref_list = [7,0,1,2,0,3,0,4,2,3,0,3,2,1]
     l = lru(frame_size,ref_list)
-    print(l.count('M'))
-    print(l.count('H'))
+    print('Misses:',l.count('M'))
+    print('Hits:',l.count('H'))
+    print('Hit-Miss ratio:',(l.count('H')/l.count('M')))
 if __name__ == '__main__':
     main()

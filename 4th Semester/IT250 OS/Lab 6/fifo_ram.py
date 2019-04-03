@@ -19,8 +19,9 @@ def main():
     ref_list = [9,2,1,2,0,5,0,4,2,3,0,3,1,2,9,0,5,3,4,0]
     l = fifo(frame_size,ref_list)
 
-    print(l.count('M'))
-    print(l.count('H'))
+    print('Misses:',l.count('M'))
+    print('Hits:',l.count('H'))
+    print('Hit-Miss ratio:',(l.count('H')/l.count('M')))
 
 if __name__ == '__main__':
     main()

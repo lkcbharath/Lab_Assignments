@@ -1,7 +1,7 @@
 def opt_index(ram,ref_list):
     ram_in_ref_list = []
     for i in range(len(ram)):
-        if ram[i] in ref_list and ref_list.index(ram[i]):
+        if ram[i] in ref_list:
             ram_in_ref_list.append(ref_list.index(ram[i]))
         else:
             ram_in_ref_list.append(-1)
@@ -44,8 +44,9 @@ def main():
     # ref_list = [7,0,1,2,0,3,0,4,2,3,0,3,2,1]
     # ref_list = [7,0,1,2,0,3,0,4,2,3,0,3,2,1,2,0,1,7,0,1]
     l = opt(frame_size,ref_list)
-    print(l.count('M'))
-    print(l.count('H'))
+    print('Misses:',l.count('M'))
+    print('Hits:',l.count('H'))
+    print('Hit-Miss ratio:',(l.count('H')/l.count('M')))
 
 if __name__ == '__main__':
     main()
