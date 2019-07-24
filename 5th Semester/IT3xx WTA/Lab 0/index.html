@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>City Tour 101</title>    
+
+    <style>
+        html { 
+            display: block;
+        }
+
+        html:focus { 
+            outline: none;
+        }
+        body {
+            background-color:lightgreen;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        table, tr, th, td {
+            border: 1px solid black;
+            text-align: center;
+            background-color: lightgray;
+        }
+
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 50%;
+            margin-right:20px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <h1>
+        Hey guys this is Max from Bengaluru City Tours Corporation<sup>TM</sup>. 
+        <br>
+        Today we shall explore the city of Bengaluru!
+    </h1>
+    <p>
+
+    </p>
+    <hr>
+    <h3>Namaskara Bengaluru!</h3>
+    <p>Once known as the garden city, now teeming with software engineers and entrepreneurs, Bengaluru
+        has become the one-stop-shop destination for anyone and everyone to try out the latest and
+        greatest gizmos and see the world at a glance.
+    </p>
+    <p>
+        Some of the finest tourist attraction in an around Bengaluru are listed below!
+    </p>
+    <hr>
+    <table>
+        <tr>
+            <th>Tourist Attraction</th>
+            <th>Distance from City Center</th>
+        </tr>
+        <tr>
+            <td>Vidhana Soudha</td>
+            <td>5 km</td>
+        </tr>
+        <tr>
+            <td>Lalbagh</td>
+            <td>5 km</td>
+        </tr>
+        <tr>
+            <td>Nandi Hills</td>
+            <td>5 km</td>
+        </tr>
+        <tr>
+            <td>Banerghatta Zoo</td>
+            <td>5 km</td>
+        </tr>
+        <tr>
+            <td>Vishveshvaraya Museum</td>
+            <td>5 km</td>
+        </tr>
+    </table>
+
+    <h3>So what are you waiting for? Hop on an Air-Conditioned electric BMTC bus (that means less CO<sub>2</sub>!) and tour the city in style!</h5>
+
+    <progress value="22" max="100">This is progress</progress>
+
+    <abbr>Namma uru, Namma Bengaluru!</abbr>
+
+    <canvas id="myCanvas"></canvas>
+
+    <marquee direction="right" scrollamount=50><img src="BMTC-web.png" alt="BMTC bus"></marquee>
+
+    <div class="footer">
+        <a href="#" style="background-color: lightblue"><button>Back to top</button></a>
+    </div>
+
+    <script>
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+        ctx.fillStyle = "#FF0000";
+        ctx.fillCircle(0, 0, 80, 80);
+    </script>
+
+</body>
+</html>
