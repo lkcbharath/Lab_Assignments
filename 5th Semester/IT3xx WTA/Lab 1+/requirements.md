@@ -36,4 +36,4 @@ Although not really neccessary, in the age of the Internet, where the customer h
 
 * After a review from classmates, go ahead with shopping cart and feedback
 
-* Continue to design and implement newer submodules such as recommendations
+* Continue to design and implement newer modules such as payments and recommendations
