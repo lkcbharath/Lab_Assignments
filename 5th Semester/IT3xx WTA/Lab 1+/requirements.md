@@ -7,15 +7,18 @@ For the E-Commerce website, the most essential piece of information is the produ
 * Home Page (Highlights)
 * Browse Products using Filters
 * Shopping Cart
+* User Authentication
 * Feedback
 
 ## Module-wise explanation
 
 ### Home Page
-
 The home page is the first page that the user sees when they open the website for the first time.
 
 To look attractive and engaging, it is essential to highlight any deals or discounts going on in products. Amazon does this very well.
+
+### User Authentication
+Basic Sign In, Sign Up, Sign Out
 
 ### Browse Products
 Just like how knowing what products are sold is essential to the company, a user being able to search for products that cater to his liking is just as important. Thus, a filter-based search, or even a list of products is important.
