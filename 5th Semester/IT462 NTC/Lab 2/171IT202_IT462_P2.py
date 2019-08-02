@@ -25,49 +25,61 @@ def square_and_multiply(a,r,n):
         a = (a*a)%n
     return y
 
-def file_write(strings):
+def file_ops(lines):
+    f = open("output.txt","a")
+    for line in lines:
+        print(line)
+        f.write(line + '\n')
+    f.write('\n');
+    f.close()
     return
   
 def lucas(n):
     factors = [] 
+    lines = []
     primeFactors(n - 1, factors)
     a = random.randint(2,n-1)
-    print("a:",a)
-    print("Prime factors of",n-1,"are:",str(factors)[1:-1])
+    lines.append(("a: " + str(a)))
+    lines.append(("Prime factors of " + str(n-1) + " are: " + str(factors)[1:-1]))
 
     if (square_and_multiply(a, n - 1, n) != 1): 
-        print(n,"is not prime.")
+        lines.append((str(n) + " is not prime."))
+        file_ops(lines)
         return
 
     for i in range(len(factors)): 
         if (square_and_multiply(a, int((n - 1) / factors[i]), n) == 1): 
-            print(n,"may not be prime.")
+            lines.append((str(n) + " may not be prime."))
+            file_ops(lines)
             return
 
-    print(n,"is prime.")
+    lines.append((str(n) + " is prime."))
+    file_ops(lines)
 
 def main():
-	n = int(input("Enter any positive integer: "))
-
-	# Base cases:
-
-	if (n < 1):
-		print(n,"is not positive! Terminating")
-		return 0
-
-	if (n == 1):
-		print(n,"is not prime.")
-		return 0
-
-	if (n == 2) or (n == 3):
-		print(n,"is prime.")
-		return 0
-
-	if (n > 2) and (n%2 == 0):
-		print(n,"is even and greater than 2, and thus not prime.")
-		return 0
-
-	lucas(n)
+    n = int(input("Enter any positive integer: "))
+    lines = []
+    
+    if (n < 1):
+        lines.append((str(n) + " is not positive! Terminating"))
+        file_ops(lines)
+        return 0
+    if (n == 1):
+        lines.append((str(n) + " is not prime."))
+        file_ops(lines)
+        return 0
+        
+    if (n == 2) or (n == 3):
+        lines.append((str(n) + " is prime."))
+        file_ops(lines)
+        return 0
+    
+    if (n > 2) and (n%2 == 0):
+        lines.append((str(n) + " is even and greater than 2, and thus not prime."))
+        file_ops(lines)
+        return 0
+        
+    lucas(n)
 
 if __name__=='__main__':
 	main()

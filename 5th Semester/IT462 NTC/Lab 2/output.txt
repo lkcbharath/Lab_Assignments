@@ -1,0 +1,18 @@
+a: 1730
+Prime factors of 2046 are: 2, 3, 11, 31
+2047 may not be prime.
+
+a: 20495
+Prime factors of 65536 are: 2
+65537 may not be prime.
+
+70 is even and greater than 2, and thus not prime.
+
+a: 283
+Prime factors of 560 are: 2, 5, 7
+561 may not be prime.
+
+a: 542
+Prime factors of 1116 are: 2, 3, 31
+1117 may not be prime.
+
