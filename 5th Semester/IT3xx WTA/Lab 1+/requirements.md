@@ -18,7 +18,7 @@ The home page is the first page that the user sees when they open the website fo
 To look attractive and engaging, it is essential to highlight any deals or discounts going on in products. Amazon does this very well.
 
 ### User Authentication
-Basic Sign In, Sign Up, Sign Out
+Basic Sign In, Sign Up, Sign Out for any user. Additionally, there should be a profile for each user, showing his/her purchases, and links to cars.
 
 ### Browse Products
 Just like how knowing what products are sold is essential to the company, a user being able to search for products that cater to his liking is just as important. Thus, a filter-based search, or even a list of products is important.
