@@ -13,12 +13,16 @@ int main() {
     start_time = omp_get_wtime();
 
     step = 1.0/(double)num_steps;
-    
-    for(i=0;i<num_steps;++i){
-        x = (i+0.5)*step;
-        sum += 4.0/(1.0 + x*x);
+
+    #pragma omp serial
+    {
+        for(i=0;i<num_steps;++i){
+            x = (i+0.5)*step;
+            sum += 4.0/(1.0 + x*x);
+        }
+        pi = step*sum;
     }
-    pi = step*sum;
+    
 
     time_taken = omp_get_wtime() - start_time;
     

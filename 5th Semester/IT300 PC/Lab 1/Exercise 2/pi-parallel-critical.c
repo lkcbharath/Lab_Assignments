@@ -5,7 +5,7 @@
 static long num_steps = 100000;
 double step;
 
-int main () {
+int main() {
 
     int i;
     double x,pi,sum,aux,start_time,time_taken;

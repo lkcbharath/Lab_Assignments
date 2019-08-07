@@ -5,10 +5,11 @@
 int main() {
     int id;
 
-    #pragma omp serial 
+    #pragma omp parallel 
     {
         id = omp_get_thread_num();
-        printf("Hello World! from %3d\n",id);
+        if(id==0)
+            printf("Hello World! from %3d\n",id);
     }
 
     return 0;
