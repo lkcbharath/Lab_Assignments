@@ -15,31 +15,31 @@ CREATE TABLE Department (Dname varchar(25),
 			Mgr_ssn int(9) NOT NULL,
 			Mgr_start_date date,
 			PRIMARY KEY (Dnumber),
-			FOREIGN KEY (Mgr_ssn) REFERENCES Employee (Ssn));
+			FOREIGN KEY (Mgr_ssn) REFERENCES Employee (Ssn) ON UPDATE CASCADE ON DELETE CASCADE);
 
 CREATE TABLE Dept_locations(DNumber int(5) NOT NULL,
 			DLocation varchar(25) NOT NULL,
-			FOREIGN KEY (DNumber) REFERENCES Department (Dnumber));
+			FOREIGN KEY (DNumber) REFERENCES Department (Dnumber) ON UPDATE CASCADE ON DELETE CASCADE);
 
 CREATE TABLE Project(Pname varchar(25),
 			Pnumber int(5) NOT NULL,
 			Plocation varchar(25),
 			Dnum int(5),
 			PRIMARY KEY (Pnumber),
-			FOREIGN KEY (Dnum) REFERENCES Department (Dnumber));
+			FOREIGN KEY (Dnum) REFERENCES Department (Dnumber) ON UPDATE CASCADE ON DELETE CASCADE);
 
 CREATE TABLE Works_on(Essn int(9) NOT NULL,
 			Pno int(5) NOT NULL,
 			Hours decimal(3,1),
-			FOREIGN KEY (Essn) REFERENCES Employee (Ssn),
-			FOREIGN KEY (Pno) REFERENCES Project (Pnumber));
+			FOREIGN KEY (Essn) REFERENCES Employee (Ssn) ON UPDATE CASCADE ON DELETE CASCADE,
+			FOREIGN KEY (Pno) REFERENCES Project (Pnumber) ON UPDATE CASCADE ON DELETE CASCADE);
 
 CREATE TABLE Dependent(Essn int(9) NOT NULL,
 			Dependent_name varchar(25) NOT NULL,
 			Sex char(1),
 			Bdate date,
 			Relationship varchar(10),
-			FOREIGN KEY (Essn) REFERENCES Employee (Ssn));
+			FOREIGN KEY (Essn) REFERENCES Employee (Ssn) ON UPDATE CASCADE ON DELETE CASCADE);
 
 
 INSERT INTO Employee (Fname, Minit, Lname, Ssn, Bdate, Address, Sex, Salary, Super_Ssn, Dno) VALUES ('John', 'B', 'Smith', 123456789, '1965-01-09', '731 Fondren, Houston, TX', 'M', 30000, 333445555, 5);
