@@ -1,50 +1,52 @@
-# Thanks to Rashad Ahmed for this code
-
 import random
 import math
 
+def predict(row,weights):
+    res = weights[0]
+    for i in range(1,len(row)):
+        res += (row[i]*weights[i])
+
+    if res > 1000:
+        return 1
+    else:
+        return 0
+
 def perceptron(train_set,n_attr,test_set):
-    bias = -0.5
     weights = [random.uniform(0,1) for i in range(n_attr)]
-    # delta_weights = [0.0 for i in range(n_attr)]
-
-    learning_rate = 0.2
+    learning_rate = 0.01
     iterations = 0
-    error_count = -1
+    error_count = 0
 
-    while (iterations < 500) or error_count!=0:
+    # training model
+    while (iterations < 10):
+        # print(iterations,weights)
+        old_error_count = error_count
         error_count = 0
         
         for row in train_set:
-            z = row[-1]
-            res = bias
-            for i in range(n_attr):
-                res += (row[i]*weights[i])
-            
-            if res>0:
-                y = 1
-            else:
-                y = 0
-            
-            error = abs(z-y)
-            error_count += error
+            z = int(row[0])
+            y = predict(row,weights)
 
-            if error > 0:
-                delta_weight = learning_rate*error
-                weight = weight + delta_weight
+            error = z-y
+            error_count += abs(error)
+
+            if abs(error) > 0:
+                weights[-1] += learning_rate*error
+                for i in range(1,n_attr):
+                    weights[i] += learning_rate*error*weights[i]*row[i]
+        
+        if (error_count == 0):
+            break
+
+        if (old_error_count == error_count):
+            iterations += 1
+        
+    # testing model
     
     acc = 0
-
     for row in test_set:
-        z = row[-1]
-        res = bias
-        for i in range(n_attr):
-            res += (row[i]*weights[i])
-
-        if res > 0:
-            y = 1
-        else:
-            y = 0
+        z = row[0]
+        y = predict(row,weights)
 
         error = abs(z-y)
 
@@ -54,61 +56,65 @@ def perceptron(train_set,n_attr,test_set):
     return (acc/len(test_set))*100
 
 
-def fold(dataset,i,k):
-    l = len(dataset)
-    start_index_test = l*(i-1)//k
-    end_index_test = l*i//k
-    if start_index_test==0:
-		start_index_train=end_index_test
-		end_index_train=l
-		return [dataset[start_index_train:end_index_train],dataset[start_index_test:end_index_test]]
-	
-    elif end_index_test==l:
-		start_index_train=0
-		end_index_train=start_index_test
-		return [dataset[start_index_train:end_index_train],dataset[start_index_test:end_index_test]]
-        
-    else:
-		start_index_train_first=0
-		end_index_train_first=start_index_test
-		start_index_train_second=end_index_test
-		end_index_train_second=l
-		new_dataset=[]
-		for i in range(start_index_test):
-			new_dataset.append(dataset[i])
-		for j in range(end_index_test,l):
-			new_dataset.append(dataset[j])
-
-		return [new_dataset,dataset[start_index_test:end_index_test]]
+def cross_validation_split(dataset,n_folds):
+    dataset_split = []
+    dataset_copy = list(dataset)
+    fold_size = int(len(dataset)/n_folds)
+    for i in range(n_folds):
+        fold = []
+        while len(fold) < fold_size:
+            index = random.randrange(len(dataset_copy))
+            fold.append(dataset_copy.pop(index))
+        dataset_split.append(fold)
+    return dataset_split
 
 def main():
     filename = 'SPECT.csv'
     attributes = []
     rows = []
     with open(filename,'r') as file:
-        # csvreader = csv.reader(csvfile)
-        # attributes = csvreader.next()
-        len_attributes = len(file[0])
-        for row in file:
+        len_attributes = 0
+        i = 0
+        for line in file:
+            if (i==0):
+                i = 1
+                continue
+            row_ = line.split(',')
+
+            if(len_attributes==0):
+                len_attributes = len(row_)
+            
+            if row_[0]=='Yes':
+                row_[0] = '0.0'
+            else:
+                row_[0] = '1.0'
+            
+            row = [float(x) for x in row_]
             rows.append(row)
-	k = 10
-	accuracy = []
-	avg_acc = 0.0
+    # Number of folds
+    k = 10
+    accuracy = []
+    avg_acc = 0.0
+    folds = cross_validation_split(rows,k)
+    for fold in folds:
+        train_set = list(folds)
+        train_set.remove(fold)
+        train_set = sum(train_set,[])
+        test_set = []
+        for row in fold:
+            row_copy = list(row)
+            test_set.append(row_copy)
 
-	for i in range(1,k+1):
-		after_fold = fold(rows,i,k)
-		train_set = after_fold[0]
-		test_set = after_fold[1]
-		acc = perceptron(train_set,len_attributes,test_set)
-		accuracy.append(acc)
+        acc = perceptron(train_set,len_attributes,test_set)
+        accuracy.append(acc)
 
-    print('The Accuracy for each fold is as follows : ')
+    print('\n\nThe Accuracy for each fold is as follows : ')
     for i in accuracy:
-		print(math.ceil(i))
-		avg_acc = avg_acc + float(math.ceil(i))
+        print(math.ceil(i), end=',')
+        avg_acc = avg_acc + float(math.ceil(i))
     
     avg_acc = avg_acc/10
-    print("Average accuracy is " + str(avg_acc))
+    print("\n\nAverage accuracy is " + str(avg_acc))
 
 if __name__ == '__main__':
 	main()
