@@ -8,11 +8,20 @@
 </head>
 <body>
     <div class="header">
-        Shop@Home - E-Commerce Portal
+        <a href="file:///home/student/it202/Lab_Assignments/5th%20Semester/IT3xx%20WTA/Lab%201+/index.html" class="logo">Shop@Home</a>
+        <div class="header-right">
+            <a class="active" href="file:///home/student/it202/Lab_Assignments/5th%20Semester/IT3xx%20WTA/Lab%201+/index.html">Home</a>
+            <a href="file:///home/student/it202/Lab_Assignments/5th%20Semester/IT3xx%20WTA/Lab%201+/login.html">Login</a>
+            <a href="file:///home/student/it202/Lab_Assignments/5th%20Semester/IT3xx%20WTA/Lab%201+/signup.html">Signup</a>
+        </div>
     </div>
 
     <div class="container">
         <div class="row">
+            <div class="col-12">
+                <p>The time is: <span id="time"></span></p>
+            </div>
+
             <div class="col-12">
                 <h1>Welcome to Shop@Home! </h1>
                 <p>The one-stop-shop for your daily needs, right at your fingertips!</p>
@@ -22,46 +31,51 @@
 
             </div>
 
-            <!-- <div class="col-12"> -->
-                <form>
-                    <div class="row">
-                            <div class="col-3">
-                                <label>Your name</label>
-                            </div>
-        
-                            <div class="col-9">
-                                    <input type="text" name="name">
-                            </div>
-                        </div>
-                    
-                    <div class="row">
-                        <div class="col-3">
-                            <label>Your email</label>
-                        </div>
-    
-                        <div class="col-9">
-                                <input type="text" name="email">
-                        </div>
+            <form name="newsletter" onsubmit="validateForm()">
+                <div class="row">
+                    <div class="col-3">
+                        <label>E-mail</label>
                     </div>
 
-                    <div class="row">
-                        <div class="col-3">
-                            <label>Do you want to subscribe to our newsletter?</label>
-                        </div>
-    
-                        <div class="col-9">
-                            <input type="checkbox">
-                        </div>
+                    <div class="col-9">
+                        <input type="text" name="email">
                     </div>
-                    
-                    <input type="submit" value="submit">
-                </form>
-            <!-- </div> -->
+                </div>
+
+                <div class="row">
+                    <div class="col-3">
+                        <label>Do you want to subscribe to our newsletter?</label>
+                    </div>
+
+                    <div class="col-9">
+                        <input type="checkbox" name="subscribed" id="subscribed">
+                    </div>
+                </div>
+                
+                <input type="submit" value="Subscribe">
+            </form>
         </div>
     </div>
     <br>
     <div class="footer">Copyright © S.H. and Co. 2019-2019</div>
 
+    <script>
+        function validateForm() {
+            var email = document.forms["newsletter"]["email"].value;
+            var subscribed = document.getElementById("subscribed").checked;
+            
+            if(subscribed==true){
+                alert("You have subscribed! :)");
+            }
+            else if (email==null){
+                alert("Enter a valid email.");
+            }
+            else{
+                alert("You have not subscribed :(");
+            }
+            window.open('http://www.w3.org', '_blank');
+        }
+    </script>
     <script src="assets/script.js"></script>
 </body>
 </html>

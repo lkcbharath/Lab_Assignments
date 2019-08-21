@@ -1,11 +1,11 @@
 #include <omp.h>
 #include <stdio.h>
-#define N 327000
+#define N 500
 
 int main()
 {
-    long long int m = N,n = N,p = N,q = N,i,j,k;
-    long long int a[N][N],b[N][N],c[N][N];
+    int m = N,n = N,p = N,q = N,i,j,k;
+    int a[N][N],b[N][N],c[N][N];
     double start_time, end_time;
 
     // Some initial values
