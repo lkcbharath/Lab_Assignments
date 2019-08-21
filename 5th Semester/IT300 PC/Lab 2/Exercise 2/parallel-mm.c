@@ -1,11 +1,11 @@
 #include <omp.h>
 #include <stdio.h>
-#define N 500
+#define N 327000
 
 int main()
 {
-    int m = N,n = N,p = N,q = N,i,j,k;
-    int a[N][N],b[N][N],c[N][N];
+    long long int m = N,n = N,p = N,q = N,i,j,k;
+    long long int a[N][N],b[N][N],c[N][N];
     double start_time, end_time;
 
     // Some initial values
@@ -14,10 +14,10 @@ int main()
             a[i][j]=i;
             b[i][j]=j;
         }
-            
     }
 
     start_time = omp_get_wtime();
+
     #pragma omp parallel shared(a,b,c) private(i,j,k) 
     {
         #pragma omp for  schedule(static)

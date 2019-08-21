@@ -1,6 +1,6 @@
 #include <omp.h>
 #include <stdio.h>
-#define N 100000
+#define N 327000
 
 int main(){
     long int i,n=N;
@@ -27,3 +27,4 @@ int main(){
     printf("Time taken for parallel dynamic scheduling approach = %lf s\n", end_time - start_time);
 
     return 0;
+}

@@ -1,21 +1,30 @@
-
 #include <omp.h>
 #include <stdio.h>
+#define N 327000
+
 int main(){
-    int i;
-        int a[100000];
-    int n=100000;
-   for(i=0;i<100000;i++)
-a[i]=i;    double b[100000],d[10];
-    double start_time = omp_get_wtime();
-#pragma omp parallel
-{
-        #pragma omp for schedule(static,1000)
-  for(i=0; i<n-1;i++)
-    {
-        b[i]=(a[i]+a[i+1])/2.0;
-    }
- }
+    long int i,n=N;
+    long int a[N];
+    double b[N];
+    double start_time,end_time; 
+
+    for(i=0;i<N;++i){
+        a[i] = i; 
+    } 
     
-    printf("time = %lfsec",omp_get_wtime()-start_time);
+    start_time = omp_get_wtime();
+    
+    #pragma omp parallel
+    {
+        #pragma omp for schedule(static,1000)
+        for(i=0; i<n-1;i++) {
+            b[i]=(a[i]+a[i+1])/2.0;
+        }
+    }
+
+    end_time = omp_get_wtime();
+
+    printf("Time taken for parallel static scheduling approach = %lf s\n", end_time - start_time);
+
+    return 0;
 }

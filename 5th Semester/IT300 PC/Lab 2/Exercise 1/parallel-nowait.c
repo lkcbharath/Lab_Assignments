@@ -3,7 +3,7 @@
 #include <time.h>
 
 int main(){
-    int i,n = 5000;
+    int i,n = 327000;
     int a[n],c[n];
     double start_time,end_time;
     double b[n],d[n];
