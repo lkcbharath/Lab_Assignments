@@ -16,20 +16,23 @@ int main()
         }
             
     }
-    
+
     start_time = omp_get_wtime();
-    
-    for (i=0;i<m;++i) {
-        for (j=0;j<n;++j) {
-            a[i][j]=0;
-            for (k=0;k<p;++k)
-                a[i][j] += b[i][k]*c[k][j];
+    #pragma omp parallel shared(a,b,c) private(i,j,k) 
+    {
+        #pragma omp for  schedule(static)
+        for (i=0;i<m;++i) {
+            for (j=0;j<n;++j) {
+                a[i][j]=0;
+                for (k=0;k<p;++k)
+                    a[i][j] += b[i][k]*c[k][j];
+            }
         }
     }
     
     end_time = omp_get_wtime();
 
-    printf("Time taken for serial approach = %lf s\n", end_time - start_time);
+    printf("Time taken for parallel approach = %lf s\n", end_time - start_time);
 
     return 0;
 }
