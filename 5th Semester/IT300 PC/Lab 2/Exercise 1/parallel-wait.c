@@ -1,10 +1,12 @@
 #include <omp.h>
 #include <stdio.h>
+#include <time.h>
+
 int main(){
     int i,n = 5000;
     int a[n],c[n];
     double start_time,end_time;
-    double b[2*n],d[2*n];
+    double b[n],d[n];
 
     for(i=0;i<n;++i) {
         a[i] = (i+1)%n;

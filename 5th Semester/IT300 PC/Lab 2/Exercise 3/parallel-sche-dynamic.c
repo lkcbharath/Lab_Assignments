@@ -27,4 +27,3 @@ int main(){
     printf("Time taken for parallel dynamic scheduling approach = %lf s\n", end_time - start_time);
 
     return 0;
-}
