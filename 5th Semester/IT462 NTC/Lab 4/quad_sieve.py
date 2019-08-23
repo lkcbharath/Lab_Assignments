@@ -16,9 +16,7 @@ def euclidean_gcd(a,b):
 
 def is_quadratic_residue(N,prime):
     x = N**((prime-1)//2)%prime
-    if (x==1):
-        return True
-    return False
+    return x == 1
 
 def sieve_eras(n):
     prime = [True for i in range(n+1)]
@@ -57,32 +55,44 @@ def check_if_square(n):
     n_root = int(math.sqrt(n))
     return n_root*n_root == n
 
+def linear_algebra_helper(X,Y,N,lines):
+    f = euclidean_gcd(X+Y, N)
+    g = euclidean_gcd(X-Y, N)
+
+    if(f not in range(2, N) or g not in range(2, N)):
+        lines.append("x and y such that x^2 is congruent to y^2(mod N): " + str(X) + " " + str(Y))
+        lines.append("Either of f and g such that f = gcd(x+y,N) and g = gcd(x-y,N) is 1.\n")
+        return
+
+    lines.append("x and y such that x^2 is congruent to y^2(mod N): " + str(X) + " " + str(Y))
+    lines.append("f and g such that f = gcd(x+y,N), g = gcd(x-y,N), N = f*g and 1 < (f,g) < N: " + str(f) + " " + str(g) + "\n")
+
 def quadratic_sieve(N,B):
     prime_factors = sieve_eras(B+1)
     lines = []
     factor_base = []
+    all_bits = []
+    power_of_each = []
+
     for x in prime_factors:
         if is_quadratic_residue(N,x):
             factor_base.append(x)
+
     factor_base.insert(0,-1)
     f_b_n = len(factor_base)
 
-
     lines.append("\nB-smooth factor base: " + ','.join([str(f) for f in factor_base]))
-
     lines.append("Q(x) is defined as (a*a - N)\n")
+        
+    a = int(math.sqrt(N)) + 1 - 20
 
-    all_bits = []
-    
-    power_of_each = []
-            
-    a = int(math.sqrt(N)) + 1
+    for iterations in range(100):
 
-    for iterations in range(40):
+        flag = 0
         bits = [0 for i in range(f_b_n)]
         power_of_each_bit = [0 for i in range(f_b_n)]
-        flag = 0
         q = int(a*a) - N
+        # print(q)
 
         if(q<0):
             q = abs(q)
@@ -109,6 +119,7 @@ def quadratic_sieve(N,B):
             power_of_each_bit[i] = bits[::][i]
 
             bits[i] = bits[i]%2
+
         if(flag==1):
             all_bits.append([a,bits])
             power_of_each.append([a,power_of_each_bit])
@@ -118,9 +129,31 @@ def quadratic_sieve(N,B):
         a += 1
     
     a_b_n = len(all_bits)
+    
+    f_g_flag = 0
 
     for i in range(a_b_n):
         for j in range(i+1,a_b_n):
+            # take 2 at a time
+            flag = 0
+            for l in range(f_b_n):
+                if (all_bits[i][1][l] + all_bits[j][1][l]) % 2 == 1:
+                    flag = 1
+                    break
+            if(flag == 0):
+                f_g_flag = 1
+                # calculate x
+                X = (all_bits[i][0]*all_bits[j][0]) %N
+                # calculate y
+                Y = 1
+                for l in range(1, f_b_n):
+                    power = (power_of_each[i][1][l] + power_of_each[j][1][l])/2
+                    Y *= factor_base[l]**power
+                Y = int(Y%N)
+
+                linear_algebra_helper(X,Y,N,lines)
+            
+            # take 3 at a time
             for k in range(j+1,a_b_n):
                 flag = 0
                 for l in range(f_b_n):
@@ -128,6 +161,7 @@ def quadratic_sieve(N,B):
                         flag = 1
                         break
                 if(flag==0):
+                    f_g_flag = 1
                     # calculate x
                     X = (all_bits[i][0]*all_bits[j][0]*all_bits[k][0])%N
                     # calculate y
@@ -136,21 +170,11 @@ def quadratic_sieve(N,B):
                         power = (power_of_each[i][1][l] + power_of_each[j][1][l] + power_of_each[k][1][l])/2
                         Y *= factor_base[l]**power
                     Y = int(Y%N)
-                    
-                    f = euclidean_gcd(X+Y,N)
-                    g = euclidean_gcd(X-Y,N)
 
-                    if(f not in range(2,N) or g not in range(2,N)):
-                        lines.append(
-                            "x and y such that x^2 is congruent to y^2(mod N): " + str(X) + " " + str(Y))
-                        lines.append(
-                            "Either of f and g such that f = gcd(x+y,N) and g = gcd(x-y,N) is 1.\n")
-                        continue
+                    linear_algebra_helper(X,Y,N,lines)
 
-                    lines.append(
-                        "x and y such that x^2 is congruent to y^2(mod N): " + str(X) + " " + str(Y))
-                    lines.append(
-                        "f and g such that f = gcd(x+y,N), g = gcd(x-y,N), N = f*g and 1 < (f,g) < N: " + str(f) + " " + str(g) + "\n")
+    if(f_g_flag==0):
+        lines.append("Unable to find suitable X and Y using B-smooth factor base.\n")
 
     file_ops(lines)
 
@@ -176,7 +200,6 @@ def main():
         lines.append((str(N) + " is the only prime factor of itself."))
         file_ops(lines)
         return 0
-    
     
     quadratic_sieve(N,B)
 
