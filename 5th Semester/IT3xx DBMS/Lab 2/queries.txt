@@ -3,7 +3,8 @@ TRUNCATE TABLE Dept_locations;
 ALTER TABLE Project RENAME TO Work;
 ALTER TABLE Employee CHANGE COLUMN Sex Gender char(1);
 
-INSERT INTO Employee (Fname, Minit, Lname, Ssn, Bdate, Address, Gender, Salary, Super_Ssn, Dno) VALUES ('John', 'D', 'Smith', 123456780, '1965-01-09', '731 Fondren, Houston, TX', 'M', 30000, 333445555, 5);
+INSERT INTO Employee (Fname, Minit, Lname, Ssn, Bdate, Address, Gender, Salary, Super_Ssn, Dno) 
+VALUES ('John', 'D', 'Smith', 123456780, '1965-01-09', '731 Fondren, Houston, TX', 'M', 30000, 333445555, 5);
 
 UPDATE Employee SET Minit = 'X' where Salary = 30000;
 DELETE FROM Employee WHERE Gender = 'M';
