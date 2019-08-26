@@ -6,14 +6,14 @@ def predict(row,weights):
     for i in range(1,len(row)):
         res += (row[i]*weights[i])
 
-    if res > 1000:
+    if res > 0:
         return 1
     else:
         return 0
 
-def perceptron(train_set,n_attr,test_set):
-    weights = [random.uniform(0,1) for i in range(n_attr)]
-    learning_rate = 0.01
+def multilayer_perceptron(train_set,n_attr,test_set):
+    weights = [random.uniform(0,1) for i in range(n_attr+1)]
+    learning_rate = 0.2
     iterations = 0
     error_count = 0
 
@@ -24,7 +24,7 @@ def perceptron(train_set,n_attr,test_set):
         error_count = 0
         
         for row in train_set:
-            z = int(row[0])
+            z = int(row[-1])
             y = predict(row,weights)
 
             error = z-y
@@ -45,7 +45,7 @@ def perceptron(train_set,n_attr,test_set):
     
     acc = 0
     for row in test_set:
-        z = row[0]
+        z = row[-1]
         y = predict(row,weights)
 
         error = abs(z-y)
@@ -69,7 +69,7 @@ def cross_validation_split(dataset,n_folds):
     return dataset_split
 
 def main():
-    filename = 'SPECT.csv'
+    filename = 'IRIS.csv'
     attributes = []
     rows = []
     with open(filename,'r') as file:
@@ -82,12 +82,12 @@ def main():
             row_ = line.split(',')
 
             if(len_attributes==0):
-                len_attributes = len(row_)
+                len_attributes = len(row_) - 1
             
-            if row_[0]=='Yes':
-                row_[0] = '0.0'
+            if row_[-1]=='Iris-setosa':
+                row_[-1] = '0.0'
             else:
-                row_[0] = '1.0'
+                row_[-1] = '1.0'
             
             row = [float(x) for x in row_]
             rows.append(row)
@@ -105,7 +105,7 @@ def main():
             row_copy = list(row)
             test_set.append(row_copy)
 
-        acc = perceptron(train_set,len_attributes,test_set)
+        acc = multilayer_perceptron(train_set,len_attributes,test_set)
         accuracy.append(acc)
 
     print('\n\nThe Accuracy for each fold is as follows : ')
