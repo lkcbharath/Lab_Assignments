@@ -1,0 +1,105 @@
+
+B-smooth factor base: -1,2,5,7,11,13
+Q(x) is defined as (a*a - N)
+
+Values of a close to n^(0.5): 43,39,38,49,52,53
+B-Smooth Q(a): 20,-308,-385,572,875,980
+
+Corresponding exponent vectors:
+0,0,1,0,0,0
+1,0,0,1,1,0
+1,0,1,1,1,0
+0,0,0,0,1,1
+0,0,1,1,0,0
+0,0,1,0,0,0
+
+Exponent vectors chosen:
+a[i] = 39  Q(a[i]) = -308
+a[i] = 38  Q(a[i]) = -385
+a[i] = 53  Q(a[i]) = 980
+
+x and y chosen such that x^2 is congruent to y^2(mod n): 1728,1635
+Final factors f and g such that f = gcd(x+y,n), g = gcd(x-y,n), n = f*g and 1 < (f,g) < n: 31,59
+
+
+
+B-smooth factor base: -1,2
+Q(x) is defined as (a*a - N)
+
+Values of a close to n^(0.5): 879,-879
+B-Smooth Q(a): 4,4
+
+Corresponding exponent vectors:
+0,0
+0,0
+
+Exponent vectors chosen:
+a[i] = 879  Q(a[i]) = 4
+
+x and y chosen such that x^2 is congruent to y^2(mod n): 879,2
+Final factors f and g such that f = gcd(x+y,n), g = gcd(x-y,n), n = f*g and 1 < (f,g) < n: 877,881
+
+
+
+B-smooth factor base: -1,2,3,7,13
+Q(x) is defined as (a*a - N)
+
+Values of a close to n^(0.5): 86,87,77,95,74
+B-Smooth Q(a): 9,182,-1458,1638,-1911
+
+Corresponding exponent vectors:
+0,0,0,0,0
+0,1,0,1,1
+1,1,0,0,0
+0,1,0,1,1
+1,0,1,0,1
+
+Exponent vectors chosen:
+a[i] = 86  Q(a[i]) = 9
+
+x and y chosen such that x^2 is congruent to y^2(mod n): 86,3
+Final factors f and g such that f = gcd(x+y,n), g = gcd(x-y,n), n = f*g and 1 < (f,g) < n: 83,89
+
+
+
+B-smooth factor base: -1,2,3,9,11,13
+Q(x) is defined as (a*a - N)
+
+Values of a close to n^(0.5): 79,75,73,71,85,89
+B-Smooth Q(a): 264,-352,-648,-936,1248,1944
+
+Corresponding exponent vectors:
+0,1,1,0,1,0
+1,1,0,0,1,0
+1,1,0,0,0,0
+1,1,0,0,0,1
+0,1,1,0,0,1
+0,1,1,0,0,0
+
+Exponent vectors chosen
+a[i] = 85  Q(a[i]) = 1248
+a[i] = 89  Q(a[i]) = 1944
+x and y chosen such that x^2 is congruent to y^2(mod n): 1588,1557
+Unable to determine f and g such that f = gcd(x+y,n), g = gcd(x-y,n), n = f*g and 1 < (f,g) < n: 
+
+
+
+B-smooth factor base: -1,2,3,5,9,13
+Q(x) is defined as (a*a - N)
+
+Values of a close to n^(0.5): 260,262,271,221,154,379
+B-Smooth Q(a): 9,1053,5850,-18750,-43875,76050
+
+Corresponding exponent vectors:
+0,0,0,0,0,0
+0,0,0,0,0,1
+0,1,0,0,0,1
+1,1,1,1,0,0
+1,0,1,1,0,1
+0,1,0,0,0,0
+
+Exponent vectors chosen
+a[i] = 260  Q(a[i]) = 9
+x and y chosen such that x^2 is congruent to y^2(mod n): 260,3
+Final factors f and g such that f = gcd(x+y,n), g = gcd(x-y,n), n = f*g and 1 < (f,g) < n: 257,263
+
