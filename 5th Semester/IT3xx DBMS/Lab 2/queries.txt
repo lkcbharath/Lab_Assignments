@@ -1,6 +1,6 @@
 DROP TABLE Works_on;
 TRUNCATE TABLE Dept_locations;
-ALTER TABLE Project RENAME TO Work;
+ALTER TABLE Dependent RENAME TO Relatives;
 ALTER TABLE Employee CHANGE COLUMN Sex Gender char(1);
 
 INSERT INTO Employee (Fname, Minit, Lname, Ssn, Bdate, Address, Gender, Salary, Super_Ssn, Dno) 

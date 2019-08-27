@@ -253,7 +253,7 @@ def main():
     n_folds = 10
     l_rate = 0.3
     n_epoch = 500
-    n_hidden = 5
+    n_hidden = 20
     accuracies = evaluate_algorithm(
         dataset, back_propagation, n_folds, l_rate, n_epoch, n_hidden)
         

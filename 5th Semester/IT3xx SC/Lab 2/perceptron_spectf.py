@@ -69,7 +69,7 @@ def cross_validation_split(dataset,n_folds):
     return dataset_split
 
 def main():
-    filename = 'SPECT.csv'
+    filename = 'SPECTF.csv'
     attributes = []
     rows = []
     with open(filename,'r') as file:
