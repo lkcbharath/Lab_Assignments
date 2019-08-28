@@ -21,6 +21,16 @@
             <form name="signup" action="login.html" onsubmit="return validateForm()">
                 <div class="row">
                     <div class="col-3">
+                        <label>Name</label>
+                    </div>
+
+                    <div class="col-9">
+                        <input type="text" name="name" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-3">
                         <label>E-mail</label>
                     </div>
 
@@ -49,10 +59,14 @@
                         </div>
                     </div>
                 
-                <div style="align-content: center">
+                <div class="row" style="text-align: center">
                     <input type="submit" value="Sign Up">
                 </div>
             </form>
+            <br>
+            <div class="row" style="text-align: center">
+                Already have an account? <a href="login.html">Login</a>
+            </div>
         </div>
     </div>
     <br>
@@ -63,16 +77,25 @@
             var email = document.forms["signup"]["email"].value;
             var password = document.forms["signup"]["password"].value;
             var password2 = document.forms["signup"]["password2"].value;
+            var atposition=email.indexOf("@");  
+            var dotposition=email.lastIndexOf(".");
+            // uppercase|lowercase|number|symbol|atleast8
+            var pattern = new RegExp("^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$");
             
-            if(password!=password2){
+            if (atposition<1 || dotposition<atposition+2 || dotposition+2>=email.length) {  
+                alert("Please enter a valid e-mail address");
+                return false;  
+            }  
+            if (password!=password2){
                 alert("Passwords do not match.");
                 return false;
             }
-            else{
-                alert("Successfully signed up!");
-                return true;
+            if (pattern.test(password)==false){
+                alert("Your password must be of length 8 and contain one uppercase, one lowercase, one number, and one special symbol character");
+                return false;
             }
-            return false;
+            alert("Successfully signed up!");
+            return true;
         }
     </script>
 

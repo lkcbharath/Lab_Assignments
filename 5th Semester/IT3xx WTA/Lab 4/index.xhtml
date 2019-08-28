@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+   <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Shop@Home - E-Commerce Portal</title>
+        <link rel="stylesheet" href="assets/styles.css"/>
+   </head>
+	
+   <body>
+        <div class="header">
+            <a href="index.html" class="logo">Shop@Home</a>
+            <div class="header-right">
+                <a href="index.html">Home</a>
+                <a href="login.html">Login</a>
+                <a class="active" href="signup.html">Signup</a>
+            </div>
+        </div>
+    
+        <div class="container">
+            <div class="row">
+                <form name="signup" action="login.html" onsubmit="return validateForm()">
+                    <div class="row">
+                        <div class="col-3">
+                            <label>Name</label>
+                        </div>
+    
+                        <div class="col-9">
+                            <input type="text" name="name" id="name" required="required"/>
+                        </div>
+                    </div>
+    
+                    <div class="row">
+                        <div class="col-3">
+                            <label>City</label>
+                        </div>
+    
+                        <div class="col-9">
+                            <input type="text" name="name" id="name" required="required"/>
+                        </div>
+                    </div>
+    
+                    <div class="row">
+                        <div class="col-3">
+                            <label>Gender</label>
+                        </div>
+                        <div class="col-3">
+                            <input type="radio" name="Gender" id="Male" value="Male"/>
+                        </div>
+    
+                        <div class="col-3">
+                            <input type="radio" name="Gender" id="Female" value="Female"/>
+                        </div>
+    
+                        <div class="col-3">
+                            <input type="radio" name="Gender" id="Other" value="Other"/>
+                        </div>
+                    </div>
+    
+                    
+                    <div class="row" style="text-align: center">
+                        <input type="submit" value="Sign Up"/>
+                    </div>
+                </form>
+                <br/>
+                <div class="row" style="text-align: center">
+                    Already have an account? <a href="login.html">Login</a>
+                </div>
+            </div>
+        </div>
+        <br/>
+        <div class="footer">Copyright © S.H. and Co. 2019-2019</div>
+    
+    
+        <script src="assets/script.js"></script>
+   </body>
+</html>

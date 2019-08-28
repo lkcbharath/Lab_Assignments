@@ -39,10 +39,24 @@
                     </div>
                 </div>
                 
-                <div style="align-content: center">
+                <div class="row">
+                    <div class="col-3">
+                        <label>Remember Me?</label>
+                    </div>
+
+                    <div class="col-9">
+                        <input type="checkbox" name="remember" id="remember">
+                    </div>
+                </div>
+
+                <div class="row" style="text-align: center">
                     <input type="submit" value="Login">
                 </div>
             </form>
+            <br>
+            <div class="row" style="text-align: center">
+                Don't have an account? <a href="signup.html">Sign up</a>
+            </div>
         </div>
     </div>
     <br>
@@ -52,15 +66,18 @@
         function validateForm() {
             var email = document.forms["login"]["email"].value;
             var password = document.forms["login"]["password"].value;
+            var atposition=email.indexOf("@");  
+            var dotposition=email.lastIndexOf(".");
 
-            if((email=="lkcbharath@gmail.com") && password=="123"){
+            if (atposition<1 || dotposition<atposition+2 || dotposition+2>=email.length) {  
+                alert("Please enter a valid e-mail address");
+                return false;  
+            } 
+            if ((email=="lkcbharath@gmail.com") && password=="123"){
                 alert("Successfully logged in!");
                 return true;
             }
-            else{
-                alert("Invalid credentials.");
-                return false;
-            }
+            alert("Invalid credentials.");
             return false;
         }
 

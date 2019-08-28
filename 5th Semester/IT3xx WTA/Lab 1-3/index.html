@@ -19,7 +19,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <p>The time is: <span id="time"></span></p>
+                <p>The time is: <b><span id="time"></span></b></p>
             </div>
 
             <div class="col-12">
@@ -52,7 +52,9 @@
                     </div>
                 </div>
                 
-                <input type="submit" value="Subscribe">
+                <div class="row" style="text-align: center">
+                    <input type="submit" value="Subscribe">
+                </div>
             </form>
         </div>
     </div>
@@ -63,19 +65,24 @@
         function validateForm() {
             var email = document.forms["newsletter"]["email"].value;
             var subscribed = document.getElementById("subscribed").checked;
+            var atposition=email.indexOf("@");  
+            var dotposition=email.lastIndexOf(".");
             
-            if(subscribed==true){
+            if (atposition<1 || dotposition<atposition+2 || dotposition+2>=email.length) {  
+                alert("Please enter a valid e-mail address");
+                return false;  
+            } 
+            if (subscribed==true){
                 alert("You have subscribed! :)");
                 return true;
             }
-            else if (email==null){
+            if (email==null){
                 alert("Enter a valid email.");
                 return false;
             }
-            else{
-                alert("You have not subscribed :(");
-                return false;
-            }
+            
+            alert("You have not subscribed :(");
+            return false;
         }
     </script>
     <script src="assets/script.js"></script>

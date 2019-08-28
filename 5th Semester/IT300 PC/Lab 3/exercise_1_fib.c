@@ -48,9 +48,13 @@ lld fib_parallel(lld n)
         return n;
   	else 
   	{
+		#pragma omp task
     	i = fib_parallel(n-1);
-    	j = fib_parallel(n-2);
-    	return i + j;
+
+    	#pragma omp task
+		j = fib_parallel(n-2);
+		
+		return i + j;
   	}
 }
 
@@ -68,10 +72,10 @@ lld fib_parallel_taskwait(lld n)
         return fib_serial(n);
   	else 
   	{
-    	#pragma omp task 
+    	#pragma omp task shared(i)
     	i = fib_parallel_taskwait(n-1);
 
-    	#pragma omp task 
+    	#pragma omp task shared(j)
     	j = fib_parallel_taskwait(n-2);
     	
 		#pragma omp taskwait

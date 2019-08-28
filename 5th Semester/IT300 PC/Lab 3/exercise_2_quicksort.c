@@ -1,3 +1,21 @@
+/*
+**  PROGRAM: Quick sort
+**
+**  PURPOSE: This is a program to sort an array using the Quick sort algorithm.
+**           Quick sort sorts an array by picking a pivot element and swapping elements to the left of it with elements to the right, if elements on the left are greater than pivot.
+**			 The first two numbers in the series are 0 and 1.
+**           Example of the first 10 numbers in the Fibonacci series:
+**
+**                0,1,1,2,3,5,8,13,21,34
+**
+**           We use a recursive function to find the previous two elements, taking n as input. 
+**           If n goes below 2, then we return n.
+**           Else, we return the sum of the values returned by the functions taking n-1 and n-2 as input.
+**
+**  USAGE:   Run the program and enter an integer in the command line when prompted.
+**
+**  HISTORY: Written by Bharath Adikar, Aug 2019
+*/
 #include <omp.h>
 #include <stdio.h> 
 #include <stdlib.h>
