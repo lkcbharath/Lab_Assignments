@@ -40,6 +40,22 @@ lld fib_serial(lld n)
 
 lld fib_parallel(lld n) 
 {
+	// Return values of fib(n-1) and fib(n-2)
+  	lld i, j; 
+  	
+	// If n is less than 2, return itself (first two elements of Fibonacci series)  
+	if (n < 2)
+        return n;
+  	else 
+  	{
+    	i = fib_parallel(n-1);
+    	j = fib_parallel(n-2);
+    	return i + j;
+  	}
+}
+
+lld fib_parallel_taskwait(lld n) 
+{
 	/*To get good performance you need to use a cutoff value for "n". 
 	Otherwise, too many small tasks will be generated. 
 	Once the value of "n" gets below this threshold it is best to simply execute the serial version without tasking.*/
@@ -52,11 +68,11 @@ lld fib_parallel(lld n)
         return fib_serial(n);
   	else 
   	{
-    	#pragma omp task shared(i)
-    	i = fib_parallel(n-1);
+    	#pragma omp task 
+    	i = fib_parallel_taskwait(n-1);
 
-    	#pragma omp task shared(j)
-    	j = fib_parallel(n-2);
+    	#pragma omp task 
+    	j = fib_parallel_taskwait(n-2);
     	
 		#pragma omp taskwait
     	return i + j;
@@ -102,7 +118,7 @@ int main()
     #pragma omp parallel
     {
         #pragma omp single
-		answer = fib_serial(n);
+		answer = fib_parallel(n);
     }
 	time_taken = omp_get_wtime()-start_time;
 	error = check_correctness(answer,n);
@@ -118,7 +134,7 @@ int main()
     #pragma omp parallel
     {
         #pragma omp single
-		answer = fib_parallel(n);
+		answer = fib_parallel_taskwait(n);
     }
 	time_taken = omp_get_wtime()-start_time;
 	error = check_correctness(answer,n);

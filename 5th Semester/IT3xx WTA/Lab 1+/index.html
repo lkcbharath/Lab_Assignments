@@ -8,11 +8,11 @@
 </head>
 <body>
     <div class="header">
-        <a href="file:///home/student/it202/Lab_Assignments/5th%20Semester/IT3xx%20WTA/Lab%201+/index.html" class="logo">Shop@Home</a>
+        <a href="index.html" class="logo">Shop@Home</a>
         <div class="header-right">
-            <a class="active" href="file:///home/student/it202/Lab_Assignments/5th%20Semester/IT3xx%20WTA/Lab%201+/index.html">Home</a>
-            <a href="file:///home/student/it202/Lab_Assignments/5th%20Semester/IT3xx%20WTA/Lab%201+/login.html">Login</a>
-            <a href="file:///home/student/it202/Lab_Assignments/5th%20Semester/IT3xx%20WTA/Lab%201+/signup.html">Signup</a>
+            <a class="active" href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="signup.html">Signup</a>
         </div>
     </div>
 
@@ -31,7 +31,7 @@
 
             </div>
 
-            <form name="newsletter" onsubmit="validateForm()">
+            <form name="newsletter" action="http://www.w3.org" onsubmit="return validateForm()">
                 <div class="row">
                     <div class="col-3">
                         <label>E-mail</label>
@@ -66,14 +66,16 @@
             
             if(subscribed==true){
                 alert("You have subscribed! :)");
+                return true;
             }
             else if (email==null){
                 alert("Enter a valid email.");
+                return false;
             }
             else{
                 alert("You have not subscribed :(");
+                return false;
             }
-            window.open('http://www.w3.org', '_blank');
         }
     </script>
     <script src="assets/script.js"></script>

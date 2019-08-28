@@ -8,17 +8,17 @@
 </head>
 <body>
     <div class="header">
-        <a href="file:///home/student/it202/Lab_Assignments/5th%20Semester/IT3xx%20WTA/Lab%201+/index.html" class="logo">Shop@Home</a>
+        <a href="index.html" class="logo">Shop@Home</a>
         <div class="header-right">
-            <a href="file:///home/student/it202/Lab_Assignments/5th%20Semester/IT3xx%20WTA/Lab%201+/index.html">Home</a>
-            <a class="active" href="file:///home/student/it202/Lab_Assignments/5th%20Semester/IT3xx%20WTA/Lab%201+/login.html">Login</a>
-            <a href="file:///home/student/it202/Lab_Assignments/5th%20Semester/IT3xx%20WTA/Lab%201+/signup.html">Signup</a>
+            <a href="index.html">Home</a>
+            <a class="active" href="login.html">Login</a>
+            <a href="signup.html">Signup</a>
         </div>
     </div>
 
     <div class="container">
         <div class="row">
-            <form name="login" onsubmit="validateForm()">
+            <form name="login" action="welcome.html" onsubmit="return validateForm()">
                 <div class="row">
                     <div class="col-3">
                         <label>E-mail</label>
@@ -55,11 +55,13 @@
 
             if((email=="lkcbharath@gmail.com") && password=="123"){
                 alert("Successfully logged in!");
-                window.open('file:///home/student/it202/Lab_Assignments/5th%20Semester/IT3xx%20WTA/Lab%201+/welcome.html', '_blank'); 
+                return true;
             }
             else{
                 alert("Invalid credentials.");
+                return false;
             }
+            return false;
         }
 
     </script>
