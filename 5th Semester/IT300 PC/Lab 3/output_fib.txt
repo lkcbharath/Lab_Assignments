@@ -1,0 +1,13 @@
+Enter the nth fibonacci number to print
+40
+nth fibonacci number is 102334155
+Time taken for serial approach is 0.844113 s
+The output obtained is correct and has no errors.
+
+The nth fibonacci number is 0
+Time taken for parallel approach is 1.322116 s
+Error obtained: -102334155
+
+The nth fibonacci number is 102334155
+Time taken for parallel approach with taskwait is 0.230766 s
+The output obtained is correct and has no errors.

@@ -22,6 +22,7 @@
 
 #define lld long long int
 
+// Serialised version of calculation of nth Fibonacci number
 lld fib_serial(lld n) 
 {
 	// Return values of fib(n-1) and fib(n-2)
@@ -38,6 +39,7 @@ lld fib_serial(lld n)
   	}
 }
 
+// Parallelised version of calculation of nth Fibonacci number using taskwait
 lld fib_parallel(lld n) 
 {
 	// Return values of fib(n-1) and fib(n-2)
@@ -48,12 +50,12 @@ lld fib_parallel(lld n)
         return n;
   	else 
   	{
+		// Each recursion tree is a task with data sharing that can be parallelised with other operations. But this is incorrect.
 		#pragma omp task
     	i = fib_parallel(n-1);
 
-    	#pragma omp task
+		#pragma omp task
 		j = fib_parallel(n-2);
-		
 		return i + j;
   	}
 }
@@ -78,11 +80,13 @@ lld fib_parallel_taskwait(lld n)
     	#pragma omp task shared(j)
     	j = fib_parallel_taskwait(n-2);
     	
+		// Wait for other tasks to be completed before executing this
 		#pragma omp taskwait
     	return i + j;
   	}
 }
 
+// Function to check correctness of output
 lld check_correctness(lld num, lld n){
 	if(n < 2)
 		return num-n;
@@ -106,6 +110,7 @@ int main()
 	printf("Enter the nth fibonacci number to print\n");
 	scanf("%lld",&n);
 	
+	// Serial nth Fibonacci number
 	start_time = omp_get_wtime();
 	answer = fib_serial(n);
 	time_taken = omp_get_wtime()-start_time;
@@ -118,7 +123,8 @@ int main()
 		printf("The output obtained is correct and has no errors.\n");
 	printf("\n");
 
-    start_time = omp_get_wtime();
+	// Parallel nth Fibonacci number
+	start_time = omp_get_wtime();
     #pragma omp parallel
     {
         #pragma omp single
@@ -134,7 +140,8 @@ int main()
 		printf("The output obtained is correct and has no errors.\n");
 	printf("\n");
 
-    start_time = omp_get_wtime();
+	// Parallel nth Fibonacci number with taskwait
+	start_time = omp_get_wtime();
     #pragma omp parallel
     {
         #pragma omp single

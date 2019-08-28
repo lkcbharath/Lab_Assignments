@@ -2,17 +2,17 @@
 **  PROGRAM: Quick sort
 **
 **  PURPOSE: This is a program to sort an array using the Quick sort algorithm.
-**           Quick sort sorts an array by picking a pivot element and swapping elements to the left of it with elements to the right, if elements on the left are greater than pivot.
-**			 The first two numbers in the series are 0 and 1.
-**           Example of the first 10 numbers in the Fibonacci series:
+**           Quick sort sorts an array by picking the last element as a pivot element. The pivot element is placed correctly in the array.
+**           Elements smaller than the pivot are placed to the left of it, and elements greater than it to the right.
+**           Then, we recurse on the left and right subarrays to the pivot by calling the algorithm on them, until size of array is 1.
 **
-**                0,1,1,2,3,5,8,13,21,34
+**			 If the array is initially:
+**                5,1,3,4,2
+**           We select the element 2 as pivot. After swapping, the array should look like:
+**				  1,2,5,3,4
+**           and the algorithm is called on the arrays [1] and [5,3,4].
 **
-**           We use a recursive function to find the previous two elements, taking n as input. 
-**           If n goes below 2, then we return n.
-**           Else, we return the sum of the values returned by the functions taking n-1 and n-2 as input.
-**
-**  USAGE:   Run the program and enter an integer in the command line when prompted.
+**  USAGE:   Run the program and enter an integer in the command line when prompted. Random values are taken as elements for the array with size being the integer entered.
 **
 **  HISTORY: Written by Bharath Adikar, Aug 2019
 */
@@ -30,6 +30,7 @@ void swap(lld* a, lld* b)
 	*b = t; 
 } 
 
+// Utility function to prnt all elements of array
 void printArray(lld arr[], lld size) 
 { 
 	lld i; 
@@ -61,51 +62,40 @@ lld partition (lld arr[], lld low, lld high)
 	return (i + 1); 
 } 
 
-/* The main function that implements QuickSort 
-arr[] --> Array to be sorted, 
-low --> Starting index, 
-high --> Ending index */
+// Serial implementation of quicksort
 void quickSort(lld arr[], lld low, lld high) 
 { 
 	if (low < high) 
-	{ 
-		/* pi is partitioning index, arr[p] is now 
-		at right place */
-		lld pi = partition(arr, low, high); 
+	{
+		// pi is partitioning index, arr[p] is now at right place
+		lld pi = partition(arr, low, high);
 
-		// Separately sort elements before 
-		// partition and after partition 
-		quickSort(arr, low, pi - 1); 
+		// Separately sort elements before partition
+		quickSort(arr, low, pi - 1);
+
+		// Separately sort elements after partition
 		quickSort(arr, pi + 1, high); 
 	} 
 } 
 
-/* The main function that implements QuickSort 
-arr[] --> Array to be sorted, 
-low --> Starting index, 
-high --> Ending index */
+// Parallelised version of quicksort by using data sharing and taskwait constructs
 void quickSortP(lld arr[], lld low, lld high) 
 { 
 	if (low < high) 
 	{ 
-		// pi is partitioning index, arr[p] is now at right place
 		lld pi;
 		#pragma omp task shared(pi)
 		pi = partition(arr, low, high); 
 
-		// Separately sort elements before partition
 		#pragma omp taskwait
 		quickSortP(arr, low, pi - 1); 
 
-		// Separately sort elements after partition
 		#pragma omp taskwait
 		quickSortP(arr, pi + 1, high); 
 	} 
 } 
 
-/* Function to prlld an array */
-
-
+// Function to check correctness of output
 lld check_correctness(lld arr[], lld n){
 	lld i,error=0;
 	for(i=0;i<n-1;++i){
@@ -115,31 +105,28 @@ lld check_correctness(lld arr[], lld n){
 	return error;
 }
 
-// Driver program to test above functions 
-lld main() 
+int main() 
 { 
 	double start_time,time_taken;
 	lld i,n,input,error;
 	printf("Enter array size: ");
 	scanf("%lld",&n);
 	lld arr[n],arr2[n];
-	// printf("Enter array elements one by one");
 
 	for(i=0;i<n;++i){
-		// scanf("%lld",&input);
-		// arr[i] = input;
-		// arr2[i] = input;
-		arr[i] = n-i;
-		arr2[i] = n-i;
+		input = rand()%1003;
+		arr[i] = input;
+		arr2[i] = input;
 	}
 
+	// Serial quicksort
 	start_time = omp_get_wtime();
 	quickSort(arr, 0, n-1); 
 	time_taken = omp_get_wtime()-start_time;
 	error = check_correctness(arr,n);
 
-	printf("Sorted array: \n"); 
-	// printArray(arr, n); 
+	//printf("Sorted array: \n"); 
+	//printArray(arr, n); 
 	printf("Time taken for serial approach is %lf s\n",time_taken);
 	if(error)
 		printf("Error obtained: %lld\n",error);
@@ -147,14 +134,14 @@ lld main()
 		printf("The output obtained is correct and has no errors.\n");
 	printf("\n");
 
-
+	// Parallel quicksort with taskwait directives
 	start_time = omp_get_wtime(); 
 	quickSortP(arr2, 0, n-1); 
 	time_taken = omp_get_wtime()-start_time;
 	error = check_correctness(arr2,n);
 
-	printf("Sorted array: \n"); 
-	// printArray(arr2, n); 
+	//printf("Sorted array: \n"); 
+	//printArray(arr2, n); 
 	printf("Time taken for parallel approach is %lf s\n",time_taken);
 	if(error)
 		printf("Error obtained: %lld\n",error);

@@ -1,0 +1,6 @@
+Enter array size: 50000
+Time taken for serial approach is 0.030246 s
+The output obtained is correct and has no errors.
+
+Time taken for parallel approach is 0.015344 s
+The output obtained is correct and has no errors.
