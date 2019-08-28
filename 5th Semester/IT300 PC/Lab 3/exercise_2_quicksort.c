@@ -1,14 +1,23 @@
-/* C implementation QuickSort */
 #include <omp.h>
 #include <stdio.h> 
 #include <stdlib.h>
 
+#define lld long long int
+
 // A utility function to swap two elements 
-void swap(int* a, int* b) 
+void swap(lld* a, lld* b) 
 { 
-	int t = *a; 
+	lld t = *a; 
 	*a = *b; 
 	*b = t; 
+} 
+
+void printArray(lld arr[], lld size) 
+{ 
+	lld i; 
+	for (i=0; i < size; i++) 
+		printf("%lld ",arr[i]); 
+	printf("\n"); 
 } 
 
 /* This function takes last element as pivot, places 
@@ -16,12 +25,12 @@ the pivot element at its correct position in sorted
 	array, and places all smaller (smaller than pivot) 
 to left of pivot and all greater elements to right 
 of pivot */
-int partition (int arr[], int low, int high) 
+lld partition (lld arr[], lld low, lld high) 
 { 
-	int pivot = arr[high]; // pivot 
-	int i = (low - 1); // Index of smaller element 
+	lld pivot = arr[high]; // pivot 
+	lld i = (low - 1); // Index of smaller element 
 
-	for (int j = low; j <= high- 1; j++) 
+	for (lld j = low; j <= high- 1; j++) 
 	{ 
 		// If current element is smaller than the pivot 
 		if (arr[j] < pivot) 
@@ -38,13 +47,13 @@ int partition (int arr[], int low, int high)
 arr[] --> Array to be sorted, 
 low --> Starting index, 
 high --> Ending index */
-void quickSort(int arr[], int low, int high) 
+void quickSort(lld arr[], lld low, lld high) 
 { 
 	if (low < high) 
 	{ 
 		/* pi is partitioning index, arr[p] is now 
 		at right place */
-		int pi = partition(arr, low, high); 
+		lld pi = partition(arr, low, high); 
 
 		// Separately sort elements before 
 		// partition and after partition 
@@ -57,46 +66,51 @@ void quickSort(int arr[], int low, int high)
 arr[] --> Array to be sorted, 
 low --> Starting index, 
 high --> Ending index */
-void quickSortP(int arr[], int low, int high) 
+void quickSortP(lld arr[], lld low, lld high) 
 { 
 	if (low < high) 
 	{ 
-		/* pi is partitioning index, arr[p] is now 
-		at right place */
-		int pi;
+		// pi is partitioning index, arr[p] is now at right place
+		lld pi;
 		#pragma omp task shared(pi)
 		pi = partition(arr, low, high); 
 
-		// Separately sort elements before 
-		// partition and after partition 
+		// Separately sort elements before partition
 		#pragma omp taskwait
 		quickSortP(arr, low, pi - 1); 
 
+		// Separately sort elements after partition
 		#pragma omp taskwait
 		quickSortP(arr, pi + 1, high); 
 	} 
 } 
 
-/* Function to print an array */
-void printArray(int arr[], int size) 
-{ 
-	int i; 
-	for (i=0; i < size; i++) 
-		printf("%d ", arr[i]); 
-	printf("\n"); 
-} 
+/* Function to prlld an array */
+
+
+lld check_correctness(lld arr[], lld n){
+	lld i,error=0;
+	for(i=0;i<n-1;++i){
+		if(arr[i+1]<arr[i])
+			++error;
+	}
+	return error;
+}
 
 // Driver program to test above functions 
-int main() 
+lld main() 
 { 
 	double start_time,time_taken;
-	int i,n;
-	printf("Enter array size:");
-	scanf("%d",&n);
-	int arr[n],arr2[n];
+	lld i,n,input,error;
+	printf("Enter array size: ");
+	scanf("%lld",&n);
+	lld arr[n],arr2[n];
 	// printf("Enter array elements one by one");
 
 	for(i=0;i<n;++i){
+		// scanf("%lld",&input);
+		// arr[i] = input;
+		// arr2[i] = input;
 		arr[i] = n-i;
 		arr2[i] = n-i;
 	}
@@ -104,16 +118,31 @@ int main()
 	start_time = omp_get_wtime();
 	quickSort(arr, 0, n-1); 
 	time_taken = omp_get_wtime()-start_time;
+	error = check_correctness(arr,n);
 
-	printf("Sorted array: "); 
+	printf("Sorted array: \n"); 
 	// printArray(arr, n); 
 	printf("Time taken for serial approach is %lf s\n",time_taken);
+	if(error)
+		printf("Error obtained: %lld\n",error);
+	else
+		printf("The output obtained is correct and has no errors.\n");
+	printf("\n");
+
 
 	start_time = omp_get_wtime(); 
 	quickSortP(arr2, 0, n-1); 
 	time_taken = omp_get_wtime()-start_time;
-	printf("Sorted array: "); 
+	error = check_correctness(arr2,n);
+
+	printf("Sorted array: \n"); 
 	// printArray(arr2, n); 
 	printf("Time taken for parallel approach is %lf s\n",time_taken);
+	if(error)
+		printf("Error obtained: %lld\n",error);
+	else
+		printf("The output obtained is correct and has no errors.\n");
+	printf("\n");
+
 	return 0; 
 } 
