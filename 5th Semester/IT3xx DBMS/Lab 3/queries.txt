@@ -4,13 +4,13 @@ SELECT SUM(Salary),MAX(Salary),MIN(Salary),AVG(Salary) FROM Employee WHERE Dno =
 
 SELECT COUNT(*) FROM Employee WHERE Dno = (SELECT Dnumber FROM Department WHERE Dname = 'Administration');
 
-SELECT p.Pnumber,p.Pname,COUNT(*) as employees FROM Project p, Employee e WHERE e.Dno = p.Dnum GROUP BY p.Pnumber;
+SELECT p.Pnumber,p.Pname,COUNT(*) as employees FROM Project p, Employee e, Works_on w WHERE e.Ssn = w.Essn AND p.Dnum = w.Pno GROUP BY p.Pnumber;
 
-SELECT p.Pnumber,p.Pname,COUNT(*) as employees FROM Project p, Employee e WHERE e.Dno = p.Dnum and p.Dnum = 5 GROUP BY p.Pnumber;
+SELECT p.Pnumber,p.Pname,COUNT(*) as employees FROM Project p, Employee e, Works_on w WHERE e.Ssn = w.Essn AND p.Dnum = w.Pno and p.Dnum = 5 GROUP BY p.Pnumber;
 
 SELECT p.Pnumber, p.Dnum, e.Lname, e.Address from Project p, Employee e WHERE e.Ssn = (SELECT Mgr_ssn FROM Department WHERE Dnumber = p.Dnum) AND p.Plocation = 'Houston';
 
-SELECT * FROM Project p, Employee e WHERE e.Dno = p.Dnum ORDER BY p.Dnum, e.Fname ASC, e.Lname DESC;
+SELECT * FROM Project p, Employee e, Works_on w WHERE e.Ssn = w.Essn AND p.Dnum = w.Pno ORDER BY p.Dnum, e.Fname ASC, e.Lname DESC;
 
 SELECT Fname,Minit,Lname FROM Employee WHERE Super_ssn IS NOT NULL;
 
