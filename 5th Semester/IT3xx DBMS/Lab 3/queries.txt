@@ -10,7 +10,7 @@ SELECT p.Pnumber,p.Pname,COUNT(*) as employees FROM Project p, Employee e, Works
 
 SELECT p.Pnumber, p.Dnum, e.Lname, e.Address from Project p, Employee e WHERE e.Ssn = (SELECT Mgr_ssn FROM Department WHERE Dnumber = p.Dnum) AND p.Plocation = 'Houston';
 
-SELECT * FROM Project p, Employee e, Works_on w WHERE e.Ssn = w.Essn AND p.Pnumber = w.Pno ORDER BY p.Dnum, e.Fname ASC, e.Lname DESC;
+SELECT * FROM Project p, Employee e, Works_on w WHERE e.Ssn = w.Essn AND p.Pnumber = w.Pno ORDER BY p.Dnum, e.Fname, e.Lname;
 
 SELECT Fname,Minit,Lname FROM Employee WHERE Super_ssn IS NULL;
 
