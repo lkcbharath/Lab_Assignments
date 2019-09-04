@@ -35,3 +35,5 @@ SELECT e.Fname,e.Minit,e.Lname FROM Employee e, Employee e1 WHERE e.Super_ssn = 
 SELECT p.Pname, SUM(w.Hours) FROM Project p, Works_on w WHERE w.Pno = p.Pnumber GROUP BY p.Pnumber;
 
 SELECT AVG(Salary) FROM Employee WHERE Sex = 'F';
+
+INSERT INTO Employee (Fname, Minit, Lname, Ssn, Bdate, Address, Sex, Salary, Super_Ssn, Dno) VALUES ('James', 'E', 'Borg', 1234554321, '1937-11-10', '450 Stone, Houston, TX', 'M', 55000, 999887777, 1);
