@@ -122,7 +122,7 @@ def NB(X, Y, chromosome):
 	X = X_new[:, 1:]
 	nx = X.shape[1]
 
-	#print("Number of features chosen is : ",nx)
+	# print("Number of features chosen is : ",nx)
 
 	accuracy = 0
 
@@ -149,6 +149,7 @@ def NB(X, Y, chromosome):
 
 		prob_yes = total_yes/m_train
 		prob_no = total_no/m_train
+
 
 		#print("Total yes and no : ",total_yes," ",total_no)
 

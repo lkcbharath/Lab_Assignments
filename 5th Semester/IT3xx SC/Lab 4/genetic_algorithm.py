@@ -5,37 +5,37 @@ import random
 
 def train(train_set, train_set_classes, test_set, test_set_classes):
     
-    len_features = 0
+    len_features = len(train_set[0])
     n_yes = 0
     n_no = 0
     yes_string = 'Yes'
     no_string = 'No'
-    
 
     for i in range(len(train_set)):
         if train_set_classes[i] == yes_string:
             n_yes += 1
-        if train_set_classes[i] == no_string:
+        elif train_set_classes[i] == no_string:
             n_no += 1
 
-    prob_yes = float(n_yes)/(n_yes+n_no)
-    prob_no = float(n_no)/(n_yes+n_no)
+    prob_yes = float(n_yes/(n_yes+n_no))
+    prob_no = float(n_no/(n_yes+n_no))
     
     f1_yes = [0]*(len_features)
     f1_no = [0]*(len_features)
     f0_no = [0]*(len_features)
     f0_yes = [0]*(len_features)
     
+
     for j in range(len(train_set)):
         for i in range(0, len_features):
             if train_set[j][i] == '1' and train_set_classes[j] == yes_string:
-                f1_yes[i-1] += 1
+                f1_yes[i] += 1
             elif train_set[j][i] == '1' and train_set_classes[j] == no_string:
-                f1_no[i-1] += 1
+                f1_no[i] += 1
             elif train_set[j][i] == '0' and train_set_classes[j] == yes_string:
-                f0_yes[i-1] += 1
+                f0_yes[i] += 1
             elif train_set[j][i] == '0' and train_set_classes[j] == no_string:
-                f0_no[i-1] += 1
+                f0_no[i] += 1
                 
     for i in range(len(f1_yes)):
         f1_no[i] = f1_no[i]/float(n_no)
@@ -50,11 +50,11 @@ def train(train_set, train_set_classes, test_set, test_set_classes):
         no_p = prob_no
         for i in range(0, len_features):
             if test_set[j][i] == '0':
-                yes_p *= f0_yes[i-1]
-                no_p *= f0_no[i-1]
+                yes_p *= f0_yes[i]
+                no_p *= f0_no[i]
             elif test_set[j][i] == '1':
-                yes_p *= f1_yes[i-1]
-                no_p *= f1_no[i-1]
+                yes_p *= f1_yes[i]
+                no_p *= f1_no[i]
         
         if yes_p > no_p:
             max_prob = yes_string
@@ -64,7 +64,8 @@ def train(train_set, train_set_classes, test_set, test_set_classes):
         if test_set_classes[j] == max_prob:
             accuracy += 1
     
-    result = float(accuracy)/len(test_set)
+
+    result = float(accuracy/len(test_set))
     result *= 100
     return result
 
@@ -130,9 +131,8 @@ def naive_bayes_classifier(dataset,len_features,chromosome):
         for j in range(len(test_set)):
             test_set_classes.append(train_set[j][-1])
 
-        if(i==1):
-            acc = train(train_set[:-1], train_set_classes, test_set[:-1], test_set_classes)
-            avg_acc += acc
+        acc = train(train_set[:-1], train_set_classes, test_set[:-1], test_set_classes)
+        avg_acc += acc
     
     avg_acc /= 10
     
@@ -173,7 +173,7 @@ def crossover(chromosomes):
 def mutation(chromosomes):
     len_chromosome = len(chromosomes[0])
     # no_of_flips = len(len_chromosome/10)
-    no_of_flips = 2
+    no_of_flips = 15
     for chromosome in chromosomes:
         for i in range(no_of_flips):
             index = random.randint(0,len_chromosome-1)
@@ -191,18 +191,16 @@ def genetic_algorithm(pop_size, num_features, dataset, len_features):
     absolute_best_chromosome = [0 for i in range(num_features)]
     absolute_best_fitness = 0.0
     while (iterations<100):
-        
         fitness = []
         for chromosome in old_chromosomes:
             acc = naive_bayes_classifier(dataset,len_features,chromosome)
             if(acc>absolute_best_fitness):
-                print(iterations)
+                # print(iterations)
                 absolute_best_fitness = acc
                 absolute_best_chromosome = chromosome
             fitness.append(acc)
 
         selection_ranks = selection(fitness)
-
 
         new_chromosomes = [old_chromosomes[rank][::] for rank in selection_ranks]
 
@@ -216,10 +214,11 @@ def genetic_algorithm(pop_size, num_features, dataset, len_features):
     
 
 def main():
+    # Spect and spectf give 98% but iris gives 85???
     filename = 'SPECT.csv'
     dataset = pd.read_csv(filename)
     len_features = len(dataset.columns) - 1
-
+    
     test_chromosome = [1 for i in range(len_features)]
     print('initial',naive_bayes_classifier(dataset,len_features,test_chromosome))
 
