@@ -116,7 +116,6 @@ def naive_bayes_classifier(dataset,len_features,chromosome):
 
     random.shuffle(rows)
 
-
     # assume classes are at end!!!
     for i in range(1, k+1):
         after_fold = fold(rows, i, k)
@@ -125,11 +124,15 @@ def naive_bayes_classifier(dataset,len_features,chromosome):
         train_set_classes = []
         test_set_classes = []
 
+        # if(i==1):
+        #     print(train_set[0][:-1])
+        #     print(train_set[:-1][0])
+
         for j in range(len(train_set)):
             train_set_classes.append(train_set[j][-1])
         
         for j in range(len(test_set)):
-            test_set_classes.append(train_set[j][-1])
+            test_set_classes.append(test_set[j][-1])
 
         acc = train(train_set[:-1], train_set_classes, test_set[:-1], test_set_classes)
         avg_acc += acc
@@ -137,6 +140,8 @@ def naive_bayes_classifier(dataset,len_features,chromosome):
     avg_acc /= 10
     
     return avg_acc
+
+#-------------------------------------------------------------------------------------------------------
 
 def selection(fitness): 
     total = sum(fitness)
