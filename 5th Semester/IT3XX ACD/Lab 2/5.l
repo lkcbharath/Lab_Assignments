@@ -7,14 +7,10 @@
 
 %%
 [a-zA-Z0-9]+ {operator_count++;d++;printf("%s is an operator \n",yytext);} 
-
 [+\-\/*] {operand_count++;c++;printf("%s is an operand \n",yytext);}
-
 "(" { if(bc<=bo)bo++; }
-
 ")" { bc++; }
-
-[\n] {if(operator_count==0){printf("invalid exp");return 0;}      if((bo==bc)&&(c<d)){printf("valid exp");}else {printf("invalid exp %d %d %d %d",bo,bc,c,d);};exit(0);}
+[\n] {if(operator_count==0){printf("invalid exp");return 0;}      if((bo==bc)&&((d-c)==1)){printf("valid exp");}else {printf("invalid exp %d %d %d %d",bo,bc,c,d);};exit(0);}
 %%
 
 void main(){

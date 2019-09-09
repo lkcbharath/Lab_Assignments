@@ -1,12 +1,19 @@
 %{
-	#include<stdio.h>
-	#include<string.h>
-	FILE *ff,*fr;
-	char p[20],q[20],r[20],fname[20];
+    #include<stdio.h>
+    #include<string.h>
+    FILE *ff,*fr;
+    char p[20],q[20],r[20],fname[20];
 %}
 
 %%
-[a-zA-Z]+ {if(strcmp(p,yytext)==0){fprintf(fr,q);}else{fprintf(fr,yytext);}}
+[a-zA-Z]+ {
+    if(strcmp(p,yytext)==0){
+        fprintf(fr,q);
+    }
+    else{
+        fprintf(fr,yytext);
+    }
+}
 
 [\n] {fprintf(fr,yytext);}
 

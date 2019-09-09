@@ -1,29 +1,24 @@
-
 %{ 
     #include <stdio.h>
-    int count_comm = 0;
-    int count_id=0; 
+    int comments_n = 0;
+    int identifier_n=0; 
     int i=0;
 %} 
 
-
 %% 
-.*\/\/.*    				{count_comm++;printf("\t\b\b\b\b");}
-.*(int\ ).*(\;)				{	for (i=0;i<yyleng;i++){if (yytext[i]==',') count_id++;} count_id++;printf("\t\b\b\b\b");}
-.*(char\ ).*(\;)			{	for (i=0;i<yyleng;i++){if (yytext[i]==',') count_id++;} count_id++;printf("\t\b\b\b\b");}
-.*(float\ ).*(\;)			{	for (i=0;i<yyleng;i++){if (yytext[i]==',') count_id++;} count_id++;printf("\t\b\b\b\b");}
-.*(double\ ).*(\;)			{	for (i=0;i<yyleng;i++){if (yytext[i]==',') count_id++;} count_id++;printf("\t\b\b\b\b");}
+.*\/\/.*    				{comments_n++;printf("(Here is a comment)");}
+.*(int\ ).*(\;)				{for (i=0;i<yyleng;i++){if (yytext[i]==',') identifier_n++;} identifier_n++;printf("(Here is an int identifier(s))");}
+.*(char\ ).*(\;)			{for (i=0;i<yyleng;i++){if (yytext[i]==',') identifier_n++;} identifier_n++;printf("(Here is an char identifier(s))");}
+.*(float\ ).*(\;)			{for (i=0;i<yyleng;i++){if (yytext[i]==',') identifier_n++;} identifier_n++;printf("(Here is an float identifier(s))");}
+.*(double\ ).*(\;)			{for (i=0;i<yyleng;i++){if (yytext[i]==',') identifier_n++;} identifier_n++;printf("(Here is an double identifier(s))");}
 %% 
 
-int yywrap(){} 
+int yywrap(void){} 
 
 int main(){ 
-    yyin=fopen("testing_4.txt","r");
-
+    yyin=fopen("testing_4.c","r");
     yylex(); 
-
-    printf("\nNo. of single comment lines: %d\n\n",count_comm);
-    printf("\nNo. of identifiers: %d\n\n",count_id);
-    
+    printf("\nNo. of single comment lines: %d\n\n",comments_n);
+    printf("\nNo. of identifiers: %d\n\n",identifier_n);
     return 0; 
 } 

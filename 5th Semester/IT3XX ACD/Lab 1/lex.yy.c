@@ -1002,10 +1002,10 @@ int yy_flex_debug = 0;
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
 #line 1 "4_comment.l"
-#line 3 "4_comment.l"
+#line 2 "4_comment.l"
     #include <stdio.h>
-    int count_comm = 0;
-    int count_id=0; 
+    int comments_n = 0;
+    int identifier_n=0; 
     int i=0;
 #line 1011 "lex.yy.c"
 
@@ -1225,7 +1225,7 @@ YY_DECL
 		}
 
 	{
-#line 10 "4_comment.l"
+#line 8 "4_comment.l"
 
 #line 1231 "lex.yy.c"
 
@@ -1286,32 +1286,32 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 11 "4_comment.l"
-{count_comm++;printf("\t\b\b\b\b");}
+#line 9 "4_comment.l"
+{comments_n++;printf("(Here is a comment)");}
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 12 "4_comment.l"
-{	for (i=0;i<yyleng;i++){if (yytext[i]==',') count_id++;} count_id++;printf("\t\b\b\b\b");}
+#line 10 "4_comment.l"
+{for (i=0;i<yyleng;i++){if (yytext[i]==',') identifier_n++;} identifier_n++;printf("(Here is an int identifier(s))");}
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 13 "4_comment.l"
-{	for (i=0;i<yyleng;i++){if (yytext[i]==',') count_id++;} count_id++;printf("\t\b\b\b\b");}
+#line 11 "4_comment.l"
+{for (i=0;i<yyleng;i++){if (yytext[i]==',') identifier_n++;} identifier_n++;printf("(Here is an char identifier(s))");}
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 14 "4_comment.l"
-{	for (i=0;i<yyleng;i++){if (yytext[i]==',') count_id++;} count_id++;printf("\t\b\b\b\b");}
+#line 12 "4_comment.l"
+{for (i=0;i<yyleng;i++){if (yytext[i]==',') identifier_n++;} identifier_n++;printf("(Here is an float identifier(s))");}
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 15 "4_comment.l"
-{	for (i=0;i<yyleng;i++){if (yytext[i]==',') count_id++;} count_id++;printf("\t\b\b\b\b");}
+#line 13 "4_comment.l"
+{for (i=0;i<yyleng;i++){if (yytext[i]==',') identifier_n++;} identifier_n++;printf("(Here is an double identifier(s))");}
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 16 "4_comment.l"
+#line 14 "4_comment.l"
 ECHO;
 	YY_BREAK
 #line 1318 "lex.yy.c"
@@ -2315,20 +2315,16 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 16 "4_comment.l"
+#line 14 "4_comment.l"
 
 
 
-int yywrap(){} 
+int yywrap(void){} 
 
 int main(){ 
-    yyin=fopen("testing_4.txt","r");
-
+    yyin=fopen("testing_4.c","r");
     yylex(); 
-
-    printf("\nNo. of single comment lines: %d\n\n",count_comm);
-    printf("\nNo. of identifiers: %d\n\n",count_id);
-    
+    printf("\nNo. of single comment lines: %d\n\n",comments_n);
+    printf("\nNo. of identifiers: %d\n\n",identifier_n);
     return 0; 
 } 
-
