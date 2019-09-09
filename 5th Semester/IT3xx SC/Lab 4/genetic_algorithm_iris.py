@@ -8,8 +8,8 @@ def train(train_set, train_set_classes, test_set, test_set_classes):
     len_features = len(train_set[0])
     n_yes = 0
     n_no = 0
-    yes_string = 'Yes'
-    no_string = 'No'
+    yes_string = 'Iris-setosa'
+    no_string = 'Iris-versicolor'
 
     for i in range(len(train_set)):
         if train_set_classes[i] == yes_string:
@@ -100,7 +100,7 @@ def naive_bayes_classifier(dataset,len_features,chromosome):
     avg_acc = 0.0
 
     # change based on dataset, 0 or -1
-    class_index = 0
+    class_index = -1
 
     for row in dataset.itertuples():
         new_row = []
@@ -111,7 +111,7 @@ def naive_bayes_classifier(dataset,len_features,chromosome):
             new_row = [row[i+2] for i in range(0,len_features) if (chromosome[i] == 1)]
             class_ele = row[1+class_index]
         new_row.append(class_ele)
-        print(len(row),len(new_row),len_features)
+
         rows.append(new_row)
 
     random.shuffle(rows)
@@ -164,11 +164,12 @@ def selection(fitness):
     return selection_ranks
 
 def crossover(chromosomes):
+    no_of_crossovers = 20
     len_chromosome = len(chromosomes[0])
-    no_of_chromosomes = len(chromosomes)
-    for i in range(no_of_chromosomes//2):
-        chromosome_1 = chromosomes[i]
-        chromosome_2 = chromosomes[i+1]
+    for i in range(no_of_crossovers):
+        chromosome_1 = random.choice(chromosomes)
+        chromosome_2 = random.choice(chromosomes)
+
         # swap the last 25% of both
         start_index = int((3*len_chromosome)/4)
         for i in range(start_index,len_chromosome):
@@ -177,7 +178,7 @@ def crossover(chromosomes):
 def mutation(chromosomes):
     len_chromosome = len(chromosomes[0])
     # no_of_flips = len(len_chromosome/10)
-    no_of_flips = 2
+    no_of_flips = 15
     for chromosome in chromosomes:
         for i in range(no_of_flips):
             index = random.randint(0,len_chromosome-1)
@@ -195,7 +196,8 @@ def genetic_algorithm(pop_size, num_features, dataset, len_features):
     absolute_best_chromosome = [0 for i in range(num_features)]
     absolute_best_fitness = 0.0
     same_acc = 0
-    while (iterations<100):
+    while (iterations<100 and same_acc<40):
+        print(iterations,same_acc)
         fitness = []
         for chromosome in old_chromosomes:
             acc = naive_bayes_classifier(dataset,len_features,chromosome)
@@ -210,7 +212,9 @@ def genetic_algorithm(pop_size, num_features, dataset, len_features):
             fitness.append(acc)
 
         selection_ranks = selection(fitness)
+
         new_chromosomes = [old_chromosomes[rank][::] for rank in selection_ranks]
+
         crossover(new_chromosomes)
 
         mutation(new_chromosomes)
@@ -222,14 +226,14 @@ def genetic_algorithm(pop_size, num_features, dataset, len_features):
 
 def main():
     # Spect and spectf give 98% but iris gives 85???
-    filename = 'SPECT.csv'
+    filename = 'IRIS.csv'
     dataset = pd.read_csv(filename)
     len_features = len(dataset.columns) - 1
     
     test_chromosome = [1 for i in range(len_features)]
     print('initial',naive_bayes_classifier(dataset,len_features,test_chromosome))
 
-    # genetic_algorithm(30,len_features,dataset,len_features)
+    genetic_algorithm(30,len_features,dataset,len_features)
 
 if __name__ == '__main__':
     main()
