@@ -1,9 +1,10 @@
 import pandas as pd
+import csv
 import math
 import random
 
 
-def train(train_set, train_set_classes, test_set, test_set_classes):
+def train(train_set, test_set):
     
     len_features = len(train_set[0])
     n_yes = 0
@@ -12,9 +13,9 @@ def train(train_set, train_set_classes, test_set, test_set_classes):
     no_string = 'No'
 
     for i in range(len(train_set)):
-        if train_set_classes[i] == yes_string:
+        if train_set[i][-1] == yes_string:
             n_yes += 1
-        elif train_set_classes[i] == no_string:
+        elif train_set[i][-1] == no_string:
             n_no += 1
 
     prob_yes = float(n_yes/(n_yes+n_no))
@@ -28,13 +29,13 @@ def train(train_set, train_set_classes, test_set, test_set_classes):
 
     for j in range(len(train_set)):
         for i in range(0, len_features):
-            if train_set[j][i] == '1' and train_set_classes[j] == yes_string:
+            if train_set[j][i] == '1' and train_set[j][-1] == yes_string:
                 f1_yes[i] += 1
-            elif train_set[j][i] == '1' and train_set_classes[j] == no_string:
+            elif train_set[j][i] == '1' and train_set[j][-1] == no_string:
                 f1_no[i] += 1
-            elif train_set[j][i] == '0' and train_set_classes[j] == yes_string:
+            elif train_set[j][i] == '0' and train_set[j][-1] == yes_string:
                 f0_yes[i] += 1
-            elif train_set[j][i] == '0' and train_set_classes[j] == no_string:
+            elif train_set[j][i] == '0' and train_set[j][-1] == no_string:
                 f0_no[i] += 1
                 
     for i in range(len(f1_yes)):
@@ -61,7 +62,7 @@ def train(train_set, train_set_classes, test_set, test_set_classes):
         else:
             max_prob = no_string
         
-        if test_set_classes[j] == max_prob:
+        if test_set[j][-1] == max_prob:
             accuracy += 1
     
 
@@ -102,16 +103,16 @@ def naive_bayes_classifier(dataset,len_features,chromosome):
     # change based on dataset, 0 or -1
     class_index = 0
 
-    for row in dataset.itertuples():
+    for row in dataset:
+        # print(row)
         new_row = []
         if class_index == -1:
-            new_row = [row[i+1] for i in range(0,len_features) if (chromosome[i] == 1)]
+            new_row = [row[i] for i in range(0,len_features) if (chromosome[i] == 1)]
             class_ele = row[class_index]
         else:
-            new_row = [row[i+2] for i in range(0,len_features) if (chromosome[i] == 1)]
-            class_ele = row[1+class_index]
+            new_row = [row[i+1] for i in range(0,len_features) if (chromosome[i] == 1)]
+            class_ele = row[class_index]
         new_row.append(class_ele)
-        print(len(row),len(new_row),len_features)
         rows.append(new_row)
 
     random.shuffle(rows)
@@ -121,20 +122,9 @@ def naive_bayes_classifier(dataset,len_features,chromosome):
         after_fold = fold(rows, i, k)
         train_set = after_fold[0]
         test_set = after_fold[1]
-        train_set_classes = []
-        test_set_classes = []
 
-        # if(i==1):
-        #     print(train_set[0][:-1])
-        #     print(train_set[:-1][0])
-
-        for j in range(len(train_set)):
-            train_set_classes.append(train_set[j][-1])
-        
-        for j in range(len(test_set)):
-            test_set_classes.append(test_set[j][-1])
-
-        acc = train(train_set[:-1], train_set_classes, test_set[:-1], test_set_classes)
+        # print(train_set[0])
+        acc = train(train_set, test_set)
         avg_acc += acc
     
     avg_acc /= 10
@@ -177,7 +167,7 @@ def crossover(chromosomes):
 def mutation(chromosomes):
     len_chromosome = len(chromosomes[0])
     # no_of_flips = len(len_chromosome/10)
-    no_of_flips = 2
+    no_of_flips = 15
     for chromosome in chromosomes:
         for i in range(no_of_flips):
             index = random.randint(0,len_chromosome-1)
@@ -216,20 +206,27 @@ def genetic_algorithm(pop_size, num_features, dataset, len_features):
         mutation(new_chromosomes)
 
         iterations += 1
-    
-    print('final',absolute_best_chromosome,absolute_best_fitness)
+    print('Using Genetic Algorithm, ')
+    print('Features selected:',absolute_best_chromosome)
+    print('Accuracy:',absolute_best_fitness)
     
 
 def main():
-    # Spect and spectf give 98% but iris gives 85???
     filename = 'SPECT.csv'
-    dataset = pd.read_csv(filename)
-    len_features = len(dataset.columns) - 1
+    features = []
+    dataset = []
+    with open(filename,'r') as csvfile:
+        csvreader = csv.reader(csvfile)
+        features = next(csvreader)
+        for row in csvreader:
+            dataset.append(row)
+    
+    len_features = len(features) - 1
     
     test_chromosome = [1 for i in range(len_features)]
-    print('initial',naive_bayes_classifier(dataset,len_features,test_chromosome))
+    print('Without using Genetic Algorithm, accuracy of Naive Bayes:',naive_bayes_classifier(dataset,len_features,test_chromosome))
 
-    # genetic_algorithm(30,len_features,dataset,len_features)
+    genetic_algorithm(30,len_features,dataset,len_features)
 
 if __name__ == '__main__':
     main()
