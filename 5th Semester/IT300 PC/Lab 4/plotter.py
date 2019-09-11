@@ -15,6 +15,7 @@ def main():
     plt.plot(x_axis,y_axis)
     plt.xlabel('No. of Processors')
     plt.ylabel('Speedup')
+    # plt.ylim(bottom=1.0,top=1.3)
     plt.show()
 
 if __name__ == '__main__':
