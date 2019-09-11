@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+   <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Shop@Home - E-Commerce Portal</title>
+        <link rel="stylesheet" href="assets/styles.css"/>
+   </head>
+	
+   <body>
+        <div class="header">
+            <a href="index.xhtml" class="logo">Shop@Home Feedback</a>
+        </div>
+    
+        <div class="container">
+
+            <div class="row">
+                <div class="col-1">
+                    <button id="left">Left</button>
+                </div>
+                <div class="col-10">
+                    <img src="assets/image1.jpg" id="slideshow"/>
+                </div>
+                <div class="col-1">
+                    <button id="right">Right</button>
+                </div>
+            </div>
+
+        </div>
+        <br/>
+
+
+        <div class="footer">Copyright © S.H. and Co. 2019-2019</div>
+    
+        <script>
+            window.onload = function(){
+                var slideshow = document.getElementById("slideshow");
+
+                var imgarray = ["assets/image0.jpg","assets/image1.jpg","assets/image2.jpg","assets/image3.jpg"];
+
+                var imgindex = 1; 
+
+                document.getElementById("left").onclick = function() {
+                    imgindex = (imgindex - 1) % imgarray.length;
+                    if(imgindex==-1){
+                        imgindex = imgarray.length - 1;
+                    }
+                    slideshow.setAttribute("src",imgarray[imgindex]);
+                };
+
+                document.getElementById("right").onclick = function() {
+                    imgindex = (imgindex + 1) % imgarray.length;
+                    if(imgindex>= imgarray.length){
+                        imgindex = 0;
+                    }
+                    slideshow.setAttribute("src",imgarray[imgindex]);
+                };
+            };
+            
+        </script>
+   </body>
+</html>
