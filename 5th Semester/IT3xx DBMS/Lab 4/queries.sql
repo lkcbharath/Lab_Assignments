@@ -8,6 +8,4 @@ SELECT ph.Name AS Physician, ph.Position, pr.Name AS 'Procedure Name', un.DateUn
 
 SELECT DISTINCT ph.Name FROM PhysicianE ph, Undergoes un, Procedures pr, Trained_In ti WHERE ph.EmployeeID = un.Physician AND ph.EmployeeID = ti.Physician AND un.Procedures = pr.Code AND (ti.Treatment != pr.Code);
 
--- SELECT ph.Name,ti.Treatment, un.Procedures, un.DateUndergoes, ti.CertificationExpires FROM PhysicianE ph, Trained_In ti, Undergoes un WHERE ph.EmployeeID = ti.Physician AND ph.EmployeeID = un.Physician AND (ti.Treatment != un.Procedures OR (ti.Treatment = un.Procedures AND un.DateUndergoes > ti.CertificationExpires));
-
-SELECT distinct(ph.Name) FROM PhysicianE ph, Undergoes un, Trained_In ti WHERE ph.EmployeeID = un.Physician AND ph.EmployeeID = ti.Physician AND (un.DateUndergoes > ti.CertificationExpires or un.DateUndergoes < ti.CertificationExpires or un.Procedures not in (select treatment from Trained_In where Physician=ph.EmployeeID));
+SELECT DISTINCT ph.Name FROM PhysicianE ph, Undergoes un, Trained_In ti WHERE ph.EmployeeID = un.Physician AND ph.EmployeeID = ti.Physician AND (un.DateUndergoes > ti.CertificationExpires OR un.Procedures NOT IN (SELECT Treatment FROM Trained_In WHERE Physician = ph.EmployeeID));
