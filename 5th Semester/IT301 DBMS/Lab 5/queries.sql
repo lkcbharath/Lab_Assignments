@@ -6,7 +6,7 @@ SELECT MAX(mo.year) AS "Latest Year of Review" FROM Movie mo, TNS tns WHERE mo.t
 
 -- Exercise 2
 
-CREATE OR REPLACE VIEW RatingStats AS SELECT Movie_Title, COUNT(*) AS "Number_of_Ratings", AVG(Rating) AS "Average_Rating" FROM TNS GROUP BY Movie_Title HAVING COUNT(*) > 1;
+CREATE OR REPLACE VIEW RatingStats AS SELECT Movie_Title, COUNT(*) AS "Number_of_Ratings", AVG(Rating) AS "Average_Rating" FROM TNS GROUP BY Movie_Title HAVING COUNT(*) >= 1;
 
 SELECT Movie_Title FROM RatingStats WHERE Average_Rating = (SELECT MAX(Average_Rating) FROM RatingStats WHERE Number_of_Ratings >= 3);
 
@@ -20,5 +20,3 @@ SELECT DISTINCT
     mo.title AS "Movie"
 FROM Reviewer re1, Reviewer re2, Movie mo WHERE re1.rID IN (SELECT rID FROM Favourites WHERE mID = 
 mo.mID) AND re2.rID IN (SELECT rID FROM Favourites WHERE mID = mo.mID) AND re1.rID != re2.rID; 
-
--- fa.rID, re.rID, mo.mID FROM Favourites fa, Movie mo, Reviewer re WHERE ;
