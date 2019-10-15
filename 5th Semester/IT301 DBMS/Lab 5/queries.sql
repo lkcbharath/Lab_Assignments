@@ -4,11 +4,15 @@ CREATE OR REPLACE VIEW TNS AS SELECT mo.title AS "Movie_Title", re.name AS "Revi
 
 SELECT MAX(mo.year) AS "Latest Year of Review" FROM Movie mo, TNS tns WHERE mo.title = tns.Movie_Title AND tns.Reviewer_Name = "Chris Jackson";
 
+-- additional
+
+SELECT mo.title AS "Latest Movie" FROM Movie mo, TNS tns WHERE mo.title = tns.Movie_Title AND tns.Reviewer_Name = "Chris Jackson" AND mo.year = (SELECT MAX(year) FROM Movie mo1, TNS tns1 WHERE mo1.title = tns1.Movie_Title AND tns1.Reviewer_Name = "Chris Jackson");
+
 -- Exercise 2
 
 CREATE OR REPLACE VIEW RatingStats AS SELECT Movie_Title, COUNT(*) AS "Number_of_Ratings", AVG(Rating) AS "Average_Rating" FROM TNS GROUP BY Movie_Title HAVING COUNT(*) >= 1;
 
-SELECT Movie_Title FROM RatingStats WHERE Average_Rating = (SELECT MAX(Average_Rating) FROM RatingStats WHERE Number_of_Ratings >= 3);
+SELECT Movie_Title FROM RatingStats WHERE Average_Rating = (SELECT MAX(Average_Rating) FROM RatingStats WHERE Number_of_Ratings >= 3); 
 
 -- Exercise 3
 
