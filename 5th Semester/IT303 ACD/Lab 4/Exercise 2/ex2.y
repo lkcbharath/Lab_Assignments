@@ -2,16 +2,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 %}
-%token ID NUM SELECT DISTINCT FROM WHERE LE GE EQ NE OR AND LIKE GROUP HAVING ORDER ASC DESC
+%token ID NUM SELECT DISTINCT FROM WHERE LE GE EQ NE OR AND LIKE GROUP HAVING ORDER ASC DESC ON INNER OUTER LEFT RIGHT
 %right '='
 %left AND OR
 %left '<' '>' LE GE EQ NE
 
 %%
 
-    S         : ST1';' {printf("This is a valid SQL Query.");exit(0);};
+    S         : ST1';' {printf("This is a valid SQL Query.\n");exit(0);};
     ST1     : SELECT attributeList FROM tableList ST2
                | SELECT DISTINCT attributeList FROM tableList ST2
+               | SELECT attributeList FROM tableList ST7
                ;
     ST2     : WHERE COND ST3
                | ST3
@@ -29,11 +30,16 @@
                | ASC
                |
                ;
-  attributeList :     ID','attributeList
+    ST7     : INNER tableList ON COND ST2
+               | OUTER tableList ON COND ST2
+               | LEFT tableList ON COND ST2
+               | RIGHT tableList ON COND ST2
+               ;
+    attributeList :   ID','attributeList
                | '*'
                | ID
                ;
- tableList    : ID',' tableList
+    tableList    : ID',' tableList
                | ID
                ;
     COND    : COND OR COND
