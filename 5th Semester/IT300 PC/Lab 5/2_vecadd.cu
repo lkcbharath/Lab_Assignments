@@ -1,5 +1,5 @@
-#define N 5000
-#define T 1024 // max threads per block
+#define N 1024
+#define T 256 // max threads per block
 
 #include <stdio.h>
 
@@ -9,6 +9,11 @@ void printArray(int a[], int b[], int c[]);
 int main() {
 	int a[N], b[N], c[N];
 	int *dev_a, *dev_b, *dev_c;
+	clock_t t;
+	double time_taken;
+
+	FILE *fp;
+    fp = fopen ("output.txt","a");
 
 	// initialize a and b with real values (NOT SHOWN)
 	int size = N * sizeof(int);
@@ -16,6 +21,8 @@ int main() {
 		a[i] = i;
 		b[i] = i/2;
 	}
+
+	t = clock();
 
 	cudaMalloc((void**)&dev_a, size);
 	cudaMalloc((void**)&dev_b, size);
@@ -32,7 +39,15 @@ int main() {
 	cudaFree(dev_b);
 	cudaFree(dev_c);
 	
-	printArray(a,b,c);
+	t = clock() - t;
+	time_taken = ((double)t)/CLOCKS_PER_SEC;
+	printf("fun() took %lf seconds to execute \n", time_taken); 
+
+	fprintf (fp, "%d %lf\n", N, time_taken);
+
+	// printArray(a,b,c);
+
+	fclose(fp);
 
 	exit (0);
 }

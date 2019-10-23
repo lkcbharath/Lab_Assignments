@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include <stdlib.h>
-#define N 16
+#define N 64
 #define BLOCK_DIM 16
 
 
@@ -9,7 +9,7 @@
 //size of the share memory tile in the device
 #define TILE_SIZE BLK_ROWS
 __global__ void matrixmul (int *a, int *b, int *c,int a_rows, int a_columns, int b_columns);
-void printArray(int a[N][N], int b[N][N], int c[N][N])
+void printArray(int a[N][N], int b[N][N], int c[N][N]);
 
 int main() {
     int a[N][N], b[N][N], c[N][N];
@@ -22,6 +22,13 @@ int main() {
     }
     int *dev_a, *dev_b, *dev_c;
     int size = N * N * sizeof(int);
+    clock_t t;
+	double time_taken;
+
+    FILE *fp;
+    fp = fopen ("output.txt","a");
+
+    t = clock();
 
     // initialize a and b with real values (NOT SHOWN)
     cudaMalloc((void**) &dev_a, size);
@@ -41,7 +48,15 @@ int main() {
     cudaFree(dev_b); 
     cudaFree(dev_c);
 
-    printArray(a,b,c);
+    t = clock() - t;
+	time_taken = ((double)t)/CLOCKS_PER_SEC;
+	printf("fun() took %lf seconds to execute \n", time_taken); 
+
+	fprintf (fp, "%d %lf\n", N, time_taken);
+
+    fclose(fp);
+
+    // printArray(a,b,c);
 
     exit (0);
 }

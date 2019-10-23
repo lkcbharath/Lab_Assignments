@@ -1,5 +1,5 @@
 #include<stdio.h>
-#define N 16
+#define N 1280
 #define BLOCK_DIM 16
 
 __global__ void matrixAdd (int *a, int *b, int *c);
@@ -16,6 +16,13 @@ int main() {
     }
     int *dev_a, *dev_b, *dev_c;
     int size = N * N * sizeof(int);
+    clock_t t;
+	double time_taken;
+
+    FILE *fp;
+    fp = fopen ("output.txt","a");
+
+    t = clock();
 
     // initialize a and b with real values (NOT SHOWN)
     cudaMalloc((void**) &dev_a, size);
@@ -35,7 +42,15 @@ int main() {
     cudaFree(dev_b); 
     cudaFree(dev_c);
 
-    printArray(a,b,c);
+    t = clock() - t;
+	time_taken = ((double)t)/CLOCKS_PER_SEC;
+	printf("fun() took %lf seconds to execute \n", time_taken); 
+
+	fprintf (fp, "%d %lf\n", N, time_taken);
+
+    // printArray(a,b,c);
+
+    fclose(fp);
 
     exit (0);
 }
