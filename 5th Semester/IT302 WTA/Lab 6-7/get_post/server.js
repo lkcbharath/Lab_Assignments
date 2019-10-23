@@ -1,23 +1,23 @@
-var http = require('http');
-var fs = require('fs');
+let ejs = require('ejs');
+let express = require('express'); 
+let bodyParser = require('body-parser');
+let app = express();
 
-var server = http.createServer(function (req, res) {
+app.set('view engine', 'ejs');
 
-    if (req.method === "GET") {
-        res.writeHead(200, { "Content-Type": "text/html" });
-        fs.createReadStream("index.html", "UTF-8").pipe(res);
-    } else if (req.method === "POST") {
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({   
+    extended: true
+})); 
+app.use(express.json());       
+app.use(express.urlencoded());
 
-        var body = "";
-        req.on("data", function (chunk) {
-            body += chunk + "<br>";
-        });
+app.get('/', (req, res) => {
+    res.render('index');
+});
 
-        req.on("end", function () {
-            res.writeHead(200, { "Content-Type": "text/html" });
-            res.end(body);
-        });
-    }
+app.post('/', (req, res) => {
+    res.render('result',{ name: req.body.name, email: req.body.email, address: req.body.address });
+});
 
-}).listen(3000);
-console.log("Listening at port 3000");
+app.listen(3000, () => console.log('Example app listening on port 3000!'));
