@@ -1,5 +1,5 @@
 #include<stdio.h>
-#define N 1280
+#define N 64
 #define BLOCK_DIM 16
 
 __global__ void matrixAdd (int *a, int *b, int *c);
@@ -44,7 +44,7 @@ int main() {
 
     t = clock() - t;
 	time_taken = ((double)t)/CLOCKS_PER_SEC;
-	printf("fun() took %lf seconds to execute \n", time_taken); 
+	printf("Matrix addition for 2-D array of size %dx%d and block size 16x16 took %lf seconds to execute \n", N, N, time_taken); 
 
 	fprintf (fp, "%d %lf\n", N, time_taken);
 

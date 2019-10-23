@@ -41,7 +41,7 @@ int main() {
 	
 	t = clock() - t;
 	time_taken = ((double)t)/CLOCKS_PER_SEC;
-	printf("fun() took %lf seconds to execute \n", time_taken); 
+	printf("Vector addition with 256 threads per block and padding for array of length %d took %lf seconds to execute \n", N, time_taken); 
 
 	fprintf (fp, "%d %lf\n", N, time_taken);
 
