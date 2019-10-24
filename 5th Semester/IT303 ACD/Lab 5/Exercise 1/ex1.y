@@ -13,33 +13,34 @@
 %%
 
 S    : ST {printf("Input accepted.\n");exit(0);};
-ST   : SWITCH'('ID')''{'B'}'
+ST   : SWITCH '(' ID ')' '{' B '}'
       ;
 B    : C
       | C D
       ;
 C    : C C
-      | CASE NUM':'ST1 BREAK';'
+      | CASE NUM ':' ST1 BREAK ';'
       ;
-D    : DEFAULT':'ST1 BREAK';'
-      | DEFAULT':'ST1
+D    : DEFAULT ':' ST1 BREAK ';'
+      | DEFAULT ':' ST1
       ;
-ST1  : WHILE '(' E2 ')' E ';'
+ST1  : WHILE '(' E2 ')' DEF
       | FOR '(' E ';' E2 ';' E ')' DEF
-      | IF '(' E2 ')' THEN E ';'
-      | IF '(' E2 ')' THEN E ';' ELSE E ';'
+      | IF '(' E2 ')' THEN DEF 
+      | IF '(' E2 ')' THEN DEF ELSE DEF
       | ST1 ST1
       | E ';'
+      | ST
       ;
 DEF  : '{' BODY '}'
-      | E';'
+      | ST1
+      | E ';'
       | ST
-      |
       ;
 BODY : BODY BODY
+      | ST1
       | E ';'       
-      | ST
-      |            
+      | ST         
       ;
 E    : ID'='E
       | E'+'E
@@ -56,6 +57,8 @@ E    : ID'='E
       | E AND E
       | INC E
       | DEC E
+      | E INC
+      | E DEC
       | ID
       | NUM
       ;
@@ -67,8 +70,6 @@ E2  : E'<'E
       | E NE E
       | E OR E
       | E AND E
-      | INC E
-      | DEC E 
       | ID
       | NUM
       ;
