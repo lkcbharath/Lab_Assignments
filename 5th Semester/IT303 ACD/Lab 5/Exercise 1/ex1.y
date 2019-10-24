@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 %}
-%token ID NUM IF THEN LE GE EQ NE OR AND ELSE FOR WHILE INC DEC
+%token ID NUM IF THEN LE GE EQ NE OR AND ELSE FOR WHILE INC DEC SWITCH CASE BREAK DEFAULT
 %right '='
 %left AND OR
 %left '<' '>' LE GE EQ NE
@@ -12,15 +12,35 @@
 %left '!'
 %%
 
-S      : ST {printf("Input accepted.\n");exit(0);};
-ST    : IF '(' E2 ')' THEN ST1';' ELSE ST1';'
-        | IF '(' E2 ')' THEN ST1';'
-        | FOR '(' E ';' E2 ';' E ')' ST1 ';'
-        | WHILE '(' E2 ')' ST1 ';'
-        ;
-ST1  : ST
-        | E
-        ;
+S    : ST {printf("Input accepted.\n");exit(0);};
+ST   : SWITCH'('ID')''{'B'}'
+      ;
+B    : C
+      | C D
+      ;
+C    : C C
+      | CASE NUM':'ST1 BREAK';'
+      ;
+D    : DEFAULT':'ST1 BREAK';'
+      | DEFAULT':'ST1
+      ;
+ST1  : WHILE '(' E2 ')' E ';'
+      | FOR '(' E ';' E2 ';' E ')' DEF
+      | IF '(' E2 ')' THEN E ';'
+      | IF '(' E2 ')' THEN E ';' ELSE E ';'
+      | ST1 ST1
+      | E ';'
+      ;
+DEF  : '{' BODY '}'
+      | E';'
+      | ST
+      |
+      ;
+BODY : BODY BODY
+      | E ';'       
+      | ST
+      |            
+      ;
 E    : ID'='E
       | E'+'E
       | E'-'E
