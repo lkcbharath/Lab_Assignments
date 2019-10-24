@@ -21,6 +21,8 @@ ceil    return CEIL;
 floor   return FLOOR;
 abs     return ABS;
 {number}	{ yylval=atof(yytext);return NUMBER; }
+e     return E;
+pi    return PI;
 "<<"    return LEFTSHIFT;
 ">>"    return RIGHTSHIFT;
 "++"    return INC;

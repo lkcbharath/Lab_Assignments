@@ -36,13 +36,22 @@ return sum;
 %token NUMBER MOD RIGHTSHIFT LEFTSHIFT PIVAL
 %token PLUS MINUS DIV MUL POW SQRT OPENBRACKET CLOSEBRACKET UNARYMINUS
 %token ASIN ACOS ATAN SIN SINH COS COSH TAN TANH INC DEC LAND OR  XOR ASSIGN IOR AND  CEIL FLOOR ABS FACTORIAL BIN_DEC
-%left PLUS MINUS MUL DIV UNARYMINUS LAND OR XOR AND IOR LOG
+%left PLUS MINUS MUL DIV UNARYMINUS LAND OR XOR AND IOR LOG E PI
 %%
 lines	:	lines expr '\n'	{ printf("%g\n", $2); }
 	|	lines '\n'
+        |       E 
+        |       PI
 	|
 	;
 expr:   logicalor
+        |
+        ;
+E       :       { printf("3.14159"); }
+        |
+        ;
+PI      :       { printf("2.781"); }
+        |
         ;
 logicalor: logicaland
         | logicalor OR logicaland
