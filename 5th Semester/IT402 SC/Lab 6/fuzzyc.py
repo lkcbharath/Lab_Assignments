@@ -79,7 +79,7 @@ def fuzzy_clustering(dataset,n_attr,c,m):
 
 
 def main():
-    filename = 'IRIS.csv'
+    filename = 'SPECTF.csv'
     dataset = []
     n_attr = 0
 
@@ -98,10 +98,14 @@ def main():
             if(len_attributes==0):
                 len_attributes = len(row_) - 1
             
-            if row_[-1]=='Iris-versicolor':
-                row_[-1] = '0.0'
+            if row_[0] == 'No':
+                row_[0] = '0.0'
             else:
-                row_[-1] = '1.0'
+                row_[0] = '1.0'
+            
+
+            # Use if class at start
+            row_ = row_[1:] + [row_[0]]
             
             row = [float(x) for x in row_]
             dataset.append(row)

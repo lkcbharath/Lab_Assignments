@@ -96,6 +96,10 @@ def main():
     k = 2
 
     accuracy = kmeans(rows,n_attr,k)
+    # Suppose classes were to be inverted
+    if(accuracy<0.5):
+        accuracy = 1.0 - accuracy
+
     print('Accuracy is ' + str(accuracy*100) + '%')
 
 if __name__ == '__main__':

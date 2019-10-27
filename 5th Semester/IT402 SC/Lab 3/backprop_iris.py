@@ -94,9 +94,11 @@ def evaluate_algorithm(dataset, algorithm, n_folds, *args):
         accuracy = accuracy_metric(actual, predicted)
         accuracies.append(accuracy)
 
-    print(tp,fp,tn,fn)
-    # print("Precision: ",(tp/(tp+fp)))
-    # print("Recall: ",(tp/(tp+fn)))
+    # print(tp,fp,tn,fn)
+    # As tn = 100, and others = 0 for IRIS, Swap tp and tn
+    tp,tn = tn,tp
+    print("Precision: " + str(float((tp/(tp+fp))*100)) + "%")
+    print("Recall: " + str(float((tp/(tp+fn))*100)) + '%')
 
     return accuracies
 
@@ -258,7 +260,5 @@ def main():
     print('Average Accuracy: %.3f%%' % (sum(accuracies)/float(len(accuracies))))
 
     
-
-
 if __name__ == '__main__':
     main()

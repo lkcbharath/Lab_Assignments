@@ -110,7 +110,7 @@ def main():
 
     print('\n\nThe Accuracy for each fold is as follows : ')
     for i in accuracy:
-        print(math.ceil(i), end=',')
+        print(math.ceil(i), end = ',')
         avg_acc = avg_acc + float(math.ceil(i))
     
     avg_acc = avg_acc/10

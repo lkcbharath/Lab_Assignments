@@ -94,10 +94,10 @@ def evaluate_algorithm(dataset, algorithm, n_folds, *args):
 
     # tn, fp, fn, tp=confusion_matrix(actual,predicted).ravel()
 
-    # print("Precision: ",(tp/(tp+fp)))
-    # print("Recall: ",(tp/(tp+fn)))
+    print("Precision: " + str(float((tp/(tp+fp))*100)) + "%")
+    print("Recall: " + str(float((tp/(tp+fn))*100)) + '%')
 
-    print(fp,fn,tn,tp)
+    # print(fp,fn,tn,tp)
 
     return accuracies
 
@@ -257,9 +257,10 @@ def main():
     accuracies = evaluate_algorithm(
         dataset, back_propagation, n_folds, l_rate, n_epoch, n_hidden)
         
-    print("Scores: " + ','.join([str(f) for f in accuracies]))
-
-    print('Mean Accuracy: %.3f%%' % (sum(accuracies)/float(len(accuracies))))
+    print("Accuracies of folds: " +
+          ', '.join([(str(f) + '%') for f in accuracies]))
+    print('Average Accuracy: %.3f%%' %
+          (sum(accuracies)/float(len(accuracies))))
 
 if __name__ == '__main__':
     main()
