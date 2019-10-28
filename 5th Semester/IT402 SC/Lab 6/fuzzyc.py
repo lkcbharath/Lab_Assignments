@@ -4,7 +4,7 @@ import math
 import sys
 import numpy as np
 from operator import add 
-
+from prettytable import PrettyTable
 
 def find_dist(row,centroid):
     result = 0
@@ -20,7 +20,7 @@ def fuzzy_clustering(dataset,n_attr,c,m):
 
     iterations = 0
 
-    while iterations < 500:
+    while iterations < 50:
         membership_matrix = [[0 for i in range(c)] for j in range(len(dataset))]
         clusters = [[] for i in range(c)]
 
@@ -55,27 +55,39 @@ def fuzzy_clustering(dataset,n_attr,c,m):
             centroid = [math.floor(x/denominator) for x in numerator]
             next_centroids.append(centroid)
 
-
         if(prev_centroids == next_centroids):
             break
 
         prev_centroids = next_centroids[::]
         next_centroids = list()
-    
-    correct = 0
-    incorrect = 0
-    # Assuming first cluster is class 0, second is class 1
-    for actual_class in range(len(clusters)):
-        for row_index in clusters[actual_class]:
-            if (dataset[row_index][-1] == actual_class):
-                correct += 1
-            else:
-                incorrect += 1
-    
-    # print(correct,incorrect)
 
+        iterations += 1
+    
+    tp = 0
+    tn = 0
+    fp = 0
+    fn = 0
 
-    return (correct/(incorrect+correct))
+    for pred_class in range(len(clusters)):
+        for row_index in clusters[pred_class]:
+            if pred_class == 0 and dataset[row_index][-1] == 0:
+                tn += 1
+            if pred_class == 0 and dataset[row_index][-1] == 1:
+                fn += 1
+            if pred_class == 1 and dataset[row_index][-1] == 0:
+                fp += 1
+            if pred_class == 1 and dataset[row_index][-1] == 1:
+                tp += 1
+
+    t = PrettyTable([' ', 'Predicted Yes', 'Predicted No'])
+    t.add_row(['Actual Yes', tp, fn])
+    t.add_row(['Actual No', fp, tn])
+    print(t)
+
+    print("Precision: " + str(float((tp/(tp+fp))*100)) + "%")
+    print("Recall: " + str(float((tp/(tp+fn))*100)) + '%')
+
+    return ((tp+tn)/(tp+fp+tn+fn))
 
 
 def main():
@@ -114,8 +126,8 @@ def main():
     m = 2
 
     accuracy = fuzzy_clustering(dataset,n_attr,c,m)
-    if (accuracy<0.5):
-        accuracy = 1 - accuracy
+    # if (accuracy<0.5):
+        # accuracy = 1 - accuracy
     print('Accuracy is ' + str(accuracy*100) + '%')
     
 if __name__ == '__main__':

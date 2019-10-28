@@ -3,6 +3,7 @@ import csv
 import math
 import sys
 import numpy as np
+from prettytable import PrettyTable
 
 def find_least_dist_cluster(centroids,x):
     least_dist = sys.maxsize
@@ -27,7 +28,7 @@ def kmeans(rows,n_attr,k):
 
     iterations = 0
 
-    while iterations < 500:
+    while iterations < 50:
         clusters = [[] for i in range(k)]
 
         for row_index in range(len(rows)):
@@ -49,24 +50,33 @@ def kmeans(rows,n_attr,k):
 
         old_centroids = new_centroids[::]
         new_centroids = list()
+        iterations += 1
 
+    tp = 0
+    tn = 0
+    fp = 0
+    fn = 0
 
-
+    for pred_class in range(len(clusters)):
+        for row_index in clusters[pred_class]:
+            if pred_class == 0 and rows[row_index][-1] == 0:
+                tn += 1
+            if pred_class == 0 and rows[row_index][-1] == 1:
+                fn += 1
+            if pred_class == 1 and rows[row_index][-1] == 0:
+                fp += 1
+            if pred_class == 1 and rows[row_index][-1] == 1:
+                tp += 1
     
-    correct = 0
-    incorrect = 0
-    # Assuming first cluster is class 0, second is class 1
-    for actual_class in range(len(clusters)):
-        for row_index in clusters[actual_class]:
-            if (rows[row_index][-1] == actual_class):
-                correct += 1
-            else:
-                incorrect += 1
-    
-    # print(correct,incorrect)
+    t = PrettyTable([' ', 'Predicted Yes', 'Predicted No'])
+    t.add_row(['Actual Yes', tp, fn])
+    t.add_row(['Actual No', fp, tn])
+    print(t)
 
-
-    return (correct/(incorrect+correct))
+    print("Precision: " + str(float((tp/(tp+fp))*100)) + "%")
+    print("Recall: " + str(float((tp/(tp+fn))*100)) + '%')
+            
+    return ((tp+tn)/(tp+fp+tn+fn))
 
 def main():
     filename = 'SPECTF.csv'
@@ -97,8 +107,8 @@ def main():
 
     accuracy = kmeans(rows,n_attr,k)
     # Suppose classes were to be inverted
-    if(accuracy<0.5):
-        accuracy = 1.0 - accuracy
+    # if(accuracy<0.5):
+        # accuracy = 1.0 - accuracy
 
     print('Accuracy is ' + str(accuracy*100) + '%')
 
