@@ -7,12 +7,22 @@ import random
 
 def train(rows, features, test_set):
 
+	yes_string = 'Iris-setosa'
+	no_string = 'Iris-versicolor'
+
+
+	averages = [0 for i in range(len(features)-1)]
+	for i in range(0, len(features)-1):
+		for j in range(len(test_set)):
+			averages[i] += float(test_set[j][i])
+		averages[i] = str(averages[i]/len(test_set))
+
 	n_yes = 0
 	n_no = 0
 	for i in range(len(rows)):
-		if rows[i][-1] == 'Iris-setosa':
+		if rows[i][-1] == yes_string:
 			n_yes += 1
-		if rows[i][-1] == 'Iris-versicolor':
+		if rows[i][-1] == no_string:
 			n_no += 1
 
 	prob_yes = float(n_yes)/(n_yes+n_no)
@@ -24,15 +34,15 @@ def train(rows, features, test_set):
 	f0_yes = [0]*(len(features)-1)
 
 	for j in range(len(rows)):
-		for i in range(1, len(features)):
-			if rows[j][i] == '1' and rows[j][-1] == 'Iris-setosa':
-				f1_yes[i-1] += 1
-			elif rows[j][i] == '1' and rows[j][-1] == 'Iris-versicolor':
-				f1_no[i-1] += 1
-			elif rows[j][i] == '0' and rows[j][-1] == 'Iris-setosa':
-				f0_yes[i-1] += 1
-			elif rows[j][i] == '0' and rows[j][-1] == 'Iris-versicolor':
-				f0_no[i-1] += 1
+		for i in range(0, len(features)-1):
+			if rows[j][i] >= averages[i] and rows[j][-1] == yes_string:
+				f1_yes[i] += 1
+			elif rows[j][i] >= averages[i] and rows[j][-1] == no_string:
+				f1_no[i] += 1
+			elif rows[j][i] < averages[i] and rows[j][-1] == yes_string:
+				f0_yes[i] += 1
+			elif rows[j][i] < averages[i] and rows[j][-1] == no_string:
+				f0_no[i] += 1
 
 	for i in range(len(f1_yes)):
 		f1_no[i] = f1_no[i]/float(n_no)
@@ -45,22 +55,21 @@ def train(rows, features, test_set):
 	for j in range(len(test_set)):
 		yes_p = prob_yes
 		no_p = prob_no
-		for i in range(1, len(features)):
-			if test_set[j][i] == '0':
-				yes_p *= f0_yes[i-1]
-				no_p *= f0_no[i-1]
-			elif test_set[j][i] == '1':
-				yes_p *= f1_yes[i-1]
-				no_p *= f1_no[i-1]
+		for i in range(0, len(features)-1):
+			if test_set[j][i] <= averages[i]:
+				yes_p *= f0_yes[i]
+				no_p *= f0_no[i]
+			else:
+				yes_p *= f1_yes[i]
+				no_p *= f1_no[i]
 
 		if yes_p > no_p:
-			max_prob = 'Iris-setosa'
+			max_prob = yes_string
 		else:
-			max_prob = 'Iris-versicolor'
+			max_prob = no_string
 
 		if test_set[j][-1] == max_prob:
 			accuracy += 1
-
 	result = float(accuracy)/len(test_set)
 	result *= 100
 	return result

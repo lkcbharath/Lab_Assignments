@@ -15,7 +15,7 @@ def find_dist(row,centroid):
 
 
 def fuzzy_clustering(dataset,n_attr,c,m):
-    prev_centroids = [[random.uniform(0,10) for j in range(n_attr)] for i in range(c)]
+    prev_centroids = [[random.uniform(0,100) for j in range(n_attr)] for i in range(c)]
     next_centroids = list()
 
     iterations = 0
