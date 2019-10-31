@@ -12,7 +12,7 @@ DELIMITER ;
 
 CALL usp_get_employees(48100);
 
--- Exercise 3?
+-- Exercise 2
 DROP PROCEDURE IF EXISTS usp_get_towns_starting_with;
 
 DELIMITER &&
@@ -26,7 +26,7 @@ DELIMITER ;
 
 CALL usp_get_towns_starting_with('H');
 
--- Exercise 4
+-- Exercise 3
 DROP FUNCTION IF EXISTS ufn_get_salary_level;
 
 DELIMITER &&
@@ -47,15 +47,30 @@ DELIMITER ;
 
 SELECT ufn_get_salary_level(35000);
 
+-- Exercise 4
+DROP FUNCTION IF EXISTS ufn_calculate_future_value;
+
+DELIMITER &&
+
+CREATE FUNCTION ufn_calculate_future_value(initial_sum int, interest decimal(10,2), years int)
+RETURNS decimal(10,2)
+BEGIN
+    RETURN initial_sum * (POWER(1+interest,years));
+END && 
+
+DELIMITER ;
+
+SELECT ufn_calculate_future_value(1000,0.1,5);
+
 -- Exercise 5
 DROP PROCEDURE IF EXISTS emp_in_dept;
 
 DELIMITER $$
 
-CREATE PROCEDURE emp_in_dept(IN department INT, INOUT name_result varchar(1000) DEFAULT "")
+CREATE PROCEDURE emp_in_dept(IN department INT, INOUT name_result varchar(1000))
 BEGIN
-    DECLARE finished INT DEFAULT 0;
-    DECLARE employee_name varchar(100) DEFAULT "";
+    DECLARE finished int;
+    DECLARE employee_name varchar(100);
 
     DEClARE cursor_emp CURSOR FOR SELECT Fname FROM Employee WHERE Dno = department;
     
@@ -63,52 +78,69 @@ BEGIN
     
     OPEN cursor_emp;
 
-    -- REPEAT FETCH cursor_emp INTO employee_name;
-    -- UNTIL finished = 1 
-    -- END REPEAT;
-
     e_loop: LOOP
         FETCH cursor_emp INTO employee_name;
         IF finished = 1 THEN
             LEAVE e_loop;
         END IF;     
 
-        SET name_result = CONCAT(employee_name,", ",name_result)
+        SET name_result = CONCAT(employee_name,", ",name_result);
+    END LOOP e_loop;
 
     CLOSE cursor_emp;
+
 END $$
 
 DELIMITER ;
 
 SET @result = "";
-CALL emp_in_dept(5,@result);
-SELECT @result;
+CALL emp_in_dept(5, @result);
+SELECT @result AS "Employees in Department";
 
 -- Exercise 6
 
--- DROP PROCEDURE IF EXISTS update_emp_salary;
+source create_emp_2.sql;
 
--- DELIMITER $$
--- CREATE PROCEDURE update_emp_salary()
--- BEGIN
---     DECLARE finished int DEFAULT 0;
---     DECLARE salary varchar(100) DEFAULT = "";
+DROP PROCEDURE IF EXISTS update_emp_salary;
 
---     DEClARE cursor_emp CURSOR FOR SELECT Fname,Minit,Lname FROM Employee WHERE Dno = department;
+DELIMITER $$
+CREATE PROCEDURE update_emp_salary()
+BEGIN
+    DECLARE finished int DEFAULT 0;
+    DECLARE emp_id varchar(10);
+    DECLARE old_salary int;
+    DECLARE employee_name varchar(100);
+    DECLARE emp_pos varchar(20);
+
+    DEClARE cursor_sal CURSOR FOR SELECT Id FROM Employee_2;
     
---     DECLARE CONTINUE HANDLER FOR NOT FOUND SET finished = 1;
+    DECLARE CONTINUE HANDLER FOR NOT FOUND SET finished = 1;
     
---     OPEN cursor_emp;
+    OPEN cursor_sal;
 
---     GET emp_loop: LOOP
---         FETCH cursor_emp INTO employee_name;
---         IF finished = 1 THEN
---             LEAVE emp_loop;
---         END IF;
+    s_loop: LOOP  
+        IF finished = 1 THEN
+            LEAVE s_loop;
+        END IF;
 
---         SET employee_list = CONCAT(employee_name,', ',employee_list);
---     END LOOP emp_loop;
+        FETCH cursor_sal INTO emp_id;
 
---     CLOSE cursor_emp;
--- END $$
--- DELIMITER ;
+        SELECT Salary INTO old_salary FROM Employee_2 WHERE Id = emp_id;
+        SELECT Position INTO emp_pos FROM Employee_2 WHERE Id = emp_id;
+    
+        IF emp_pos = 'Manager' THEN
+            UPDATE Employee_2 SET Salary = (old_salary + 20000) WHERE Id = emp_id;
+        END IF;
+
+        IF emp_pos = 'Trainer' THEN
+            UPDATE Employee_2 SET Salary = (old_salary + 30000) WHERE Id = emp_id;
+        END IF;
+    
+    END LOOP s_loop;
+
+    CLOSE cursor_sal;
+END $$
+DELIMITER ;
+
+CALL update_emp_salary();
+SELECT * FROM Employee_2;
