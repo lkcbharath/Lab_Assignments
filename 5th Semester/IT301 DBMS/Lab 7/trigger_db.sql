@@ -56,16 +56,16 @@ CREATE TABLE Blog
     Id int,
     Title varchar(20),
     Content varchar(200),
-    Deleted int,
-    PRIMARY KEY (Id)
+    Deleted int
 );
 
-CREATE TABLE Audit
+CREATE TABLE Audit_blog
 ( 
+    Id int NOT NULL AUTO_INCREMENT,
     Blog_id int,
     Changetype enum('NEW','EDIT','DELETE') NOT NULL,
     Changetime timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-    FOREIGN KEY (Blog_id) REFERENCES Blog(Id)
+    PRIMARY KEY (Id)
 );
 
 DROP TRIGGER IF EXISTS insert_audit;
@@ -75,9 +75,9 @@ CREATE TRIGGER insert_audit
     FOR EACH ROW
     BEGIN
         IF NEW.Deleted = 0 THEN
-            INSERT INTO Audit VALUES(New.Id, 'NEW', SYSDATE());
+            INSERT INTO Audit_blog (Blog_id, Changetype, Changetime) VALUES(New.Id, 'NEW', SYSDATE());
         ELSE
-            INSERT INTO Audit VALUES(New.Id, 'DELETE', SYSDATE());   
+            INSERT INTO Audit_blog (Blog_id, Changetype, Changetime) VALUES(New.Id, 'DELETE', SYSDATE());   
         END IF;
     END
 //
@@ -90,9 +90,9 @@ CREATE TRIGGER update_audit
     FOR EACH ROW
     BEGIN
         IF NEW.Deleted = 0 THEN
-            INSERT INTO Audit VALUES(New.Id, 'UPDATE', SYSDATE());
+            INSERT INTO Audit_blog (Blog_id, Changetype, Changetime) VALUES(New.Id, 'EDIT', SYSDATE());
         ELSE
-            INSERT INTO Audit VALUES(New.Id, 'DELETE', SYSDATE());   
+            INSERT INTO Audit_blog (Blog_id, Changetype, Changetime) VALUES(New.Id, 'DELETE', SYSDATE());   
         END IF;
     END
 //
