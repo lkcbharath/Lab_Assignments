@@ -5,7 +5,7 @@ DELIMITER &&
 
 CREATE PROCEDURE usp_get_employees(IN target_salary INT) 
 BEGIN
-    SELECT Fname, Lname FROM Employee WHERE Salary >= target_salary;
+    SELECT Fname, Lname FROM Employee WHERE Salary >= target_salary ORDER BY Fname ASC, Lname ASC;
 END &&
 
 DELIMITER ;
@@ -109,7 +109,6 @@ BEGIN
     DECLARE finished int DEFAULT 0;
     DECLARE emp_id varchar(10);
     DECLARE old_salary int;
-    DECLARE employee_name varchar(100);
     DECLARE emp_pos varchar(20);
 
     DEClARE cursor_sal CURSOR FOR SELECT Id FROM Employee_2;
