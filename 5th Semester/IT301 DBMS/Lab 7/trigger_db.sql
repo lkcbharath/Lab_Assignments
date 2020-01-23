@@ -59,7 +59,7 @@ CREATE TABLE Blog
     Deleted int
 );
 
-CREATE TABLE Audit_blog
+CREATE TABLE Audit
 ( 
     Id int NOT NULL AUTO_INCREMENT,
     Blog_id int,
@@ -75,9 +75,9 @@ CREATE TRIGGER insert_audit
     FOR EACH ROW
     BEGIN
         IF NEW.Deleted = 0 THEN
-            INSERT INTO Audit_blog (Blog_id, Changetype, Changetime) VALUES(New.Id, 'NEW', SYSDATE());
+            INSERT INTO Audit (Blog_id, Changetype) VALUES(New.Id, 'NEW');
         ELSE
-            INSERT INTO Audit_blog (Blog_id, Changetype, Changetime) VALUES(New.Id, 'DELETE', SYSDATE());   
+            INSERT INTO Audit (Blog_id, Changetype) VALUES(New.Id, 'DELETE');   
         END IF;
     END
 //
@@ -90,9 +90,9 @@ CREATE TRIGGER update_audit
     FOR EACH ROW
     BEGIN
         IF NEW.Deleted = 0 THEN
-            INSERT INTO Audit_blog (Blog_id, Changetype, Changetime) VALUES(New.Id, 'EDIT', SYSDATE());
+            INSERT INTO Audit (Blog_id, Changetype) VALUES(New.Id, 'EDIT');
         ELSE
-            INSERT INTO Audit_blog (Blog_id, Changetype, Changetime) VALUES(New.Id, 'DELETE', SYSDATE());   
+            INSERT INTO Audit (Blog_id, Changetype) VALUES(New.Id, 'DELETE');   
         END IF;
     END
 //

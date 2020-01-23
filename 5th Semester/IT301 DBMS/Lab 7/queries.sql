@@ -6,13 +6,13 @@ Select * FROM Student_marks;
 
 -- 
 
-Select * FROM Audit_blog;
+Select * FROM Audit;
 
 INSERT INTO Blog VALUES(1, 'My first article', 'Sumne', 0);
 
 UPDATE Blog SET Title = 'My second' WHERE Id = 1;
 
-Select * FROM Audit_blog;
+Select * FROM Audit;
 
 -- 
 
