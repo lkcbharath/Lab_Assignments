@@ -1,0 +1,9 @@
+Source MAC Address: 50:eb:1a:90:61:32
+Destination MAC Address: 6c:c2:17:77:00:a6
+Packet Type: IPv4
+IPv4 Packet Protocol: TCP
+Source IP Address: 54.72.51.202
+Source IP Port: 8282
+Destination IP Address: 10.100.53.123
+Destination IP Port: 1949
+Action: Deny

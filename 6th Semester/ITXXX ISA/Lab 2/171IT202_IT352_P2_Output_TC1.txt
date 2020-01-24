@@ -1,0 +1,9 @@
+Source MAC Address: 6c:c2:17:77:00:a6
+Destination MAC Address: 50:eb:1a:90:61:32
+Packet Type: IPv4
+IPv4 Packet Protocol: TCP
+Source IP Address: 10.100.53.123
+Source IP Port: 1949
+Destination IP Address: 54.72.51.202
+Destination IP Port: 8282
+Action: Allow
