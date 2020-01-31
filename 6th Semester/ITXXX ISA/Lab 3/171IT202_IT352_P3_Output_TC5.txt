@@ -1,0 +1,14 @@
+Raw Packet: b'P\xeb\x1a\x90a2\xe8*D\xd5g\xdf\x08\x00E\x00\x00(\x00\x01\x00\x00@\x06\x1f\xda\xc8\x14\xca\x14dfdf\x00Q\x00P\x00\x00\x00\x00\x00\x00\x00\x00P\x02 \x004L\x00\x00'
+Hexdump of Packet: 50 eb 1a 90 61 32 e8 2a 44 d5 67 df 08 00 45 00 00 28 00 01 00 00 40 06 1f da c8 14 ca 14 64 66 64 66 00 51 00 50 00 00 00 00 00 00 00 00 50 02 20 00 34 4c 00 00
+Source MAC Address: e8:2a:44:d5:67:df
+Destination MAC Address: 50:eb:1a:90:61:32
+Packet Type: IPv4
+IPv4 Packet Protocol: TCP
+Packet Length: 40
+Time To Live (TTL): 64
+Source IP Address: 200.20.202.20
+Source IP Port: 81
+Destination IP Address: 100.102.100.102
+Destination IP Port: 80
+Rule matched: Any, Any, 100.102.100.102 , Any, Deny
+Action: Deny
