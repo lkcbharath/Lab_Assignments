@@ -2,39 +2,62 @@
 # This is client.py file
 
 import socket
+import random
+import math
 
 class TestCase:
-
-    def __init__(self,p,q,r,s,c):
-        self.n = (p * q)
-        self.r = r
+    
+    def __init__(self,p,q,s,r):
+        self.n = p * q
         self.s = s
-        self.c = c
+        self.v = math.pow(s,2) % self.n
+        self.r = r
+        self.x = math.pow(r,2) % self.n
+    
+    def prove_identity(self, c):
+        y = self.r * math.pow(self.s, c)
+
+        return [y, self.n, self.v]
 
 def main():
 
-    
+    print('Starting Client Program')
 
-    # create a socket object
-    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM) 
+    t1 = TestCase(467,479,111,1111)
+    t2 = TestCase(929,937,200,760)
+    t3 = TestCase(727,733,1000,540)
 
-    # get local machine name
-    host = socket.gethostname()                           
+    test_cases = [t1,t2,t3]
+    results = []
 
+    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    host = socket.gethostname()
     port = 9999
+    sock.connect((host, port))
 
-    # connection to hostname on the port.
-    s.connect((host, port))      
+    for i, tc in enumerate(test_cases):
 
-    msg1 = 'I am a menace'
-    s.send(msg1.encode('utf-8'))
+        print('Evaluating Round', i+1)
 
+        sock.send(str(tc.x).encode('utf-8'))
 
-    # Receive no more than 1024 bytes
-    msg = s.recv(1024)                                     
+        c = int(sock.recv(1024).decode('utf-8'))
 
-    s.close()
-    print (msg.decode('utf-8'))
+        y, n, v = tc.prove_identity(c)
+        
+        sock.send(','.join([str(y), str(n), str(v)]).encode('utf-8'))
+
+        # Verify whether user is really Alice
+        verified = sock.recv(1024).decode('utf-8')
+        verified = (verified == 'True')
+        
+        results.append(verified)
+
+    sock.close()
+
+    print(results)
+
+    print('Ending Client Program')
 
 if __name__ == '__main__':
     main()

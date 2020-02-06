@@ -26,13 +26,13 @@ def main():
         
         clientsocket.send(str(c).encode('utf-8'))
 
-        y_n_v = clientsocket.recv(1024).decode('utf-8').split(',')
-        y = float(y_n_v[0])
-        n = float(y_n_v[1])
-        v = float(y_n_v[2])
+        y = float(clientsocket.recv(1024).decode('utf-8'))
+        v = float(clientsocket.recv(1024).decode('utf-8'))
 
-        y2 = (math.pow(y,2) % n)
-        xvc = (x*math.pow(v,c) % n)
+        y2 = math.pow(y,2)
+        xvc = x*math.pow(v,c)
+
+        print(y2,xvc)
 
         verified = False
         if (y2==xvc):
