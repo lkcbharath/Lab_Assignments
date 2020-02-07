@@ -1,6 +1,3 @@
-#!/usr/bin/python3
-# This is client.py file
-
 import socket
 import random
 import math
@@ -32,7 +29,7 @@ def main():
 
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     host = socket.gethostname()
-    port = 9999
+    port = 8181
     sock.connect((host, port))
 
     for i, tc in enumerate(test_cases):
@@ -50,12 +47,19 @@ def main():
         # Verify whether user is really Alice
         verified = sock.recv(1024).decode('utf-8')
         verified = (verified == 'True')
+
+        results.append([verified,i+1])
         
-        results.append(verified)
+        if verified == False:
+            break
 
     sock.close()
 
-    print(results)
+    for result, round_ in results:
+        if result == True:
+            print('For Round',round_,'Identity verified')
+        else:
+            print('For Round',round_,'Identity not verified')
 
     print('Ending Client Program')
 

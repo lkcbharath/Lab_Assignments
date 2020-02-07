@@ -1,5 +1,3 @@
-#!/usr/bin/python3
-# This is server.py file
 import socket
 import random
 import math
@@ -12,7 +10,7 @@ def main():
 
     serversocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM) 
     host = socket.gethostname()                           
-    port = 9999                                           
+    port = 8181                                           
     serversocket.bind((host, port))                                  
     serversocket.listen(len(c_arr))                                           
 
@@ -39,6 +37,10 @@ def main():
             verified = True
         
         clientsocket.send(str(verified).encode('utf-8'))
+
+        if verified == False:
+            print('Identity not verified!')
+            break
 
     clientsocket.close()
 
