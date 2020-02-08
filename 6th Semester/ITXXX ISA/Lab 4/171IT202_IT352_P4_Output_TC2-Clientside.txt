@@ -1,0 +1,32 @@
+Starting Client Program
+Evaluating Round 1
+Witness generated and sent, x: 225
+Commitment/Random number generated, r: 15
+Private key generated, s: 22
+Public key generated and made public, v: 484
+Public value generated and made public, n: 870473
+Challenge received, c: 0
+Response generated and sent, y: 15
+For Round 1 Identity verified!
+
+Evaluating Round 2
+Witness generated and sent, x: 256
+Commitment/Random number generated, r: 16
+Private key generated, s: 22
+Public key generated and made public, v: 484
+Public value generated and made public, n: 870473
+Challenge received, c: 0
+Response generated and sent, y: 16
+For Round 2 Identity verified!
+
+Evaluating Round 3
+Witness generated and sent, x: 1681
+Commitment/Random number generated, r: 41
+Private key generated, s: 22
+Public key generated and made public, v: 484
+Public value generated and made public, n: 870473
+Challenge received, c: 1
+Response generated and sent, y: 902
+For Round 3 Identity verified!
+
+Ending Client Program

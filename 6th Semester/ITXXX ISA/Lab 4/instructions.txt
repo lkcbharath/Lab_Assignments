@@ -1,0 +1,9 @@
+T1:
+docker build -t lab_image .
+docker run -t -d -p 8181:8181 --name=lab_cont lab_image
+
+T2:
+docker exec -it lab_cont /bin/bash
+
+T3:
+sudo python3 171IT202_IT352_P4-Clientside.py 

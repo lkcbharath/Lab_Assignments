@@ -1,0 +1,86 @@
+Starting Server Program
+Recieved connection from ('172.17.0.1', 37960)
+Evaluating Round 1
+Client Program was terminated due to failure of one or more conditions. Terminating Server Program.
+Ending Server Program
+
+Starting Server Program
+Recieved connection from ('172.17.0.1', 38002)
+Evaluating Round 1
+Witness recieved, x: 225
+Challenge generated, c: 0
+Response recieved, y: 15
+Public key accessed, v: 484
+Public key accessed, n: 870473
+Value of y^2: 225
+Value of x*v^c 225
+Verification y^2 = x*v^c succeeded, and identity verified!
+
+Evaluating Round 2
+Witness recieved, x: 256
+Challenge generated, c: 0
+Response recieved, y: 16
+Public key accessed, v: 484
+Public key accessed, n: 870473
+Value of y^2: 256
+Value of x*v^c 256
+Verification y^2 = x*v^c succeeded, and identity verified!
+
+Evaluating Round 3
+Witness recieved, x: 1681
+Challenge generated, c: 1
+Response recieved, y: 902
+Public key accessed, v: 484
+Public key accessed, n: 870473
+Value of y^2: 813604
+Value of x*v^c 813604
+Verification y^2 = x*v^c succeeded, and identity verified!
+
+Ending Server Program
+
+Starting Server Program
+Recieved connection from ('172.17.0.1', 38012)
+Evaluating Round 1
+Witness recieved, x: 10201
+Challenge generated, c: 1
+Response recieved, y: 3636
+Public key accessed, v: 1296
+Public key accessed, n: 532891
+Value of y^2: 431112
+Value of x*v^c 431112
+Verification y^2 = x*v^c succeeded, and identity verified!
+
+Evaluating Round 2
+Witness recieved, x: 3600
+Challenge generated, c: 1
+Response recieved, y: 2160
+Public key accessed, v: 1296
+Public key accessed, n: 532891
+Value of y^2: 402472
+Value of x*v^c 402472
+Verification y^2 = x*v^c succeeded, and identity verified!
+
+Evaluating Round 3
+Witness recieved, x: 1600
+Challenge generated, c: 1
+Response recieved, y: 1440
+Public key accessed, v: 1296
+Public key accessed, n: 532891
+Value of y^2: 474927
+Value of x*v^c 474927
+Verification y^2 = x*v^c succeeded, and identity verified!
+
+Ending Server Program
+
+Starting Server Program
+Recieved connection from ('172.17.0.1', 38022)
+Evaluating Round 1
+Client Program was terminated due to failure of one or more conditions. Terminating Server Program.
+Ending Server Program
+
+Starting Server Program
+Recieved connection from ('172.17.0.1', 38030)
+Evaluating Round 1
+Client Program was terminated due to failure of one or more conditions. Terminating Server Program.
+Ending Server Program
+

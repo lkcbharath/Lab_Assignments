@@ -1,0 +1,33 @@
+Starting Server Program
+Recieved connection from ('172.17.0.1', 38012)
+Evaluating Round 1
+Witness recieved, x: 10201
+Challenge generated, c: 1
+Response recieved, y: 3636
+Public key accessed, v: 1296
+Public key accessed, n: 532891
+Value of y^2: 431112
+Value of x*v^c 431112
+Verification y^2 = x*v^c succeeded, and identity verified!
+
+Evaluating Round 2
+Witness recieved, x: 3600
+Challenge generated, c: 1
+Response recieved, y: 2160
+Public key accessed, v: 1296
+Public key accessed, n: 532891
+Value of y^2: 402472
+Value of x*v^c 402472
+Verification y^2 = x*v^c succeeded, and identity verified!
+
+Evaluating Round 3
+Witness recieved, x: 1600
+Challenge generated, c: 1
+Response recieved, y: 1440
+Public key accessed, v: 1296
+Public key accessed, n: 532891
+Value of y^2: 474927
+Value of x*v^c 474927
+Verification y^2 = x*v^c succeeded, and identity verified!
+
+Ending Server Program

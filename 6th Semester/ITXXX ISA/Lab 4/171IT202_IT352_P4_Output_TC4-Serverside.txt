@@ -1,0 +1,5 @@
+Starting Server Program
+Recieved connection from ('172.17.0.1', 38022)
+Evaluating Round 1
+Client Program was terminated due to failure of one or more conditions. Terminating Server Program.
+Ending Server Program

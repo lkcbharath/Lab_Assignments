@@ -1,0 +1,9 @@
+Starting Client Program
+Evaluating Round 1
+Witness generated and sent, x: 121
+Commitment/Random number generated, r: 11
+Private key generated, s: 223694
+Public key generated and made public, v: 1
+Public value generated and made public, n: 223693
+The value of s is not in between 1 and n-1 (exclusive). Terminating execution of Client Program.
+Ending Client Program
