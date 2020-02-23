@@ -70,63 +70,41 @@ class FP_Tree:
     def get_cond_fp_tree(self,min_sup):
         keys = list(self.cond_pattern_base.keys())
         for pb_key in keys:
-            # branches = set([value[1] for value in self.cond_pattern_base[key].values()])
             branches = defaultdict(lambda: None)
-            # branch_ids = set([value[1] for value in self.cond_pattern_base[key].values()])
-            # print(branches)
             for key, value in self.cond_pattern_base[pb_key].items():
-                # print(key,value,pb_key)
                 branch_id = value[1]
                 if branches[branch_id] != None:
                     branches[branch_id].add((key,value[0]))
                 else:
                     branches[branch_id] = set()
                     branches[branch_id].add((key,value[0]))
-                # branches[value[1]] = []
 
-            # self.cond_fp_tree[min(key)] = branches
             self.cond_fp_tree[pb_key] = set()
             for branch_id, branch in branches.items():
                 branch_dict = defaultdict(lambda: None)
-                # print(pb_key, branch_id, branch, 'test')
                 for items in branch:
-                    # print(items)
                     item_value = items[1]
                     for item_key in items[0]:
-                        # print(item_key)
                         if branch_dict[item_key] != None:
                             branch_dict[item_key] += item_value
                         else:
                             branch_dict[item_key] = item_value
-                # print(branch_dict)
                 branch_dict = {k: v for k,v in branch_dict.items() if v >= min_sup}
-                # print(pb_key, branch_id, branch_dict)
-                # print(pb_key)
                 self.cond_fp_tree[pb_key].add(tuple(branch_dict.items()))
-
     
     def gen_freq_item_set(self):
         for node_key, node_cond_fp_tree in self.cond_fp_tree.items():
-            # items = list(node_cond_fp_tree.keys()) + [node_key]
-            # items = [' '.join(tups) for tups in node_cond_fp_tree]
-            # print(node_cond_fp_tree)
             items = list(set(chain(*node_cond_fp_tree)))
             dict_items = dict(items)
             item_keys = dict_items.keys()
-            # print(node_key, item_keys)
             self.freq_itemset_gen[node_key] = set()
 
-            # print(dict_items)
-
             for i in range(1,len(item_keys)+1):
-                # print(item_keys)
                 perm_keys = list(combinations(item_keys,i))
 
-                # print(perm_keys)
                 for perm_key in perm_keys:
                     min_dict = {k:v for k,v in dict_items.items() if k in perm_key}
                     min_value = min(min_dict.values())
-                    # print(perm_key,min_value)
                     item_to_add = tuple(list(perm_key) + [node_key])
                     tup_to_add = (item_to_add,min_value)
 

@@ -24,7 +24,6 @@ def custom_csv_import(filename,header_):
 
 def self_join(keys,k):
     if k > 2:
-        # c_comb = [tuple(set(key).union(key)) for key in keys]
         c_comb = set()
         for i in range(len(keys)):
             for j in range(i+1,len(keys)):
@@ -34,11 +33,7 @@ def self_join(keys,k):
                 if len(c_comb_item) == k:
                     c_comb.add(c_comb_item)
 
-        # c_comb = list(product(keys,keys))
-        # c_comb = [''.join(x) for x in product(keys, keys)]
-        # print(c_comb)
         c_comb = set(tuple(sorted(l)) for l in c_comb if l[0] != l[1])
-        # print(c_comb)
     else:
         keys_ = [min(key) for key in keys]
         c_comb = list(combinations(keys_, k))
@@ -107,7 +102,6 @@ def main():
     ds_entries = custom_csv_import(filename, header)
     print(ds_entries)
 
-    # L1,L2
     item_set = []
 
     min_sup_count = 2
