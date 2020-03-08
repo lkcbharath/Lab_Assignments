@@ -13,6 +13,7 @@ class Node:
 class FP_Tree:
 
     def __init__(self):
+        self.freq_1_itemset = defaultdict(lambda: None)
         self.global_id_count = 0
         self.root = Node(None,None,0)
         self.cond_pattern_base = defaultdict(lambda: None)
@@ -110,6 +111,46 @@ class FP_Tree:
 
                     self.freq_itemset_gen[node_key].add(tup_to_add)
 
+    def assoc_rule_mining(self,min_conf):
+        len_ = 0
+        for freq_itemset in self.freq_itemset_gen.values():
+            for freq_item in freq_itemset:
+                if len(freq_item[0]) > len_:
+                    len_ = len(freq_item[0])
+
+        print('Association Rule Mining and Confidence:')
+        item_set = [{} for i in range(len_)]
+        item_set[0] = self.freq_1_itemset
+        for freq_itemset in self.freq_itemset_gen.values():
+            for freq_item in freq_itemset:
+                index = len(freq_item[0]) - 1
+                item_set[index][frozenset(freq_item[0])] = freq_item[1]
+
+        item_set[0] = {frozenset([key]):value for key,value in item_set[0].items()}
+
+        k = len(item_set)
+        for i in range(0, k):
+            freq_set = item_set[i]
+            keys = [list(i) for i in freq_set.keys()]
+            for key in keys:
+                perm_keys = list(permutations(key, len(key)))
+
+                for perm_key in perm_keys:
+                    for i in range(1, len(perm_key)):
+                        key_ = frozenset(perm_key)
+                        if_1 = frozenset(perm_key[:i])
+                        then_1 = frozenset(perm_key[i:])
+                        sup_if_1 = item_set[len(if_1)-1][if_1]
+                        sup_key = item_set[len(key_)-1][key_]
+                        conf_value = sup_key/sup_if_1
+                        strong = ''
+                        if conf_value > min_conf:
+                            strong = ', Strong Rule'
+                        rule = 'Rule: ' + '^'.join(if_1) + ' -> ' + '^'.join(
+                            then_1) + ', Confidence = ' + str(round(conf_value, 4)*100) + '%' + strong
+                        print(rule)
+
+
 def custom_csv_import(filename, header_):
 
     data_file = filename
@@ -152,9 +193,13 @@ def main():
 
     freq_1_itemset.pop(np.nan, None)
 
+    print('freq',freq_1_itemset)
+
     transactions = []
 
     tree = FP_Tree()
+
+    tree.freq_1_itemset = freq_1_itemset
 
     for ds_entry in ds_entries:
         transaction = [item for item in ds_entry if not (pd.isnull(item))]
@@ -168,9 +213,9 @@ def main():
     tree.get_cond_fp_tree(sup)
 
     tree.gen_freq_item_set()
-
-    for key, value in tree.freq_itemset_gen.items():
-        print(key,value)
+    
+    min_conf = 0.75
+    tree.assoc_rule_mining(min_conf)
 
 if __name__ == '__main__':
     main()

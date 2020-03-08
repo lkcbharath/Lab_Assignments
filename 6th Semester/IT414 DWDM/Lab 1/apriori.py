@@ -104,7 +104,7 @@ def main():
 
     item_set = []
 
-    min_sup_count = 2
+    min_sup_count = 3
 
     c1 = dict()
 
@@ -117,20 +117,27 @@ def main():
 
     c1.pop(np.nan, None)
 
+    print('c1',c1)
+
     l1 = compare_sup_count(c1, min_sup_count)
     l1 = dict((frozenset([k]),v) for k,v in l1.items())
     item_set.append(l1)
+
+    print('l1',l1)
 
     no_of_items = len(c1)
 
     for k in range(2,no_of_items):
         c_comb = self_join(list(item_set[-1].keys()), k)
         cand = generate_cand_set(ds_entries, c_comb, k)
+        print('c',k,' ',cand)
         lx = compare_sup_count(cand, min_sup_count)
         if lx != {}:
             item_set.append(lx)
+            print('l', k, ' ', lx)
+
             
-    conf = 0.75
+    conf = 0.60
 
     assoc_rule_mining(item_set,conf)
 
