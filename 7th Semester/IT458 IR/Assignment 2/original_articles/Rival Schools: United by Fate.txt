@@ -1,0 +1,55 @@
+Rival Schools: United by Fate (Japanese: 私立しりつジャスティス学園がくえん リージョン オブ ヒーローズ, Hepburn: Shiritsu Jasutisu Gakuen: Rījon obu Hīrōzu, "Private Justice Academy: Legion of Heroes") is a fighting game produced by Capcom originally released as an arcade game in 1997 and ported to the PlayStation in 1998. On February 23, 2012 Capcom released United by Fate on the Japanese PlayStation Network.
+Gameplay
+The main fighting game is best described as a polygonal Marvel vs. Capcom game, with some notable differences. Control wise, the game imitates Star Gladiator's four button setup (two punches and two kicks, like the SNK game format).[1]
+
+A player chooses a team of two characters, and fights against another two character team. The actual fights, however, are one-on-one fights, with the partner only participating by being called in when a player has enough 'vigor' for a Team Up attack, done by pressing a punch and kick button of the same pressure. The Team Ups are some kind of double team attack by the character and partner, or (for most female characters' Team Ups) heal the main character or give them more vigor.[citation needed] After the end of a round, a player (win or lose) has a choice to fight the next round with the partner from the previous round, or to keep their main character in play. The 'vigor' meter (essentially a super meter) can go up to 9 levels, with Team Ups costing two levels and super moves from a single person costing one level of vigor.[1]
+
+Much like the Marvel vs. Capcom games, launchers can be done that allow air combos to be performed, with all characters having universal low and high launchers.
+
+The game also has a few defensive techniques.
+
+Tardy Counters acted much like Alpha Counters from Street Fighter Alpha, allowing a player to immediately counter-attack from a blocking position. However, the restrictions on Tardy Counters are very lax; any hard normal, special or super attack can be used to Tardy counter (Alpha counters are only limited to certain special moves[clarification needed] for each character), and Tardy Counters do not cost any extra vigor to perform (Alpha Counters required at least a level of Super Combo gauge to do).
+Attack Cancels allowed a player to cancel an incoming hit simply by timing their own hit with the attack, which would cancel out both attacks (though it does not nullify the remaining hits of a multi-hit move). Also, one additional level of vigor is awarded.
+Plot
+See also: List of Rival Schools characters
+The story of Rival Schools introduces the player to a Japanese city called Aoharu City, where several local schools are the victims of unknown attacks and kidnappings of students and staff. The various characters in the game set out to find who is responsible for the attacks on their school, with the cut-scenes and fights portraying their interactions with the other schools and among themselves. Eventually, the story reveals that an elite school in the city, Justice High, is responsible for the attacks. The player's team eventually faces off against Raizo Imawano, the principal of the school, and first boss of the game. If certain requirements are met during the fight against Raizo, the story would continue as the player would then head into a true final boss fight against Hyo Imawano, Raizo's nephew and the true mastermind behind the events of the game.
+
+The structure of the single player game of Rival Schools varied depending on how characters were selected. If two characters from the same school were selected (with a few exceptions), single-player would play in a progressing story with fights predetermined beforehand and each fight preceding and ending with short 2D cut-scenes to explain the story. If two characters from different schools were chosen, the single-player mode would instead play similar to other fighting games, with the player's chosen team fighting against random teams of opponents before facing the boss. In the arcade version, character selection is initially limited to selecting two characters from the same school[1] and free selection of any character is accessed through time; the PlayStation version, which includes all characters unlocked by default, has no such restrictions.
+
+Development
+Rival Schools: United by Fate entered development when director Hideaki Itsuno wanted to make a 60fps polygon-based fighting game. As Capcom's earlier 3D fighting title Star Gladiator was already set to 30fps, because of things such as sword effects and backgrounds, the development team didn't exceed the limitations of the arcade hardware.[2]
+
+The game was originally called Justice Fist, and the initial story was that fighters from every country came together to decide who was the strongest.[2] Itsuno wrote up the design document and showed it to several co-workers but after a humble response he decided to base it on something people had an interest in and understood; he went with a school setting because he believed that everyone has had school experiences.[2][3] Itsuno intended for the setting to be in a school where 40 characters fought to decide who would be the class representatives. After a programmer showed him three playable characters on a screen, Itsuno came up with the two-character team idea.[2] Street Fighter character Sakura was included as "insurance" due to worries of bad sales.[2]
+
+A 54% complete version of Rival Schools was the most popular Capcom game at the September 1997 JAMMA show,[1] drawing larger crowds than Street Fighter III: 2nd Impact.[4]
+
+Ports
+After its initial arcade release, the game was ported to the PlayStation. The PlayStation version of the game came in two CDs. The first disc included the original arcade game and the standard modes included in most home versions of fighting games. Capcom enhanced the original game with animated introduction and ending sequences, as well as adding voice-over to the story mode in single player. The conversion also added two new characters, Hayato Nekketsu (a hotheaded physical education teacher) and Daigo Kazama (a teenage gang leader and the elder brother of Akira, who was a non-playable supporting character in the arcade version).
+
+The second disc, named the Evolution Disc, featured several new games to complement the arcade original. This disc included several minigames based on some of the students' activities and the Nekketsu Seisyun Nikki mode, a character creation mode in the form of a dating sim. In this mode, a player would be able to create a student and go through a typical school year. Over this time, the custom character could develop friendships with any of the characters at the various schools, which allowed to give the custom character moves and reveal bits and pieces about the existing characters and their backgrounds. Once the custom character was finished with the school year, it could be used in any of the normal fighting modes, save for the original Arcade game.
+
+Capcom translated most of the games on the Evolution Disc for the English localization, and planned to include the character creation mode (rebranded as "School Life") as well, but unfortunately later abandoned the character creation mode, citing the amount of time it would take to translate it from Japanese to English. The rest of the extra modes featured in the Evolution Disc were still included in the overseas versions.
+
+Reception
+In Japan, Game Machine listed Rival Schools: United by Fate on their February 1, 1998 issue as being the most-successful arcade game of the year.[5]
+
+Next Generation reviewed the arcade version of the game, rating it three stars out of five, and stated that "To be honest, Rival Schools is a button masher, but it's good, clean button mashing, packaged a little differently."[6]
+
+Next Generation reviewed the PlayStation version of the game, rating it three stars out of five, and stated that "This is one of the more enjoyable fighting games available, and hardcore players should give Rival Schools a try. They may be pleasantly surprised."[7]
+
+Legacy
+Nekketsu Seisyun Nikki 2
+In Japan, Capcom released a PlayStation-exclusive update to the original Rival Schools titled Shiritsu Justice Gakuen: Nekketsu Seisyun Nikki 2 (私立ジャスティス学園 熱血青春日記2, "Private Justice Academy: Hot-Blooded Youthful Diary 2"). The game featured two additional characters, Ran Hibiki, Taiyo High School's newspaper club photographer, and Nagare Namikawa, a swimmer who studies at Gorin High School, as well a new version of the Nekketsu Seisyun Nikki school sim mode, which features additional mini games and further plot developments over the original Japanese version of Shiritsu Justice Gakuen.
+
+On release, Famitsu magazine scored Nekketsu Seisyun Nikki 2 a 30 out of 40.[8]
+
+Project Justice
+Main article: Project Justice
+A sequel, Project Justice (Moero! Justice Gakuen in Japan), was released in 2000 in Japan and 2001 in the United States and Europe for arcades and the Dreamcast. In comparison to Rival Schools, Project Justice featured teams of 3, adding three-person team-up attacks and the ability to interrupt and stop 2-person team-ups. Like the previous game, Project Justice included a character-creation mode that came in the form of a virtual board game. This creation mode also was never released outside Japan due to localization issues.
+
+Future
+Since at least 2013, director Hideaki Itsuno has expressed an interest in continuing the Rival Schools series by developing a third installment.[9][10][11]
+
+Related media
+A comic book based on Rival Schools was produced by UDON Studios, with its first issue published on May 17, 2006, with art by Corey Lewis. Originally, the comic was to be produced by Dreamwave Productions, but when Dreamwave showed signs of financial failure, the rights of the comic were sold to UDON, who already produced the successful Street Fighter comic. The comic was not as successful as the same universe as the main Street Fighter series that is based. The comic was made available on August 31, 2007 in the U.S. and later released as a webcomic.
+

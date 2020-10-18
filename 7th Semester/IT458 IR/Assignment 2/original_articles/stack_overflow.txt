@@ -1,0 +1,40 @@
+Stack Overflow is a question and answer site for professional and enthusiast programmers. It is a privately held website, the flagship site of the Stack Exchange Network,[5][6][7] created in 2008 by Jeff Atwood and Joel Spolsky.[8][9] It features questions and answers on a wide range of topics in computer programming.[10][11][12] It was created to be a more open alternative to earlier question and answer sites such as Experts-Exchange. The name for the website was chosen by voting in April 2008 by readers of Coding Horror, Atwood's popular programming blog.[13]
+
+The website serves as a platform for users to ask and answer questions, and, through membership and active participation, to vote questions and answers up or down and edit questions and answers in a fashion similar to a wiki or Reddit.[14] Users of Stack Overflow can earn reputation points and "badges"; for example, a person is awarded 10 reputation points for receiving an "up" vote on an answer given to a question and 10 points for the "up" vote of a question,[15] and can receive badges for their valued contributions,[16] which represents a gamification of the traditional Q&A site. Users unlock new privileges with an increase in reputation like the ability to vote, comment, and even edit other people's posts.[17] All user-generated content is licensed under Creative Commons Attribute-ShareAlike license, version 2.5, 3.0, or 4.0 depending on the date the content was contributed.[3][18]
+
+Closing questions is a main differentiation from other Q&A sites like Yahoo! Answers and a way to prevent low quality questions.[19] The mechanism was overhauled in 2013; questions edited after being put "on hold" now appear in a review queue.[20] Jeff Atwood stated in 2010 that duplicate questions are not seen as a problem but rather they constitute an advantage if such additional questions drive extra traffic to the site by multiplying relevant keyword hits in search engines.[21]
+
+As of January 2019 Stack Overflow has over 10 million registered users,[22] and it exceeded 16 million questions in mid 2018.[23] Based on the type of tags assigned to questions, the top eight most discussed topics on the site are: JavaScript, Java, C#, PHP, Android, Python, jQuery, and HTML.[24]
+
+Stack Overflow also has a Jobs section to assist developers in finding their next opportunity.[25] For employers, Stack Overflow provides tools to brand their business, advertise their openings on the site, and source candidates from Stack Overflow's database of developers who are open to being contacted.[26]
+
+History
+The website was created by Jeff Atwood and Joel Spolsky in 2008.[8] On 31 July 2008, Jeff Atwood sent out invitations encouraging his subscribers to take part in the private beta of the new website, limiting its use to those willing to test out the new software. On 15 September 2008 it was announced that the public beta version was in session and that the general public was now able to use it to seek assistance on programming related issues. The design of the Stack Overflow logo was decided by a voting process.[27]
+
+On 3 May 2010, it was announced that Stack Overflow had raised $6 million in venture capital from a group of investors led by Union Square Ventures.[28]
+
+In 2019, Stack Overflow named Prashanth Chandrasekar as its chief executive officer and Teresa Dietrich as its chief product officer.[29]
+
+Content criteria
+Stack Overflow only accepts questions about programming that are tightly focused on a specific problem. Questions of a broader nature–or those inviting answers that are inherently a matter of opinion– are usually rejected by the site's users, and marked as closed. The sister site softwareengineering.stackexchange.com is intended to be a venue for broader queries, e.g. general questions about software development.
+
+Security breach
+In early May 2019, an update was deployed to Stack Overflow's development version. It contained a bug which allowed an attacker to grant themselves privileges in accessing the production version of the site. Stack Overflow published on their blog that approximately 250 public network users were affected by this breach, which "could have returned IP address, names, or emails".[30]
+
+Statistics
+A 2013 study has found that 75% of users only ask one question, 65% only answer one question, and only 8% of users answer more than 5 questions.[31] To empower a wider group of users to ask questions and then answer, Stack Overflow created a mentorship program resulting in users having a 50% increase in score on average.[32] As of 2011, 92% of the questions were answered, in a median time of 11 minutes.[33] Since 2013, the Stack Exchange network software automatically deletes closed questions that meet certain criteria, including having no answers in a certain amount of time.[34]
+
+As of August 2012, 443,000 of the 1.3 million registered users had answered at least one question, and of those, approximately 6,000 (0.46% of the total user count) had earned a reputation score greater than 5000.[35] Reputation can be gained fastest by answering questions related to tags with lower expertise density, doing so promptly (in particular being the first one to answer a question), being active during off-peak hours, and contributing to diverse areas.[35]
+
+In 2016, 1.5 million posts were deleted, of which about 8% were deleted by moderators.[36]
+
+Technology
+Stack Overflow is written in C#[4] using the ASP.NET MVC (Model-View-Controller) framework, and Microsoft SQL Server for the database[37] and the Dapper object-relational mapper used for data access.[38] Unregistered users have access to most of the site's functionality, while users who sign in can gain access to more functionality, such as asking or answering a question, establishing a profile and being able to earn reputation to allow functionality like editing questions and answers without peer review or voting to close a question.[citation needed]
+
+Reception
+The site's culture has been criticized for being needlessly harsh, abrasive, and unfriendly,[39][40] something which has been recognized by several Stack Overflow employees.[41][42]
+
+A study from the University of Maryland found that Android developers that used only Stack Overflow as their programming resource tended to write more insecure code than those who used only the official Android developer documentation from Google.[43]
+
+Stack Overflow won the 2020 Webby People’s Voice Award for Community in the category Web.[44]. This followed the success of Tumblr and Petfinder in previous years.
+

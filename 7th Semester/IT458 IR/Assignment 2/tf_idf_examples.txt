@@ -1,0 +1,11 @@
+Some TF-IDF scores corresponding to term-document pairs:
+Term: idea, Document: c++.txt, Score: 6.124380553426609
+Term: introduce, Document: Dispositio.txt, Score: 3.598259323334614
+Term: karnet, Document: Paul Ritter.txt, Score: 17.211227004784394
+Term: color, Document: Saturn Corporation.txt, Score: 4.142957953842043
+Term: main, Document: microsoft_windows.txt, Score: 7.781108504012801
+Term: true, Document: Sustainable distribution.txt, Score: 2.8579809951275723
+Term: evading, Document: TV detector van.txt, Score: 6.658211482751795
+Term: timothy, Document: iet.txt, Score: 5.672425341971495
+Term: updated, Document: Ilyushin Il-96.txt, Score: 3.1197392442740957
+Term: insurance, Document: Environmental certification.txt, Score: 3.7548875021634687

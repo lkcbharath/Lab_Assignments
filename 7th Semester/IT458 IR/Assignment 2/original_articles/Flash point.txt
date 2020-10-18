@@ -1,0 +1,36 @@
+The flash point of a volatile material is the lowest temperature at which its vapours ignite if given an ignition source.
+
+The flash point is sometimes confused with the autoignition temperature, the temperature that causes spontaneous ignition. The fire point is the lowest temperature at which the vapors keep burning after the ignition source is removed. It is higher than the flash point, because at the flash point more vapor may not be produced fast enough to sustain combustion.[1] Neither flash point nor fire point depends directly on the ignition source temperature, but ignition source temperature is far higher than either the flash or fire point.
+Fuels
+The flash point is a descriptive characteristic that is used to distinguish between flammable fuels, such as gasoline (also known as petrol), and combustible fuels, such as diesel.
+
+It is also used to characterize the fire hazards of fuels. Fuels which have a flash point less than 37.8 °C (100.0 °F) are called flammable, whereas fuels having a flash point above that temperature are called combustible.[2]
+
+Mechanism
+All liquids have a specific vapor pressure, which is a function of that liquid's temperature and is subject to Boyle's Law. As temperature increases, vapor pressure increases. As vapor pressure increases, the concentration of vapor of a flammable or combustible liquid in the air increases. Hence, temperature determines the concentration of vapor of the flammable liquid in the air. A certain concentration of a flammable or combustible vapor is necessary to sustain combustion in air, the lower flammable limit, and that concentration is specific to each flammable or combustible liquid. The flash point is the lowest temperature at which there will be enough flammable vapor to induce ignition when an ignition source is applied.[citation needed]
+
+Measurement
+There are two basic types of flash point measurement: open cup and closed cup.[3] In open cup devices, the sample is contained in an open cup which is heated and, at intervals, a flame brought over the surface. The measured flash point will actually vary with the height of the flame above the liquid surface and, at sufficient height, the measured flash point temperature will coincide with the fire point. The best-known example is the Cleveland open cup (COC).[4]
+
+There are two types of closed cup testers: non-equilibrial, such as Pensky-Martens, where the vapours above the liquid are not in temperature equilibrium with the liquid, and equilibrial, such as Small Scale (commonly known as Setaflash), where the vapours are deemed to be in temperature equilibrium with the liquid. In both these types, the cups are sealed with a lid through which the ignition source can be introduced. Closed cup testers normally give lower values for the flash point than open cup (typically 5–10 °C or 9–18 °F lower) and are a better approximation to the temperature at which the vapour pressure reaches the lower flammable limit. In addition to the Penskey-Martens flash point testers, other non-equilibrial testers include TAG and Abel, both of which are capable of cooling the sample below ambient for low flash point materials. The TAG flashpoint tester adheres to ASTM D56 and has no stirrer, while the Abel flash point testers adheres to IP 170 and ISO 13736 and has a stirring motor so the sample is stirred during testing.
+
+The flash point is an empirical measurement rather than a fundamental physical parameter. The measured value will vary with equipment and test protocol variations, including temperature ramp rate (in automated testers), time allowed for the sample to equilibrate, sample volume and whether the sample is stirred.
+
+Methods for determining the flash point of a liquid are specified in many standards. For example, testing by the Pensky-Martens closed cup method is detailed in ASTM D93, IP34, ISO 2719, DIN 51758, JIS K2265 and AFNOR M07-019. Determination of flash point by the Small Scale closed cup method is detailed in ASTM D3828 and D3278, EN ISO 3679 and 3680, and IP 523 and 524.
+
+CEN/TR 15138 Guide to Flash Point Testing and ISO TR 29662 Guidance for Flash Point Testing cover the key aspects of flash point testing.
+
+Examples
+Gasoline (petrol) is a fuel used in a spark-ignition engine. The fuel is mixed with air within its flammable limits and heated by compression and subject to Boyle's Law above its flash point, then ignited by the spark plug. To ignite, the fuel must have a low flash point, but in order to avoid preignition caused by residual heat in a hot combustion chamber, the fuel must have a high autoignition temperature.
+
+Diesel fuel flash points vary between 52 and 96 °C (126 and 205 °F). Diesel is suitable for use in a compression-ignition engine. Air is compressed until it heats above the autoignition temperature of the fuel, which is then injected as a high-pressure spray, keeping the fuel–air mix within flammable limits. A diesel-fueled engine has no ignition source (such as the spark plugs in a gasoline engine), so diesel fuel must have a high flash point[why?] and a low autoignition temperature.
+
+Jet fuel flash points also vary with the composition of the fuel. Both Jet A and Jet A-1 have flash points between 38 and 66 °C (100 and 151 °F), close to that of off-the-shelf kerosene. Yet both Jet B and JP-4 have flash points between −23 and −1 °C (−9 and 30 °F).
+
+Standardization
+Flash points of substances are measured according to standard test methods described and defined in a 1938 publication by T.L. Ainsley of South Shields entitled "Sea Transport of Petroleum" (Capt. P. Jansen). The test methodology defines the apparatus required to carry out the measurement, key test parameters, the procedure for the operator or automated apparatus to follow, and the precision of the test method. Standard test methods are written and controlled by a number of national and international committees and organizations. The three main bodies are the CEN / ISO Joint Working Group on Flash Point (JWG-FP), ASTM D02.8B Flammability Section and the Energy Institute's TMS SC-B-4 Flammability Panel.
+
+See also
+Autoignition temperature
+Fire point
+Safety data sheet (SDS)

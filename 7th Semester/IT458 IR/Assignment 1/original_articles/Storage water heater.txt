@@ -1,0 +1,51 @@
+A storage water heater, or a hot water system (HWS), is a domestic water heating appliance that uses a hot water storage tank to maximize heating capacity and provide instantaneous delivery of hot water.[1] Conventional storage water heaters use a variety of fuels, including natural gas, propane, fuel oil, and electricity. Less conventional water heating technologies, such as heat pump water heaters and solar water heaters, can also be categorized as storage water heaters.
+
+Difference between a storage heater and an instant heater
+The primary difference between a storage geyser and an instant geyser is that a storage system can deliver hot water instantly, and an instant heater takes an amount of time to heat the water first.
+
+Instant water geysers, as the name suggests, provide hot water almost instantaneously. There is hardly 1 or 2 minutes of heating time after which hot water can be accessed. But given the low storage capacity (max 5-6 litres at a given point of time) of these types of geysers, you cannot expect a bucket or a barrel full at the same speed. They are priced significantly higher than storage geysers but have a longer life period. This stands at an average of 15-20 years. Instant water heater provides water as you need. There are no heat losses and cheaper than the storage water heater.[2]
+
+Storage geysers, on the other hand, may not be as fast as the instant versions, they have large tanks that heat and store hot water for longer durations. It also allows you to store hot water for a while and is ideal for large volume usage (Large tanks can even store about 60 litres at a time too). It is priced far lower than that of its instant counterpart. But this also pumps up its operating cost and the space required to place it. The lifespan of a storage water geyser stands at an average of 7 to 12 years.
+
+Solar
+Solar heat is clean and renewable. This is the most modern system. Increasingly, solar powered water heaters are being used. Their solar collectors are installed outside dwellings, typically on the roof or walls or nearby, and the potable hot water storage tank is typically a pre-existing or new conventional water heater, or a water heater specifically designed for solar thermal.
+
+The most basic solar thermal models are the direct-gain type, in which the potable water is directly sent into the collector. Many such systems are said to use integrated collector storage (ICS), as direct-gain systems typically have storage integrated within the collector. Heating water directly is inherently more efficient than heating it indirectly via heat exchangers, but such systems offer very limited freeze protection (if any), can easily heat water to temperatures unsafe for domestic use, and ICS systems suffer from severe heat loss on cold nights and cold, cloudy days.
+
+By contrast, indirect or closed-loop systems do not allow potable water through the panels, but rather pump a heat transfer fluid (either water or a water/antifreeze mix) through the panels. After collecting heat in the panels, the heat transfer fluid flows through a heat exchanger, transferring its heat to the potable hot water. When the panels are cooler than the storage tank or when the storage tank has already reached its maximum temperature, the controller in closed-loop systems will stop the circulation pumps. In a drainback system, the water drains into a storage tank contained in conditioned or semi-conditioned space, protected from freezing temperatures. With antifreeze systems, however, the pump must be run if the panel temperature gets too hot (to prevent degradation of the antifreeze) or too cold (to prevent the water/antifreeze mixture from freezing.)
+
+Flat panel collectors are typically used in closed-loop systems. Flat panels, which often resemble skylights, are the most durable type of collector, and they also have the best performance for systems designed for temperatures within 100 °F (38 °C) of ambient temperature. Flat panels are regularly used in both pure water and antifreeze systems.
+
+Another type of solar collector is the evacuated tube collector, which are intended for cold climates that do not experience severe hail and/or applications where high temperatures are needed (i.e., over 200 °F (93 °C)). Placed in a rack, evacuated tube collectors form a row of glass tubes, each containing absorption fins attached to a central heat-conducting rod (copper or condensation-driven). The evacuated description refers to the vacuum created in the glass tubes during the manufacturing process, which results in very low heat loss and lets evacuated tube systems achieve extreme temperatures, far in excess of water's boiling point.
+
+Fossil fuel fired water heaters
+Natural gas and propane storage water heaters operate identically with a gas or propane burner located at the bottom of the storage tank heating the water. Fuel oil fired storage water heaters are configured similarly by igniting a vaporizing mist of oil and air with an electric spark.[3]
+
+Emissions from fossil fuel fired water heaters are expelled using a variety of venting technologies. Atmospheric vented systems use room air as combustion air and exhaust air. The exhaust air is expelled through the exhaust flue by buoyancy forces resulting from the combustion. Power vent models operate similarly to atmospheric vent systems, but an exhaust fan is added to aid in the expulsion of combustion gases. Direct vent systems do not use room air for combustion; instead, buoyancy forces air from the outside through the water heater combustion system and finally exhausts the combustion gases to the outside. Powered direct-vent systems include an exhaust fan to aid in the expulsion of combustion gasses.[4]
+
+Wood
+As fossil fuels, burning wood causes greenhouse effect gases. However, wood is a renewable source of energy. A sustainable heat system would be to use solar heat in the summer, and the minimum of wood in the winter, thanks to maximum insulation.
+
+Electric water heaters
+Most electric water heaters use electric resistance elements to heat the water in the storage tank using two electric resistance elements, which are located at the bottom and top of the storage tank. Each element is controlled by an independent thermostat. In two element tanks the lower element provides recovery from standby losses and the upper element provides heating during periods of large hot water use. Some resistance water heaters contain only a lower element.[3]
+
+Electrical water heaters that store hot water can be a good match for an intelligent electrical power distribution system, heating when the electrical grid load is low and turning off when the load is high. This could be implemented by allowing the power supplier to send loadshedding requests, or by the use of real-time energy pricing. See Economy 7.
+
+Heat pump water heaters use an air source heat pump to transfer thermal energy from the air around the unit into the storage tank. Electric resistance element(s) are typically included to provide backup heating if the heat pump cannot provide sufficient heating capacity.[5][6]
+
+Thermal and electrical systems
+Most of the energy used in making electricity is lost as heat.
+
+It is possible to send electricity more than 200 km, but moving thermal energy becomes impractical beyond about 1 km. The whole thermal system can be thought of as a way to transport heat over long distances.
+
+Corrosion and its prevention
+The storage units of water heaters are usually made out of steel with a lining of glass inside them. As the contact of water and steel can easily corrode the tank, the glass is used to prevent (or at least delay) this corrosion from happening.
+
+As another technique to prevent corrosion, the tanks also come with magnesium anode rods inside them. These rods undergo corrosion before the steel body of the tanker does and thus reduce the corrosion of the steel. Once the anode rod is completely corroded, the steel wall will begin to corrode much more rapidly.
+
+Given the constant contact of water, corrosion eventually happens anyway. If corrosion of the tank creates holes in it, there are some temporary fixes to try to patch it, but the long-term solution is to replace the tank altogether.
+
+The pH level of the water stored will influence how fast the rods get corroded. Lower pH implies faster corrosion and a shorter lifetime of the rod. Hence it is ideal to first know the pH level of the water stored and also to keep watch on the anode rod and replace it from time to time for the proper health of the tanker.
+
+See also
+Tankless water heating

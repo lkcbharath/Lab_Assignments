@@ -1,0 +1,42 @@
+Dispositio is the system used for the organization of arguments in Western classical rhetoric. The word is Latin, and can be translated as "organization" or "arrangement".
+
+It is the second of five canons of classical rhetoric (the first being inventio, and the remaining being elocutio, memoria, and pronuntiatio) that concern the crafting and delivery of speeches and writing.
+
+The first part of any rhetorical exercise was to discover the proper arguments to use, which was done under the formalized methods of inventio. The next problem facing the orator or writer was to select various arguments and organize them into an effective discourse.
+
+Aristotle
+Aristotle defined two essential parts of a discourse: the statement of the case and the proof of the case. For example, in a legal argument, a prosecutor must first declare the charges against the defendant and provide the relevant facts; then he must present the evidence that proves guilt. Aristotle allowed that in practice most discourse also requires an introduction and a conclusion.
+
+Latin rhetoric
+Later writers on rhetoric, such as Cicero and Quintilian refined this organizational scheme even further, so that there were eventually six parts:
+
+the introduction, or exordium. The term exordium is Latin for "the beginning". In the exordium, the speaker gives their main argument, and all the relevant information.
+the statement of the case, or narratio. Quintilian explained that in the narratio "we shall for instance represent a person accused of theft as covetous, accused of adultery as lustful, accused of homicide as rash, or attribute the opposite qualities to these persons if we are defending them; further we must do the same with place, time and the like".
+the outline of the major points in the argument, or divisio (sometimes known as partitio). It has two functions: to name the issues in dispute and to list the arguments to be used in the order they will appear.
+the proof of the case, or confirmatio. It confirms or validates the material given in the narratio and partitio.
+the refutation of possible opposing arguments, or confutatio. If the rhetor anticipates that certain people in his audience may disagree with his speech, he must be prepared to refute the argument that could possibly be presented in opposition to his original speech.
+the conclusion, or peroratio. Cicero taught that a rhetor can do three things in this step: sum up his arguments, cast anyone who disagrees with him in a negative light, and arouse sympathy for himself, his clients, or his case.
+While this structure might appear to be highly rigid (and certainly some writers[who?] on the subject were overly pedantic), it was in practice a flexible model. Cicero and Quintilian, for example, encouraged writers to rearrange the structure when it strengthened their case: for instance, if the opposing arguments were known to be powerful, it might be better to place the refutation before the proof.
+
+Within each major part, there were additional tactics that might be employed. For instance, a prosecutor might sum up his case with forceful repetition of his main points using a technique known as accumulatio. The defense attorney in the same case might use a different approach in his summation.
+
+Finally, dispositio was also seen as an iterative process, particularly in conjunction with inventio. The very process of organizing arguments might lead to the need to discover and research new ones. An orator would refine his arguments and their organization until they were properly arranged. He would then proceed to those areas that we generally associate with rhetoric today—the development of the style and delivery of the arguments.
+
+Exordium
+The exordium (/ɛɡˈzɔːrdiəm/; meaning "beginning" in Latin; from exordiri, meaning "to begin") was the introductory portion of an oration. The term is Latin and the Greek equivalent was called the proem or prooimion.
+
+In the exordium, the orator lays out the purpose of the discourse. In doing this, they need to consider several things:
+
+What kind of cause is he presenting? For instance, is it an honorable cause (defense of a hero) or a dishonorable one (defense of a murderer)?
+Should a direct opening be favoured, or should the opening be more subtle and indirect?
+In what manner ought the speaker to proceed (e.g., light-heartedly or seriously)?
+The speaker should introduce their own character or credentials, so as to make the audience predisposed to believing their arguments.
+If required, or possible, the speaker might also call into question the character or credentials of his opponent.
+Lastly, the speaker must avoid certain faults in the introduction. For example, this excerpt from the Rhetorica ad Herennium lists several faults:
+"In the Introduction of a cause we must make sure that our style is temperate and that the words are in current use, so that the discourse seems unprepared. An Introduction is faulty if it can be applied as well to a number of causes; that is called a banal Introduction. Again, an Introduction which the adversary can use no less well is faulty, and that is called a common Introduction. That Introduction, again, is faulty which the opponent can turn to his own use against you. And again that is faulty which has been composed in too laboured a style, or is too long; and that which does not appear to have grown out of the cause itself in such a way to have an intimate connection with the Statement of Facts; and, finally, that which fails to make the hearer well disposed or receptive or attentive." (Rhetorica ad Herennium, I. vii, 11, trans. Harry Caplan, Loeb Classical Library, 1954.)
+In short, the exordium was the portion of the discourse in which the orator would prepare the audience to hear his arguments in a favorable frame of mind. "An exordium can serve different kinds of functions in the differing species of rhetoric, but in all of them some of the major themes of the coming discourse will be announced in advance".[1]
+
+Peroratio
+The peroratio ("peroration"), as the final part of a speech, had two main purposes in classical rhetoric: to remind the audience of the main points of the speech (recapitulatio) and to influence their emotions (affectus). The role of the peroration was defined by Greek writers on rhetoric, who called it epilogos; but it is most often associated with Roman orators, who made frequent use of emotional appeals. A famous example was the speech of Marcus Antonius in defence of Aquillius, during which Antonius tore open the tunic of Aquillius to reveal his battle scars.[2]
+
+In the first century B.C. it was common for two or more speakers to appear on each side in major court cases. In such cases it was considered a mark of honour to be asked to deliver the peroration.[3]

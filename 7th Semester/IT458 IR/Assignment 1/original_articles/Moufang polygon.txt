@@ -1,0 +1,47 @@
+In mathematics, Moufang polygons are a generalization by Jacques Tits of the Moufang planes studied by Ruth Moufang, and are irreducible buildings of rank two that admit the action of root groups. In a book on the topic, Tits and Richard Weiss[1] classify them all. An earlier theorem, proved independently by Tits and Weiss,[2][3] showed that a Moufang polygon must be a generalized 3-gon, 4-gon, 6-gon, or 8-gon, so the purpose of the aforementioned book was to analyze these four cases.
+Definitions
+A generalized n-gon is a bipartite graph of diameter n and girth 2n.
+A graph is called thick if all vertices have valence at least 3.
+A root of a generalized n-gon is a path of length n.
+An apartment of a generalized n-gon is a cycle of length 2n.
+The root subgroup of a root is the subgroup of automorphisms of a graph that fix all vertices adjacent to one of the inner vertices of the root.
+A Moufang n-gon is a thick generalized n-gon (with n>2) such that the root subgroup of any root acts transitively on the apartments containing the root.
+Moufang 3-gons
+A Moufang 3-gon can be identified with the incidence graph of a Moufang projective plane. In this identification, the points and lines of the plane correspond to the vertices of the building. Real forms of Lie groups give rise to examples which are the three main types of Moufang 3-gons. There are four real division algebras: the real numbers, the complex numbers, the quaternions, and the octonions, of dimensions 1,2,4 and 8, respectively. The projective plane over such a division algebra then gives rise to a Moufang 3-gon.
+
+These projective planes correspond to the building attached to SL3(R), SL3(C), a real form of A5 and to a real form of E6, respectively.
+
+In the first diagram[clarification needed what diagram?] the circled nodes represent 1-spaces and 2-spaces in a three-dimensional vector space. In the second diagram[clarification needed what diagram?] the circled nodes represent 1-space and 2-spaces in a 3-dimensional vector space over the quaternions, which in turn represent certain 2-spaces and 4-spaces in a 6-dimensional complex vector space, as expressed by the circled nodes in the A5 diagram. The fourth case — a form of E6 — is exceptional, and its analogue for Moufang 4-gons is a major feature of Weiss’s book.
+
+Going from the real numbers to an arbitrary field, Moufang 3-gons can be divided into three cases as above. The split case in the first diagram exists over any field. The second case extends to all associative, non-commutative division algebras; over the reals these are limited to the algebra of quaternions, which has degree 2 (and dimension 4), but some fields admit central division algebras of other degrees. The third case involves ‘alternative’ division algebras (which satisfy a weakened form of the associative law), and a theorem of Richard Bruck and Erwin Kleinfeld[4] shows that these are Cayley-Dickson algebras.[5] This concludes the discussion of Moufang 3-gons.
+
+Moufang 4-gons
+Moufang 4-gons are also called Moufang quadrangles. The classification of Moufang 4-gons was the hardest of all, and when Tits and Weiss started to write it up, a hitherto unnoticed type came into being, arising from groups of type F4. They can be divided into three classes:
+
+(i) Those arising from classical groups.
+(ii) Those arising from “mixed groups” (in which there are two imperfect fields of characteristic 2, K and L, with K2 ⊂ L ⊂ K).
+(iii) Those arising from quadrangular algebras.
+There is some overlap here, in the sense that some classical groups arising from pseudo-quadratic spaces can be obtained from quadrangular algebras (which Weiss calls special), but there are other, non-special ones. The most important of these arise from algebraic groups of types E6, E7, and E8. They are k-forms of algebraic groups belonging to the following diagrams: E6 E7 E8. The E6 one exists over the real numbers, though the E7 and E8 ones do not. Weiss calls the quadrangular algebras in all these cases Weiss regular, but not special. There is a further type that he calls defective arising from groups of type F4. These are the most exotic of all—they involve purely inseparable field extensions in characteristic 2—and Weiss only discovered them during the joint work with Tits on the classification of Moufang 4-gons by investigating a strange lacuna that should not have existed but did.
+
+The classification of Moufang 4-gons by Tits and Weiss is related to their intriguing monograph in two ways. One is that the use of quadrangular algebras short-cuts some of the methods known before. The other is that the concept is an analogue to the octonion algebras, and quadratic Jordan division algebras of degree 3, that give rise to Moufang 3-gons and 6-gons.
+
+In fact all the exceptional Moufang planes, quadrangles, and hexagons that do not arise from "mixed groups" (of characteristic 2 for quadrangles or characteristic 3 for hexagons) come from octonions, quadrangular algebras, or Jordan algebras.
+
+Moufang 6-gons
+Moufang 6-gons are also called Moufang hexagons. A classification of Moufang 6-gons was stated by Tits,[6] though the details remained unproven until the joint work with Weiss on Moufang Polygons.
+
+Moufang 8-gons
+Moufang 8-gons are also called Moufang octagons. They were classified by Tits,[7] where he showed that they all arise from Ree groups of type ²F₄.
+
+Quadrangular algebras
+A potential use for quadrangular algebras is to analyze two open questions. One is the Kneser-Tits conjecture[8] that concerns the full group of linear transformations of a building (e.g. GLn) factored out by the subgroup generated by root groups (e.g. SLn).
+
+The conjecture is proved for all Moufang buildings except the 6-gons and 4-gons of type E8, in which case the group of linear transformations is conjectured to be equal to the subgroup generated by root groups. For the E8 hexagons this can be rephrased as a question on quadratic Jordan algebras, and for the E8 quadrangles it can now be rephrased in terms of quadrangular algebras.
+
+Another open question about the E8 quadrangle concerns fields that are complete with respect to a discrete valuation: is there, in such cases, an affine building that yields the quadrangle as its structure at infinity?
+
+See also
+Moufang loop
+Moufang plane
+Moufang–Lie algebra
+Generalized n-gon

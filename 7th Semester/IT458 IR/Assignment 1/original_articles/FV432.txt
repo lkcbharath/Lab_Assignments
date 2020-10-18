@@ -1,0 +1,78 @@
+The FV432 is the armoured personnel carrier variant of the British Army's FV430 series of armoured fighting vehicles. Since its introduction in the 1960s, it has been the most common variant, being used for transporting infantry on the battlefield. In the 1980s, almost 2,500 vehicles were in use, with around 500 now[when?] remaining in operation - mostly in supporting arms rather than front-line infantry service.
+
+Although the FV432 Series was originally to have been phased out of service in favour of then-newer vehicles, such as the Warrior and the CVR(T) series, 500 have been upgraded to extend their service into the next decade.[1]
+
+In light of the army's need for additional armoured vehicles in the Afghan and Iraqi theatres, the Ministry of Defence announced in August 2006 that an extra 70 vehicles would be upgraded by BAE Systems in addition to the 54 already ordered as part of their force protection initiative. The improvements take the form of an engine upgrade, a new steering unit and a new braking system, as well as improvement in armour protection to a level similar to that of the Warrior. In addition, plates lined with Kevlar have been added to the bottom hull. This is intended to provide better protection against improvised explosive devices. It is intended that these FV432s will free up the Warrior vehicles for provision of reserve firepower status and/or rotation out of theatre. The updated version is called the Bulldog.
+
+FV432s have been used to portray historical vehicles, and are often mocked up to resemble World War II or Cold War era military vehicles in film productions and TV series.
+
+History
+The FV432 was designed to be the armoured personnel carrier in the FV430 series. Production started in 1962 by GKN Sankey and ended in 1971, after constructing approximately 3,000 vehicles.[citation needed]
+
+The FV432 is of all-steel construction. The chassis is a conventional tracked design with the engine at the front and the driving position to the right. Directly behind the driver's position is the vehicle commander's hatch. There is a large round opening in the passenger compartment roof, which has a split/folding (concertina) hatch, and a (right hand) side-hinged door in the rear for loading and unloading. As in many designs of its era, there are no firing ports for the troops carried - British Army doctrine having been for troops to dismount from vehicles to fight, unlike Russian infantry fighting vehicles that largely incorporate ports. The passenger compartment has five seats on either side - these fold up to provide a flat cargo space.
+
+An NBC (nuclear, biological, and chemical weapons) system is fitted, normal ventilation provided by a fan mounted in the forward right hand side of the vehicle, air being drawn through a paper element filter (mounted externally on the right hand side of the hull), filtered air being distributed by a duct running around the perimeter of the interior at roof level, extending into the driver's compartment. Provision is made to add carbon filters in case of gas attack, and the system can accommodate heaters and/or air conditioning units. A roof-mounted relief valve allows a constant minimal pressure to be maintained and prevent ingress of foreign matter in the event of blast or alterations in external atmospheric pressure.
+
+Wading screens and a trim vane were fitted as standard and an extension provided to elevate the exhaust pipe. The basic vehicle, which could be readied for wading in approximately five minutes, has a water speed of about 6 km/h when converted for swimming and was propelled by its tracks.[2] Most of these vehicles have had their amphibious capability removed.[citation needed]
+
+FV432s in service with infantry battalions are equipped with a pintle-mounted L7 GPMG (if not fitted with the Peak Engineering turret). Vehicles with the Royal Artillery, Royal Engineers and Royal Signals were originally fitted with the L4A4 variant of the Bren light machine gun, but they now use the GPMG. When equipped with the GPMG, the vehicle carries 1,600 rounds of belted 7.62mm ammunition; when carrying the Bren LMG, the vehicle carried 1,400 rounds of 7.62mm ammunition (50 magazines, each holding 28 rounds). There are two three-barrel smoke dischargers at the front.[citation needed]
+
+The Australian Army evaluated two pre-production FV432s during 1962 and 1963, but decided to purchase M113 amoured personnel carriers instead. The trials undertaken in Queensland demonstrated that the M113's performance was superior to that of the FV432.[3]
+
+A number of surplus vehicles were sold to the Indian Army after being withdrawn from British service.
+
+Many FV432s are privately owned in the UK due to the relatively low price for which they can be bought.[citation needed]
+
+Variants
+The FV432 has been produced in three major variants, the Mark 1 (with a Mark 1/1 minor variant) with petrol engines, the Mark 2 with a Rolls-Royce K60 multi-fuel engine and the Mark 3 with a diesel engine. The Mark 2 minor variant, the 2/1, has its NBC pack flush with the hull side. An uparmoured variant, for use in Iraq and Afghanistan, of the Mark 3 was known as Bulldog. This name now appears to be extended to all Mark 3 versions of the FV432.[citation needed]
+
+The FV432 has proven to be flexible in use and can be converted from one role to another with reasonable ease using 'installation kits' (IK), or more permanently with minor modifications to the hull. Major or more significant modifications have usually led to a new FV43n number. In addition to the normal armoured personnel carrier role, it has been used as:
+
+a command vehicle, with seven crew, two mapboards and extra communications equipment (with an additional canvas "penthouse")
+an ambulance, with spots for up to four stretchers or two stretcher and five seated patients but would not carry any armament other than the smoke dischargers.
+a cargo carrier, for up to 3,600 kg
+a communications vehicle
+a recovery vehicle. Designated as the FV434, it includes a rear cutout to a "pickup-truck" box to carry a spare engine/other stores with tool store below, an internally mounted winch, and a 2.5-tonne lift arm.[2] Frequently equipped with the canvas "penthouse".[citation needed]
+FV432s used by combat infantry units have also been equipped with:[2]
+
+WOMBAT recoilless rifle early models carried this armament internally, using ramps and a hand winch to deploy and recover the weapon. Later models mounted it externally above the rear hatch. In this arrangement the weapon had limited-traverse (30° lateral, +7.5° −3° elevation), but it could also be demounted as in the earlier arrangement.
+84mm Carl Gustav recoilless rifle mounted on a bar across the top of the troop compartment.[2]
+81mm mortar on a turntable in the rear of the hull can be traversed through 360° firing through the roof hatch; 160 mortar bombs are carried; crew consists of a driver, commander and four men
+Peak Engineering turret with the L37A1 variant of the 7.62mm GPMG, replacing the roof hatch.
+30 mm RARDEN-gun equipped turret (taken from the Fox scout car; 13 converted). These were used by the Berlin Brigade (usually in the distinctive urban camouflage used there).[4][5] One of these, of the Royal Hampshires, was driven by their honorary colonel, Diana, Princess of Wales, on her visit to Berlin in 1985[6] These were later bought by the tank driving and paint-balling company Armourgeddon (who also converted more). These have been modified with a compressed air cylinder on the rear of the turret for the paintball gun.
+ZB 298 Elliott Automation Grounds Surveillance Radar
+MILAN anti-tank missiles (two missile teams (deployed away from the vehicle)
+FV432s used by the Royal Artillery have been equipped with:[2]
+
+a battery command post with FACE fire control computer
+a battery command post with BATES battlefield artillery target engagement system
+Cymbeline mortar-locating radar
+sound ranging equipment
+observation post vehicle with ZB 298 Elliott Automation Grounds Surveillance Radar
+FV432s used by the Royal Engineers have been equipped with:[2]
+
+a towed layer for L9 anti-tank Bar Mine
+a launcher for L10 Ranger Anti-Personnel Mine
+a towed Giant Viper mine-clearing system
+a Thales Group SWARM Remote Weapon System
+British Army designations
+FV431 Armoured load carrier – one prototype produced; the Alvis Stalwart 6×6 vehicle was selected instead for the load carrier role
+
+FV432 Armoured Personnel Carrier
+FV433 Field Artillery, Self-Propelled "Abbot" – 105 mm self-propelled gun built by Vickers
+FV434 "Carrier, Maintenance, Full Tracked" – REME Maintenance carrier with a crew of four and a hydraulically driven crane with a lifting capacity of 3,050 kg (3.00 long tons)
+FV435 Wavell - communications vehicle
+FV436 Command and control – some fitted with Green Archer counter-battery radar, later Cymbeline radar
+FV437 Pathfinder vehicle – based on an FV432 with integral buoyancy and other waterjets – prototype only
+FV438 Swingfire – guided missile launcher for Swingfire anti-tank missile
+FV439 Signals vehicle – many variants
+Bulldog
+Main article: FV430 series
+The need to upgrade the FV432 to extend its service life further led the MoD to sign an £85m contract with BAE Systems Land Systems to update over 1,000 FV 432s to Mark 3 standard. Major changes include a new diesel engine and braking system. Initially, only FV432 and 434 models were converted, but other variants are being considered. The first 500 of the batch were handed over to the British Army in December 2006.[1] For service in Iraq and Afghanistan, air-conditioning, enhanced reactive armour and IED jammers have been added. Initially, only these further enhanced versions were known by the name Bulldog; but the term now appears to be applied to all Mark 3 vehicles.[citation needed]
+
+See also
+M113 – similar US-built armoured personnel carrier
+MT-LB
+BTR-50
+List of FV series military vehicles
+MLVM

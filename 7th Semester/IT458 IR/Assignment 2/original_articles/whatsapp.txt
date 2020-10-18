@@ -1,0 +1,255 @@
+WhatsApp Messenger, or simply WhatsApp, is an American freeware, cross-platform messaging and Voice over IP (VoIP) service owned by Facebook, Inc.[46] It allows users to send text messages and voice messages,[47] make voice and video calls, and share images, documents, user locations, and other media.[48][49] WhatsApp's client application runs on mobile devices but is also accessible from desktop computers, as long as the user's mobile device remains connected to the Internet while they use the desktop app.[50] The service requires users to provide a standard cellular mobile number for registering with the service.[51] In January 2018, WhatsApp released a standalone business app targeted at small business owners, called WhatsApp Business, to allow companies to communicate with customers who use the standard WhatsApp client.[52][53]
+
+The client application was created by WhatsApp Inc. of Mountain View, California, which was acquired by Facebook in February 2014 for approximately US$19.3 billion.[54][55] It became the world's most popular messaging application by 2015,[56][57] and has over 2 billion users worldwide as of February 2020.[58] It has become the primary means of electronic communication in multiple countries and locations, including Latin America, the Indian subcontinent, and large parts of Europe and Africa.[56]
+
+History
+Further information: Timeline of WhatsApp
+2009–2014
+WhatsApp was founded in 2009 by Brian Acton and Jan Koum, former employees of Yahoo!. After leaving Yahoo! in September 2007, they took some time off in South America.[13] At one point, they applied for jobs at Facebook but were rejected.[13]
+
+In January 2009, after purchasing an iPhone and realizing the potential of the app industry on the App Store, Koum and Acton began visiting Koum's friend Alex Fishman in West San Jose to discuss a new type of messaging app that would "show statuses next to individual names of the people".[citation needed] They realized that to take the idea further, they would need an iPhone developer. Fishman visited RentACoder.com, found Russian developer Igor Solomennikov, and introduced him to Koum.
+
+Koum named the app WhatsApp to sound like "what's up". On February 24, 2009, he incorporated WhatsApp Inc. in California. However, when early versions of WhatsApp kept crashing, Koum considered giving up and looking for a new job. Acton encouraged him to wait for a "few more months".[59]
+
+In June 2009, Apple launched push notifications, allowing users to be pinged when they were not using an app. Koum changed WhatsApp so that when a user's status is changed, everyone in the user's network would be notified.[13] WhatsApp 2.0 was released with a messaging component and the number of active users suddenly increased to 250,000. Although Acton was working on another startup idea, he decided to join the company.[13] In October 2009, Acton persuaded five former friends at Yahoo! to invest $250,000 in seed funding, and Acton became a co-founder and was given a stake. He officially joined WhatsApp on November 1.[13] After months at beta stage, the application launched in November 2009, exclusively on the App Store for the iPhone. Koum then hired a friend in Los Angeles, Chris Peiffer, to develop a BlackBerry version, which arrived two months later.[13]
+
+To cover the primary cost of sending verification texts to users, WhatsApp was changed from a free service to a paid one. In December 2009, the ability to send photos was added to the iPhone version. By early 2011, WhatsApp was one of the top 20 apps at Apple's U.S. App Store.[13]
+
+In April 2011, Sequoia Capital invested about $8 million for more than 15% of the company, after months of negotiation with Sequoia partner Jim Goetz.[60][61][62]
+
+By February 2013, WhatsApp had about 200 million active users and 50 staff members. Sequoia invested another $50 million, and WhatsApp was valued at $1.5 billion.[13]
+
+In a December 2013 blog post, WhatsApp claimed that 400 million active users used the service each month.[63]
+
+Facebook subsidiary (2014–present)
+On February 19, 2014, months after a venture capital financing round at a $1.5 billion valuation,[64] Facebook, Inc. announced it was acquiring WhatsApp for US$19 billion, its largest acquisition to date.[55] At the time, it was the largest acquisition of a venture-backed company in history.[54] Sequoia Capital received an approximate 5000% return on its initial investment.[65] Facebook, which was advised by Allen & Co, paid $4 billion in cash, $12 billion in Facebook shares, and (advised by Morgan Stanley) an additional $3 billion in restricted stock units granted to WhatsApp's founders Koum and Acton.[66] Employee stock was scheduled to vest over four years subsequent to closing.[55] Days after the announcement, WhatsApp users experienced a loss of service, leading to anger across social media.[67]
+
+The acquisition caused a considerable number of users to try and/or move to other message services. Telegram claimed that it acquired 8 million new users;[68] and Line, 2 million.[69]
+
+At a keynote presentation at the Mobile World Congress in Barcelona in February 2014, Facebook CEO Mark Zuckerberg said that Facebook's acquisition of WhatsApp was closely related to the Internet.org vision.[70][71] A TechCrunch article said this about Zuckerberg's vision:
+
+The idea, he said, is to develop a group of basic internet services that would be free of charge to use – 'a 911 for the internet.' These could be a social networking service like Facebook, a messaging service, maybe search and other things like weather. Providing a bundle of these free of charge to users will work like a gateway drug of sorts – users who may be able to afford data services and phones these days just don't see the point of why they would pay for those data services. This would give them some context for why they are important, and that will lead them to paying for more services like this – or so the hope goes.[70]
+
+Just three days after announcing the Facebook purchase, Koum said they were working to introduce voice calls. He also said that new mobile phones would be sold in Germany with the WhatsApp brand and that their ultimate goal was to be on all smartphones.[72]
+
+In August 2014, WhatsApp was the most globally popular messaging app, with more than 600 million users.[73] By early January 2015, WhatsApp had 700 million monthly users and over 30 billion messages every day.[74] In April 2015, Forbes predicted that between 2012 and 2018, the telecommunications industry would lose $386 billion because of OTT services like WhatsApp and Skype.[75] That month, WhatsApp had over 800 million users.[76][77] By September 2015, it had grown to 900 million;[78] and by February 2016, one billion.[79]
+
+Voice calls between two accounts were added to the app in March and April 2015.[80]
+
+On November 30, 2015, the Android WhatsApp client made links to another message service, Telegram, unclickable and uncopyable.[81][82][83] Multiple sources confirmed that it was intentional, not a bug,[83] and that it had been implemented when the Android source code that recognized Telegram URLs had been identified.[83] (The word "telegram" appeared in WhatsApp's code.[83]) Some considered it an anti-competitive measure,[81][82][83] but WhatsApp offered no explanation.
+
+Recent (2016–present)
+On January 18, 2016, WhatsApp's co-founder Jan Koum announced that it would no longer charge users a $1 annual subscription fee, in an effort to remove a barrier faced by users without credit cards.[84][85] He also said that the app would not display any third-party ads, and that it would have new features such as the ability to communicate with businesses.[79][86]
+
+By June 2016, the company's blog reported more than 100 million voice calls per day were being placed on WhatsApp.[87]
+
+On November 10, 2016, WhatsApp launched a beta version of two-step verification for Android users, which allowed them to use their email addresses for further protection.[88] Also in November 2016, Facebook ceased collecting WhatsApp data for advertising in Europe.[89] Later that month, video calls between two accounts were introduced.[90]
+
+On February 24, 2017, (WhatsApp's 8th birthday), WhatsApp launched a new Status feature similar to Snapchat and Facebook stories.[91]
+
+On May 18, 2017, it was reported that the European Commission would fine Facebook €110 million for "misleading" it during the 2014 takeover of WhatsApp. The Commission alleged that in 2014 when Facebook acquired the messaging app, it "falsely claimed it was technically impossible to automatically combine user information from Facebook and WhatsApp". However, in the summer of 2016, WhatsApp had begun sharing user information with its parent company, allowing information such as phone numbers to be used for targeted Facebook advertisements. Facebook acknowledged the breach, but said the errors in their 2014 filings were "not intentional".[89]
+
+In September 2017, WhatsApp's co-founder Brian Acton left the company to start a nonprofit group,[92] later revealed as the Signal Foundation, which now develops the WhatsApp competitor Signal.[93] WhatsApp also announced a forthcoming business platform to enable companies to provide customer service at scale,[94] and airlines KLM and Aeroméxico announced their participation in the testing.[95][96][97][98] Both airlines previously launched customer services on the Facebook Messenger platform.
+
+In January 2018, WhatsApp launched WhatsApp Business for small business use.[99]
+
+In April 2018, WhatsApp co-founder and CEO Jan Koum announced he would be leaving the company.[100] Facebook later announced that Koum's replacement would be Chris Daniels.[11]
+
+Later in September 2018, WhatsApp introduced group audio and video call features.[101][102] In October, the "Swipe to Reply" option was added to the Android beta version, 16 months after it was introduced for iOS.[103]
+
+On October 25, 2018, WhatsApp announced support for Stickers. But unlike other platforms WhatsApp requires third party apps to add Stickers to WhatsApp.[104]
+
+On November 25, 2019, WhatsApp announced an investment of $250,000 into the startup ecosystem through a partnership with Startup India, where it will provide 500 startups with Facebook ad credits of $500 each.[105]
+
+In December 2019, WhatsApp announced that a new update would lock out any Apple users who haven't updated to iOS 9 or higher and Samsung, Huawei, Sony and Google users who haven't updated to version 4.0 by February 1, 2020. The company also reported that Windows Phone operating systems would no longer be supported after December 31, 2019.[106] WhatsApp was announced to be the 3rd most downloaded mobile app of the decade from 2010 to 2019.[107]
+
+In early 2020, WhatsApp launched its "dark mode" for iPhone and Android devices – a new design consisting of a darker palette.[108] In March, WhatsApp partnered with the World Health Organization and UNICEF to provide messaging hotlines for people to get information on the 2019-2020 coronavirus pandemic.[109] That same month, WhatsApp began testing a feature to help users find out more information and context about information they receive.[110]
+
+2019 Lawsuit
+Main article: WhatsApp snooping scandal
+In May 2019, WhatsApp was attacked by hackers who installed spyware on a number of victims' smartphones.[111] The hack, allegedly developed by Israeli surveillance technology firm NSO Group, injected malware onto WhatsApp users’ phones via a remote-exploit bug in the app's Voice over IP calling functions. A Wired report noted the attack was able to inject malware via calls to the targeted phone, even if the user did not answer the call.[112] On October 29, WhatsApp filed a lawsuit against NSO Group in a San Francisco court, claiming that the alleged cyberattack violated US laws including the Computer Fraud and Abuse Act (CFAA).[113] According to WhatsApp, the exploit "targeted at least 100 human-rights defenders, journalists and other members of civil society" among a total of 1,400 users in 20 countries.[114][115][10]
+
+SMB and Enterprise platforms
+Until 2017, WhatsApp was for individual use between two smartphones. This enabled businesses to communicate with customers,[116] but not at scale (e.g. in a contact center environment). In September 2017 WhatsApp confirmed rumors[117][118] that they were building and testing two new tools for businesses:[98]
+
+A free WhatsApp Business app for small companies[119]
+An Enterprise Solution for bigger companies with global customer bases, such as airlines, e-commerce retailers and banks, who would be able to offer customer service and conversational commerce (e-commerce) via WhatsApp chat, using live agents or chatbots. (As far back as 2015, companies like Meteordesk[120] had provided unofficial solutions for enterprises to attend to large numbers of users, but these were shut down by WhatsApp.)
+Platform support
+After months at beta stage, the official first release of WhatsApp launched in November 2009, exclusively at the App Store for iPhone. In January 2010, support for BlackBerry smartphones was added; and subsequently for Symbian OS in May 2010, and for Android OS in August 2010. In August 2011, a beta for Nokia's non-smartphone OS Series 40 was added. A month later, support for Windows Phone was added, followed by BlackBerry 10 in March 2013.[121] In April 2015, support for Samsung's Tizen OS was added.[122] Unofficial ports, Wazapp and Yappari, have also been released for the MeeGo-based Nokia N9[123] and the Maemo-based Nokia N900, respectively.[124]
+
+The oldest device capable of running WhatsApp was the Symbian-based Nokia N95 released in March 2007. (As of June 2017, WhatsApp is no longer compatible with it.)
+
+In August 2014, WhatsApp released an Android update, adding support for Android Wear smartwatches.[125]
+
+In 2014, an unofficial open source plug-in, whatsapp-purple, was released for Pidgin, implementing its XMPP and making it possible to use WhatsApp on PCs running Microsoft Windows and Linux.[126][third-party source needed] WhatsApp responded by blocking phone numbers that used the plug-in.[citation needed]
+
+On January 21, 2015, WhatsApp launched WhatsApp Web, a browser-based web client that could be used by syncing with a mobile device's connection.[127]
+
+On February 26, 2016, WhatsApp announced they would cease support for BlackBerry (including BlackBerry 10), Series 40, and Symbian S60, as well as older versions of Android (2.2), Windows Phone (7.0), and iOS (6), by the end of 2016.[128] BlackBerry, Series 40, and Symbian support was then extended to June 30, 2017.[129] In June 2017, support for BlackBerry and Series 40 was once again extended until the end of 2017, while Symbian was dropped.[130]
+
+Support for BlackBerry and older (version 8.0) Windows Phone and older (version 6) iOS devices was dropped on January 1, 2018, but was extended to December 2018 for Nokia Series 40.[131] In July 2018, it was announced that WhatsApp would soon be available for KaiOS feature phones.[132][133]
+
+In October 2019, WhatsApp officially launched a new fingerprint app-locking feature for Android users.[citation needed]
+
+WhatsApp Web
+WhatsApp was officially made available for PCs through a web client, under the name WhatsApp Web[134], in late January 2015 through an announcement made by Koum on his Facebook page: "Our web client is simply an extension of your phone: the web browser mirrors conversations and messages from your mobile device—this means all of your messages still live on your phone". The WhatsApp user's handset must still be connected to the Internet for the browser application to function. All major desktop browsers are supported except for Internet Explorer. WhatsApp Web's user interface is based on the default Android one and can be accessed through web.whatsapp.com. Access is granted after the users scan their personal QR code through their mobile WhatsApp application.
+
+As of January 21, 2015, the desktop version was only available to Android, BlackBerry, and Windows Phone users. Later on, it also added support for iOS, Nokia Series 40, and Nokia S60 (Symbian).[135][136]
+
+An unofficial derivative called WhatsAppTime has been developed, which is a standard Win32 application for PCs and supports notifications through the Windows notification area.[137]
+
+There are similar solutions for macOS, such as the open-source ChitChat.[138][139][140]
+
+Microsoft Windows and Mac
+On May 10, 2016, the messaging service was introduced for both Microsoft Windows and macOS operating systems. WhatsApp currently does not allow audio or video calling from desktop operating systems. Similar to the WhatsApp Web format, the app, which will be synced with a user's mobile device, is available for download on the website. It supports OS versions of Windows 8 and OS X 10.10 and higher.[141][142][143]
+
+Apple iPad
+A story circulated in 2019 that iPad support was coming.[144]
+
+However, as of March 2020, WhatsApp does not run on the Apple iPad. From the WhatsApp iOS page (accessed March 2020): "WhatsApp is a telephony app, so iPod and iPad are not supported devices."[145]
+
+iPad users searching for WhatsApp are shown numerous third-party clients. Several top results have names and logos resembling WhatsApp itself, and some users do not realize they are using a third-party client. Unfortunately, using third-party clients runs the risk to the user of their phone number being permanently banned.[146]
+
+Technical
+WhatsApp uses a customized version of the open standard Extensible Messaging and Presence Protocol (XMPP).[147] Upon installation, it creates a user account using one's phone number as the username (Jabber ID: [phone number]@s.whatsapp.net).
+
+WhatsApp software automatically compares all the phone numbers from the device's address book with its central database of WhatsApp users to automatically add contacts to the user's WhatsApp contact list. Previously the Android and Nokia Series 40 versions used an MD5-hashed, reversed-version of the phone's IMEI as password,[148] while the iOS version used the phone's Wi-Fi MAC address instead of IMEI.[149][150] A 2012 update now generates a random password on the server side.[151]
+
+Some Dual SIM devices may not be compatible with WhatsApp, though there are some workarounds for this.[152]
+
+In February 2015, WhatsApp introduced a voice calling feature; this helped WhatsApp to attract a completely different segment of the user population.[153][154] WhatsApp's voice codec is Opus,[155][156][157] which uses the modified discrete cosine transform (MDCT) and linear predictive coding (LPC) audio compression algorithms.[158] WhatsApp uses Opus at 8–16 kHz sampling rates.[155][157] On November 14, 2016, Whatsapp added a video calling feature for users across Android, iPhone, and Windows Phone devices.[159][160]
+
+In November 2017, Whatsapp released a new feature that would let its users delete messages sent by mistake within a time frame of 7 minutes.[161]
+
+Multimedia messages are sent by uploading the image, audio or video to be sent to an HTTP server and then sending a link to the content along with its Base64 encoded thumbnail (if applicable).[162]
+
+WhatsApp follows a "store and forward" mechanism for exchanging messages between two users. When a user sends a message, it first travels to the WhatsApp server where it is stored. Then the server repeatedly requests the receiver to acknowledge receipt of the message. As soon as the message is acknowledged, the server drops the message; it is no longer available in the database of the server. The WhatsApp server keeps the message only for 30 days in its database when it is not delivered (when the receiver is not active on WhatsApp for 30 days).[163][self-published source?]
+
+End-to-end encryption
+On November 18, 2014, Open Whisper Systems announced a partnership with WhatsApp to provide end-to-end encryption by incorporating the encryption protocol used in Signal into each WhatsApp client platform.[164] Open Whisper Systems said that they had already incorporated the protocol into the latest WhatsApp client for Android, and that support for other clients, group/media messages, and key verification would be coming soon after.[165] WhatsApp confirmed the partnership to reporters, but there was no announcement or documentation about the encryption feature on the official website, and further requests for comment were declined.[166] In April 2015, German magazine Heise Security used ARP spoofing to confirm that the protocol had been implemented for Android-to-Android messages, and that WhatsApp messages from or to iPhones running iOS were still not end-to-end encrypted.[167] They expressed the concern that regular WhatsApp users still could not tell the difference between end-to-end encrypted messages and regular messages.[167]
+
+On April 5, 2016, WhatsApp and Open Whisper Systems announced that they had finished adding end-to-end encryption to "every form of communication" on WhatsApp, and that users could now verify each other's keys.[40][168] Users were also given the option to enable a trust on first use mechanism in order to be notified if a correspondent's key changes.[169] According to a white paper that was released along with the announcement, WhatsApp messages are encrypted with the Signal Protocol.[170] WhatsApp calls are encrypted with SRTP, and all client-server communications are "layered within a separate encrypted channel".[170] The Signal Protocol library used by WhatsApp is open-source and published under the GPLv3 license.[170][171]
+
+Cade Metz, writing in Wired, said, "WhatsApp, more than any company before it, has taken encryption to the masses."[46]
+
+WhatsApp Payments
+WhatsApp Payments is a peer-to-peer money transfer feature that is currently only available in India. WhatsApp has received permission from the National Payments Corporation of India (NPCI) to enter into partnership with multiple banks in July 2017[172] to allow users to make in-app payments and money transfers using the Unified Payments Interface (UPI).[173] UPI enables account-to-account transfers from a mobile app without having any details of the beneficiary's bank.[174] This feature is being pilot tested with over a million users since April 2019, however there has not been any update on the final roll out.[175]
+
+WhatsApp Cryptocurrency
+See also: Libra (cryptocurrency)
+On February 28, 2019, The New York Times reported that Facebook was “hoping to succeed where Bitcoin failed” by developing an in-house cryptocurrency that would be incorporated into WhatsApp. The project reportedly involves over 50 engineers under the direction of former PayPal president David Marcus. This 'Facebook coin' will reportedly be a stablecoin pegged to the value of a basket of different foreign currencies.[176]
+
+Click to chat
+You can directly start a WhatsApp converstation without having the phone number in your address book by opening a special link containing the phone number.[177]
+
+Reception and criticism
+Hoaxes and fake news
+Mob murders in India
+In July 2018, WhatsApp encouraged people to report fraudulent or inciting messages after lynch mobs in India murdered innocent people because of malicious WhatsApp messages falsely accusing the victims of intending to abduct children.[178]
+
+2018 elections in Brazil
+In an investigation on the use of social media in politics, it was found that WhatsApp was being abused for the spread of fake news in the 2018 presidential elections in Brazil.[179] Furthermore, it has been reported that US$3 million has been spent in illegal off-the-books contributions related to this practice.[180]
+
+Researchers and journalists have called on WhatsApp parent company, Facebook, to adopt measures similar to those adopted in India and restrict the spread of hoaxes and fake news.[179]
+
+Security and privacy
+Main article: Reception and criticism of WhatsApp security and privacy features
+WhatsApp was initially criticized for its lack of encryption, sending information as plaintext.[181] Encryption was first added in May 2012.[182][183][184]
+
+In 2016, WhatsApp was widely praised for the addition of end-to-end encryption and earned a 6 out of 7 points on the Electronic Frontier Foundation's "Secure Messaging Scorecard".[185] WhatsApp was criticized by security researchers and the Electronic Frontier Foundation for using backups that are not covered by end-to-end encryption and allow messages to be accessed by third-parties.[186][187]
+
+In May 2019, a security vulnerability in WhatsApp was found and fixed that allowed a remote person to install spyware by making a call which did not need to be answered.[188][189]
+
+In September 2019, WhatsApp was criticized for its implementation of a 'delete for everyone' feature. iOS users can elect to save media to their camera roll automatically. When a user deletes media for everyone, WhatsApp does not delete images saved in the iOS camera roll and so those users are able to keep the images. WhatsApp released a statement saying that "the feature is working properly," and that images stored in the camera roll cannot be deleted due to Apple's security layers.[190]
+
+In November 2019, WhatsApp released a new privacy feature that let users decide who adds them to the group.[191]
+
+On December 17, 2019, WhatsApp fixed a security flaw that allowed cyber attackers to repeatedly crash the messaging application for all members of group chat, which could only be fixed by forcing the complete uninstall and reinstall of the app.[192] The bug was discovered by Check Point in August 2019 and reported to WhatsApp. It was fixed in version 2.19.246 onwards.[193][194]
+
+For security purposes, since February 1, 2020, WhatsApp has been made unavailable on smartphones using legacy operating systems like Android 2.3.7 or older and iPhone iOS 8 or older that are no longer updated by their providers.[195]
+
+In April 2020, the NSO Group held its governmental clients accountable for the allegation of human rights abuses by WhatsApp. In its revelation via documents received from court, the group said that the mobile application periled to disregard its clients’ “national security and foreign policy concerns”. However, the company did not reveal names of the end users, which according to a research by Citizen Lab include, Saudi Arabia, Bahrain, Kazakhstan, Morocco, Mexico and the United Arab Emirates.[196]
+
+NHS
+
+In 2018, it was reported that around 500,000 National Health Service (NHS) staff used WhatsApp and other instant messaging systems at work and around 29,000 had faced disciplinary action for doing so. Higher usage was reported by frontline clinical staff to keep up with care needs, even though NHS trust policies do not permit their use.[197]
+
+Mods and fake versions
+
+In March 2019, WhatsApp released a guide for users that had installed unofficial modified versions of WhatsApp and warned against data loss in case users persisted in using the same as it considered banning such users.[198]
+
+NSO Group
+
+In October 2019, WhatsApp launched an unprecedented lawsuit against the Israeli surveillance firm NSO Group, accusing that it was behind the highly sophisticated cyber attacks on over 100 human rights activists, journalists, lawyers, and academics. WhatsApp also claimed that the firm violated American law in an “unmistakable pattern of abuse”.[199] On July 16, 2020, a US federal judge ruled that WhatsApp and its parent company Facebook’s lawsuit against NSO group can proceed. The judge in his verdict invalidated most of the arguments made by the NSO group, which itched for a motion to dismiss the allegations in April.[200]
+
+Jeff Bezos Phone Hack
+
+In January 2020, a digital forensic analysis revealed that the Amazon founder Jeff Bezos received an encrypted message on WhatsApp from the official account of Saudi Arabia’s Crown Prince Mohammed bin Salman. The message reportedly contained a malicious file, the receipt of which resulted in Bezos’ phone being hacked. The United Nations’ special rapporteur David Kaye and Agnes Callamard later confirmed that Jeff Bezos’ phone was hacked through WhatsApp, as he was one of the targets of Saudi's hit list of individuals close to The Washington Post journalist Jamal Khashoggi.[201]
+
+Terrorism
+In December 2015, it was reported that Islamic State terrorists had been using WhatsApp to plot the November 2015 Paris attacks.[202] ISIS also uses WhatsApp to traffic sex slaves.[203]
+
+In March 2017, British Home Secretary Amber Rudd said encryption capabilities of messaging tools like WhatsApp are unacceptable, as news reported that Khalid Masood used the application several minutes before perpetrating the 2017 Westminster attack. Rudd publicly called for police and intelligence agencies to be given access to WhatsApp and other encrypted messaging services to prevent future terror attacks.[204]
+
+In April 2017, the perpetrator of the Stockholm attack reportedly used WhatsApp to exchange messages with an ISIS supporter shortly before and after the 2017 Stockholm attack. The messages involved discussing how to make an explosive device and a confession of the perpetration after the attack.[205]
+
+In April 2017, nearly 300 Whatsapp groups of strength about 250 members each were reportedly being used to mobilize stone-pelters in Jammu and Kashmir to disrupt security forces' operations at encounter sites. According to police, 90% of these groups were closed down after counselling of admins of these groups. [206] Further, after a 6 months probe which involved infiltration of 79 of such Whatsapp groups, the National Investigation Agency reported that about of 6386 members and admins of these groups, about 1000 were residents of Pakistan and gulf nations. Further, for their help in negating anti-terror operations, the Indian stone pelters were getting funded through barter trade from Pakistan and other indirect means. [207]
+
+Scams and malware
+It has been asserted that WhatsApp is plagued by scams that invite hackers to spread malicious viruses or malware.[208][209] In May 2016, some WhatsApp users were reported to have been tricked into downloading a third-party application called WhatsApp Gold, which was part of a scam that infected the users' phones with malware.[210] A message that promises to allow access to their WhatsApp friends' conversations, or their contact lists, has become the most popular hit against anyone who uses the application in Brazil. Since December 2016, more than 1.5 million people have clicked and lost money.[211]
+
+Another application called GB Whatsapp is considered malicious by cybersecurity firm Symantec because it usually performs some unauthorized operations on end-user devices.[212]
+
+Bans
+China
+WhatsApp is owned by Facebook, whose main social media service has been blocked in China since 2009.[213] In September 2017, security researchers reported to The New York Times that the WhatsApp service had been completely blocked in China.[214][215]
+
+According to Time, Sarsenbek Akaruli, 45, a veterinarian and trader from Ili, Xinjiang, was arrested in Xinjiang on November 2, 2017. As of November 2019, he is still in a detention camp. According to his wife Gulnur Kosdaulet, Akaruli was put in the camp after police found the banned messaging app WhatsApp on his cell phone. Kosdaulet, a citizen of neighboring Kazakhstan, has traveled to Xinjiang on four occasions to search for her husband but could not get help from friends in the Communist Party of China. Kosdaulet said of her friends, "Nobody wanted to risk being recorded on security cameras talking to me in case they ended up in the camps themselves."[216]
+
+Iran
+On May 9, 2014, the government of Iran announced that it had proposed to block the access to WhatsApp service to Iranian residents. "The reason for this is the assumption of WhatsApp by the Facebook founder Mark Zuckerberg, who is an American Zionist," said Abdolsamad Khorramabadi, head of the country's Committee on Internet Crimes. Subsequently, Iranian president Hassan Rouhani issued an order to the Ministry of ICT to stop filtering WhatsApp.[217][218]
+
+Turkey
+Turkey temporarily banned WhatsApp in 2016, following the assassination of the Russian ambassador to Turkey.[219]
+
+Brazil
+On March 1, 2016, Diego Dzodan, Facebook's vice-president for Latin America was arrested in Brazil for not cooperating with an investigation in which WhatsApp conversations were requested.[220] On March 2, 2016, at dawn the next day, Dzodan was released because the Court of Appeal held that the arrest was disproportionate and unreasonable.[221]
+
+On May 2, 2016, mobile providers in Brazil were ordered to block WhatsApp for 72 hours for the service's second failure to cooperate with criminal court orders.[222] Once again, the block was lifted following an appeal, after less than 24 hours.[223]
+
+Brazil’s Central Bank issued an order to Visa and Mastercard on June 23, 2020 to stop working with WhatsApp on its new electronic payment system. A statement from the Bank asserted the decision to block the Facebook-owned company’s latest offering was taken in order to “preserve an adequate competitive environment” in the mobile payments space and to ensure “functioning of a payment system that’s interchangeable, fast, secure, transparent, open and cheap.”[224][225]
+
+Sri Lanka
+WhatsApp, one of the most activated messaging apps along with other social media networks such as Facebook and Instagram were temporarily blocked, banned and had been unavailable for about two days (March 7–8, 2018) in certain parts of the country to eradicate communal violence, especially the anti-Muslim riots.[226] This was probably the first such instance where social media platforms had been banned in Sri Lanka. The ban was finally lifted on March 14, 2018 around midnight time in Sri Lanka.[227]
+
+Uganda
+The government of Uganda banned WhatsApp and Facebook, along with other social media platforms, to enforce a tax on the use of social media.[228] Users are to be charged 200 shilling per day to access these services according to the new law set by parliament.[229]
+
+United Arab Emirates (UAE)
+The United Arab Emirates banned WhatsApp video chat and VoIP call applications[230][231] in as early as 2013[232] due to what is often reported as an effort to protect the commercial interests of their home grown nationally owned telecom providers (du and Etisalat).[232] Their app ToTok has received press suggesting it is able to spy on users.[231][233]
+
+User statistics
+WhatsApp handled ten billion messages per day in August 2012,[234] growing from two billion in April 2012,[235] and one billion the previous October.[236] On June 13, 2013, WhatsApp announced that they had reached their new daily record by processing 27 billion messages.[237] According to the Financial Times, WhatsApp "has done to SMS on mobile phones what Skype did to international calling on landlines".[238]
+
+By April 22, 2014, WhatsApp had over 500 million monthly active users, 700 million photos and 100 million videos were being shared daily, and the messaging system was handling more than 10 billion messages each day.[239][240]
+
+On August 24, 2014, Koum announced on his Twitter account that WhatsApp had over 600 million active users worldwide. At that point WhatsApp was adding about 25 million new users every month, or 833,000 active users per day.[73][241]
+
+In May 2017, it was reported that WhatsApp users spend over 340 million minutes on video calls each day on the app. This is the equivalent of roughly 646 years of video calls per day.[242]
+
+By February 2017, WhatsApp had over 1.2 billion users globally,[243] reaching 1.5 billion monthly active users by the end of 2017.[244]
+
+In January 2020, WhatsApp registers over 5 billion installs on Google Play Store making it only the second non-Google app to achieve this milestone.[245]
+
+As of February 2020, WhatsApp had over 2 billion users globally.[246][247]
+
+Specific markets
+India is by far WhatsApp's largest market in terms of total number of users. In May 2014, WhatsApp crossed 50 million monthly active users in India, which is also its largest country by the number of monthly active users,[248] then 70 million in October 2014, making users in India 10% of WhatsApp's total user base.[249] In February 2017, WhatsApp reached 200 million monthly active users in India.[250]
+
+Israel is one of WhatsApp's strongest markets in terms of ubiquitous usage. According to Globes, already by 2013 the application was installed on 92% of all smartphones, with 86% of users reporting daily use.[251] WhatsApp's group chat feature is reportedly used by many Israeli families to stay in contact with each other.[252]
+
+Competition
+WhatsApp competes with a number of messaging services. They include services like iMessage (estimated 1.3 billion active users[253]), WeChat (1.2 billion active users[254][255]), Telegram (400 million users[256]), Viber (260 million active users[257]), and LINE (217 million active users[258]). Telegram in particular was reported to get registration spikes during WhatsApp outages and controversies.[259][260][261]
+
+WhatsApp has increasingly drawn its innovation from competing services,[262] such as a Telegram-inspired web version[263] and features for groups.[264] In 2016, WhatsApp was accused of copying features from a then-unreleased version of iMessage.[265]
+

@@ -1,0 +1,78 @@
+Biogenic silica (bSi), also referred to as opal, biogenic opal, or amorphous opaline silica, forms one of the most widespread biogenic minerals. For example, microscopic particles of silica called phytoliths can be found in grasses and other plants. Silica is an amorphous metal oxide formed by complex inorganic polymerization processes. This is opposed to the other major biogenic minerals, comprising carbonate and phosphate, which occur in nature as crystalline iono-covalent solids (e.g. salts) whose precipitation is dictated by solubility equilibria.[1] Chemically, bSi is hydrated silica (SiO2·nH2O), which is essential to many plants and animals.
+
+Silica in marine environments
+Silicate, or silicic acid (H4SiO4), is an important nutrient in the ocean. Unlike the other major nutrients such as phosphate, nitrate, or ammonium, which are needed by almost all marine plankton, silicate is an essential chemical requirement for very specific biota, including diatoms, radiolaria, silicoflagellates, and siliceous sponges. These organisms extract dissolved silicate from open ocean surface waters for the buildup of their particulate silica (SiO2), or opaline, skeletal structures (i.e. the biota's hard parts).[2][3] Some of the most common siliceous structures observed at the cell surface of silica-secreting organisms include: spicules, scales, solid plates, granules, frustules, and other elaborate geometric forms, depending on the species considered.[4]
+
+Five major sources of dissolved silica to the marine environment can be distinguished:[3]
+
+Riverine influx of dissolved silica to the oceans: 4.2 ± 0.8 × 1014 g SiO2 yr−1
+Submarine volcanism and associated hydrothermal emanations: 1.9 ± 1.0 × 1014 g SiO2 yr−1
+Glacial weathering: 2 × 1012 g SiO2 yr−1
+Low temperature submarine weathering of oceanic basalts
+Some silica may also escape from silica-enriched pore waters of pelagic sediments on the seafloor
+Once the organism has perished, part of the siliceous skeletal material dissolves, as it settles through the water column, enriching the deep waters with dissolved silica.[3] Some of the siliceous scales can also be preserved over time as microfossils in deep-sea sediments, providing a window into modern and ancient plankton/protists communities.[4] This biologic process has operated, since at least early Paleozoic time, to regulate the balance of silica in the ocean: Radiolarians (Cambrian/Ordovician-Holocene), diatoms (Cretaceous-Holocene), and silicoflagellates (Cretaceous-Holocene) form the ocean's main contributors to the global silica biogenic cycle throughout geologic time. Diatoms account for 43% of the ocean primary production, and are responsible for the bulk of silica extraction from ocean waters in the modern ocean, and during much of the past fifty million years. In contrast, oceans of Jurassic and older ages, were characterized by radiolarians as major silica-utilizing phyla.[2] Nowadays, radiolarians are the second (after diatoms) major producers of suspended amorphous silica in ocean waters. Their distribution ranges from the Arctic to the Antarctic, being most abundant in the equatorial zone. In equatorial Pacific waters, for example, about 16,000 specimens per cubic meter can be observed.[4]
+
+Silicate cycling gained increasingly in scientific attention the past decade because of following reasons. Firstly, the modern marine silica cycle is widely believed to be dominated by diatoms for the fixation and export of particulate matter (including organic carbon), from the euphotic zone to the deep ocean, via a process known as the biological pump. As a result, diatoms, and other silica-secreting organisms, play a crucial role in the global carbon cycle, and have the ability to affect atmospheric CO2 concentrations on a variety of time scales, by sequestering CO2 in the ocean. This connection between biogenic silica and organic carbon, together with the significantly higher preservation potential of biogenic siliceous compounds, compared to organic carbon, makes opal accumulation records very interesting for paleoceanography and paleoclimatology. Secondly, biogenic silica accumulation on the sea floor contains lot of information about where in the ocean export production has occurred on time scales ranging from hundreds to millions of years. For this reason, opal deposition records provide valuable information regarding large-scale oceanographic reorganizations in the geological past, as well as paleoproductivity. And last, the mean oceanic residence time for silicate is approximately 10,000–15,000 yr. This relative short residence time, makes oceanic silicate concentrations and fluxes sensitive to glacial/interglacial perturbations, and thus an excellent proxy for evaluating climate changes.[3][5]
+
+The remains of diatoms and other silica-utilizing organisms are found, as opal sediments within pelagic deep-sea deposits. Pelagic sediments, containing significant quantities of siliceous biogenic remains, are commonly referred to as siliceous ooze. Siliceous ooze are particularly abundant in the modern ocean at high latitudes in the northern and southern hemispheres. A striking feature of siliceous ooze distribution is a ca. 200 km wide belt stretching across the Southern Ocean. Some equatorial regions of upwelling, where nutrients are abundant and productivity is high, are also characterized by local siliceous ooze. Siliceous oozes are composed primarily of the remains of diatoms and radiolarians, but may also include other siliceous organisms, such as silicoflagellates and sponge spicules. Diatom ooze occurs mainly in high-latitude areas and along some continental margins, whereas radiolarian ooze are more characteristic of equatorial areas. Siliceous ooze are modified and transformed during burial into bedded cherts.[2]
+
+Diatoms in both fresh and salt water extract silica from the water to use as a component of their cell walls. Likewise, some holoplanktonic protozoa (Radiolaria), some sponges, and some plants (leaf phytoliths) use silicon as a structural material. Silicon is known to be required by chicks and rats for growth and skeletal development. Silicon is in human connective tissues, bones, teeth, skin, eyes, glands and organs.
+
+BSi is silica that originates from the production out of dissolved silica. BSi can either be accumulated "directly" in marine sediments (via export) or be transferred back into dissolved silica in the water column.
+
+Increasingly, isotope ratios of oxygen (O18:O16) and silicon (Si30:Si28) are analysed from BSi preserved in lake and marine sediments to derive records of past climate change and nutrient cycling (De La Rocha, 2006; Leng and Barker, 2006). This is a particularly valuable approach considering the role of diatoms in global carbon cycling. In addition, isotope analyses from BSi are useful for tracing past climate changes in regions such as in the Southern Ocean, where few biogenic carbonates are preserved.
+
+Marine biogenic silica budget
+Rivers and submarine hydrothermal emanations supply 6.1 × 1014 g SiO2 yr−1 to the marine environment. Approximately two-thirds of this silica input is stored in continental margin and deep-sea deposits. Siliceous deep-sea sediments located beneath the Antarctic Convergence (convergence zone) host some 25% of the silica supplied to the oceans (i.e. 1.6 × 1014 g SiO2 yr−1) and consequently form one of Earth's major silica sinks. The highest biogenic silica accumulation rates in this area are observed in the South Atlantic, with values as large as 53 cm.kyr−1 during the last 18,000 yr. Further, extensive biogenic silica accumulation has been recorded in the deep-sea sediments of the Bering Sea, Sea of Okhotsk, and Subarctic North Pacific. Total biogenic silica accumulation rates in these regions amounts nearly 0.6 × 1014 g SiO2 yr−1, which is equivalent to 10% of the dissolved silica input to the oceans. Continental margin upwelling areas, such as the Gulf of California, the Peru and Chile coast, are characteristic for some of the highest biogenic silica accumulation rates in the world. For example, biogenic silica accumulation rates of 69 g SiO2/cm2/kyr have been reported for the Gulf of California. Due to the laterally confined character of these rapid biogenic silica accumulation zones, upwelling areas solely account for approximately 5% of the dissolved silica supplied to the oceans. At last, extremely low biogenic silica accumulation rates have been observed in the extensive deep-sea deposits of the Atlantic, Indian and Pacific Oceans, rendering these oceans insignificant for the global marine silica budget.[6]
+
+Major silica sinks in the modern oceans
+Large-scale oceanic circulation has a direct impact on opal deposition. The Pacific (characterized by nutrient poor surface waters, and deep nutrient rich waters) and Atlantic Ocean circulations, are favoring the production/preservation of silica and carbonate, respectively. For instance, Si/N and Si/P ratios increase from the Atlantic to the Pacific and Southern Ocean, favoring opal versus carbonate producers. Consequently, the modern configuration of large-scale oceanic circulation resulted in the localization of major opal burial zones in the Equatorial Pacific, in the eastern boundary current upwelling systems, and by far the most important, the Southern Ocean.[5]
+
+Waters from the modern Pacific and Southern ocean, typically observe an increase in Si/N ratio at intermediate depth, which results in an increase in opal export (~ increase in opal production). In the Southern Ocean and North Pacific, this relationship between opal export and Si/N ratio switches from linear to exponential for Si/N ratios greater than 2. This gradual increase in the importance of silicate (Si) relative to nitrogen (N) has tremendous consequences for the ocean biological production. The change in nutrient ratios contributes to select diatoms as main producers, compared to other (e.g., calcifying) organisms. For example, microcosm experiments have demonstrated that diatoms are DSi supercompetitors and dominate other producers above 2 μM DSi. Consequently, opal vs. carbonate export will be favored, resulting in increasing opal production. The Southern Ocean and the North Pacific also display maximum biogenic silicate/Corganic flux ratios, and consist thus in an enrichment in biogenic silicate, compared to Corganic export flux. This combined increase in opal preservation and export makes the Southern Ocean the most important sink for DSi today.[5]
+
+In the modern Pacific and Southern Ocean, intermediate and deep waters are characterized by a higher content in DSi, compared to the Atlantic Ocean. This interbasin difference in DSi has the effect of increasing the preservation potential of opal in the Pacific and Southern Ocean compared to their Atlantic counterparts. Atlantic DSi depleted waters tends to produce relatively less silicified organisms, which has a strong influence on the preservation of their frustules. This mechanism in best illustrated when comparing the Peru and northwest Africa upwelling systems. The dissolution/production ratio is much higher in the Atlantic upwelling than in the Pacific upwelling. This is due to the fact that coastal upwelling source waters are much richer in DSi off Peru, than off NW Africa.[5]
+
+Cycling and accumulation of biogenic silica in the Southern Ocean sediments
+Southern Ocean sediments are a major sink for biogenic silica (50-75% of the oceanic total of 4.5 × 1014 g SiO2 yr−1; DeMaster, 1981), but only a minor sink for organic carbon (<1% of the oceanic 2 × 1014 g of organic C yr−1). These relatively high rates of biogenic silica accumulation in the Southern Ocean sediments (predominantly beneath the Polar Front) relative to organic carbon (60:1 on a weight basis) results from the preferential preservation of biogenic silica in the Antarctic water column. In contrast to what was previously thought, these high rates of biogenic silica accumulation are not the result from high rates of primary production. Biological production in the Southern Ocean is strongly limited due to the low levels of irradiance coupled with deep mixed layers and/or by limited amounts of micronutrients, such as iron.[7] This preferential preservation of biogenic silica relative to organic carbon is evident in the steadily increasing ratio of silica/organic C as function of depth in the water column. About thirty-five percent of the biogenic silica produced in the euphotic zone survives dissolution within the surface layer; whereas only 4% of the organic carbon escapes microbial degradation in these near-surface waters. Consequently, considerable decoupling of organic C and silica occurs during settling through the water column. The accumulation of biogenic silica in the seabed represents 12% of the surface production, whereas the seabed organic-carbon accumulation rate accounts for solely <0.5% of the surface production. As a result, polar sediments account for most of the ocean's biogenic silica accumulation, but only a small amount of the sedimentary organic-carbon flux.[7]
+
+
+BSi production
+
+Diatomaceous earth as viewed under bright field illumination on a light microscope. Diatomaceous earth is made up of diatom cell walls, an example of biogenic silica. Silica is synthesised in the diatom cell by the polymerisation of silicic acid. This image of diatomaceous earth particles in water is at a scale of 6.236 pixels/μm, the entire image covers a region of approximately 1.13 by 0.69 mm.
+
+The mean daily BSi rate strongly depends on the region:
+
+Coastal upwelling: 46 mmol.m−2.d−1
+Sub-arctic Pacific: 18 mmol.m−2.d−1
+Southern Ocean: 3–38 mmol.m−2.d−1
+mid-ocean gyres: 0.2–1.6 mmol.m−2.d−1
+Likewise, the integrated annual BSi production strongly depends on the region:
+
+Coastal upwelling: 3 × 1012 mol.yr−1
+Subarctic Pacific: 8 × 1012 mol.yr−1
+Southern Ocean: 17–37 × 1012 mol.yr−1
+mid-ocean gyres: 26 × 1012 mol.yr−1
+BSi production is controlled by:
+
+Dissolved silica availability, however, half saturation constant Kμ for silicon-limited growth is lower than Ks for silicon uptake.
+Light availability: There is no direct light requirement; silicon uptake at 2x depth of photosynthesis; silicon uptake continues at night but cells must be actively growing.
+Micronutrient availability.
+BSi dissolution
+BSi dissolution is controlled by:
+
+Thermodynamics of solubility: Temperature (0 to 25 °C - 50x increase).
+Sinking rate: Food web structure—grazers, fecal pellets, discarded feeding structures, Aggregation - rapid transport.
+Bacterial degradation of organic matrix (Bidle and Azam, 1999).
+BSi preservation
+BSi preservation is measured by:
+
+Sedimentation rates, mainly sediment traps (Honjo);
+Benthic remineralization rates ("recycling"), benthic flux chamber (Berelson);
+BSi concentration in sediments, chemical leaching in alkaline solution, site specific, need to differentiate lithogenic vs. biogenic Si, X-ray diffraction.
+BSi preservation is controlled by:
+
+Sedimentation rate;
+Porewater dissolved silica concentration: saturation at 1.100 μmol/L;
+Surface coatings: dissolved Al modifies solubility of deposited biogenic silica particles, dissolved silica can also precipitate with Al as clay or Al-Si coatings.
+Opaline silica on Mars
+In the Gusev crater of Mars, the Mars Exploration Rover Spirit inadvertently discovered opaline silica. One of its wheels had earlier become immobilized and thus was effectively trenching the Martian regolith as it dragged behind the traversing rover. Later analysis showed that the silica was evidence for hydrothermal conditions.[8]

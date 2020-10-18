@@ -1,0 +1,78 @@
+The Ilyushin Il-96 (Russian: Илью́шин Ил-96) is a Russian quadjet long-haul wide-body airliner designed by Ilyushin in the former Soviet Union and manufactured by the Voronezh Aircraft Production Association in Russia. It is powered by four Aviadvigatel PS-90 two-shaft turbofan engines.
+
+Design and development
+
+The Ilyushin Il-96 is a shortened, long-range, and advanced technology development of the Soviet Union's first widebody airliner, the Ilyushin Il-86. It features supercritical wings fitted with winglets, a glass cockpit, and a fly-by-wire control system. It was first flown in 1988 and certified in 1992. The basic Il-96-300 is equipped with modern Russian avionics integrating six multi-function colour LCD displays, inertial and satellite navigation systems, and a Traffic Collision Avoidance System (including mode "S"). It allows the airplane to be operated with two crew members. The avionics correspond to modern requirements on international routes in Europe and North America (RNP-1) and allow navigation and landing under ICAO CAT III/A conditions. The Il-96 is offered in three main variants: the Il-96-300, Il-96M/T and Il-96-400.[citation needed]
+
+The Il-96-300 has a standard passenger capacity of 262 seats in a two-class configuration with 18 seats with a seat pitch of 54 inches (140 cm) and 244 seats with a pitch of 32 inches (81 cm), of which typical seating is 3-3-3 (layout), but low density seating is possible with 2-4-2 (layout). Galleys are positioned on the upper deck, and the lower deck can accommodate 18 LD-3 containers and crew rest areas.
+In June 2005, the Volga-Dnepr Group signed a 15-year financial agreement with Ilyushin Finance Corporation (IFC) to take delivery of two new-build Il-96-400T aircraft, to be operated by Volga-Dnepr's subsidiary AirBridge Cargo. The first was due to have been delivered in late 2006.[4]
+
+The Cuban Government newspaper Granma announced on 3 January 2006 the first official flight of the Cubana Il-96-300, from Havana to Buenos Aires, Argentina.[5]
+
+On 11 August 2009 Russian Minister of Industry and Trade Viktor Khristenko announced that manufacturing of the Il-96-300 would cease. In particular, the Il-96-300 had been deemed inferior to counterparts from Boeing and Airbus, and the manufacturer could not arrange commercially viable mass production, making only one aircraft per year.[6] The Il-96-400T cargo version was to remain in production.
+
+On 9 October 2015, it was announced that an updated version of the Il-96 may be produced. This decision was taken due to the current diplomatic situation between Russia and the West, and the dependency of the Russian Aerospace Industry on Airbus and Boeing.[1] In September 2017, the Vice President of Russia's United Aircraft Corporation Aleksandr Tulyakov announced the start of development of the 250–280 seat, wide-body long-haul aircraft in partnership with Chinese builders.[citation needed] The aircraft is to be a development of the Russian-designed IL-96 and will be assembled in China. A new engineering center will be built in Russia to undertake technical and electronics production.
+
+Variants
+There are two variants of the Il-96. The Il-96-300 was launched in 1985 with introduction into service in 1993. The Il-96M was launched in 1993 with introduction into service in 2000.
+
+Il-96-300
+The Il-96-300 is the initial variant and is fitted with Aviadvigatel (Soloviev) PS-90A turbofans with a thrust rating of 16,000 kgf (157 kN, 35,300 lbf). Development started in the mid-80s while the first prototype flew on 28 September 1988. The first Il-96 entered service with Aeroflot in 1993.[citation needed]
+
+Range with 262 passengers and fuel reserves (for holding 75 minutes at an altitude of 450 m) in a two-class configuration is about 11,000 km (5,940 nmi), allowing flights from Moscow to US west coast cities, a great improvement over the Ilyushin Il-86. A highly customized version of the Il-96-300, called Il-96-300PU is used as the primary aircraft in the Russian presidential aircraft fleet. Four were used by Russian president Vladimir Putin, and by Dmitry Medvedev as VIP planes. The VIP aircraft is operated by Russia State Transport Company.[7] The Cuban leadership use the IL-96-300.
+
+There were plans to produce a variant dubbed Il-96-300V which would include two sets of Airstairs in it.[8]
+
+Il-96M
+The Il-96M is a stretched variant of the Il-96-300. It features a 10 m (30 ft) fuselage stretch, is 15 tonnes (33,000 lb) heavier, is fitted with Western-style avionics, and is powered by four Pratt & Whitney PW2337 engines with a thrust rating of 165 kN (37,000 lbf). Range with 312 passengers in a three-class configuration or 92 tonne (203,000 lb) payload is about 10,400 km (5,600 nmi). This turned it into a true—but vastly more capable—Il-86 successor. The Il-96M/T is broadly comparable with the Airbus A330-300 and McDonnell Douglas MD-11CF, but is much cheaper. Development on the M/T variant stalled when the US Export–Import Bank suspended talks on financing the engines and avionics, following pressure from Boeing. The dispute was later settled following an Aeroflot order for ten Boeing 737-400s—placed in April 1997 in a deal worth US$440 million that were granted a tax exemption by the Russian government. Nevertheless, the financing was blocked again when four Boeing 767-300ERs also ordered by Aeroflot were not included in the accorded exemption. The deal was never realised.
+
+Il-96T
+This is the freighter version of the Il-96-400. It is powered by four Aviadvigatel PS-90A1 engines.[9]
+
+Il-96-400
+The Il-96-400 is similar to the Il-96M, but features Russian avionics and engines. It is powered by four Aviadvigatel PS-90A1 turbofans and can carry up to 436 passengers. Typical two-class configuration will have 386 passengers. Range with 315 passengers in a three-class configuration is about 10,000 km.[10] A special version, dubbed Il-96-400VT, was reported on Friday 19 March 2010 by the Wall Street Journal to bid on the US$40 billion Air Force Tanker Program contract.[11] In February 2013, Cubana signed a deal for the order of three 350-seater Ilyushin Il-96-400s.[12]
+
+One modified Il-96-400, nicknamed the Doomsday plane, is used as an airborne command post by the Russian Air Force.[13]
+
+Il-96-400M
+In February 2017, it was announced that Russia's United Aircraft Corporation had signed a contract with its subsidiary Ilyushin Aviation Complex for the development of a new version of Ilyushin Il-96-400 wide-body passenger airliner. Il-96-400M is the passenger version of the Il-96-400T cargo aircraft. Its fuselage is 9.65 m longer than the existing Il-96-300 passenger variant. The planned seating capacity is 390 passengers.[14][15] In 2017, the Russian Government injected ₽3.6 billion ($57.4 million) into the Ilyushin Il-96-400M.[16] By January 2020, the first test-flight airframe was in final assembly and the wing and fuselage were joined, to be finished at the end of 2020 before a first flight in 2021.[17]
+
+Il-96-400TZ
+In January 2015, a new tanker variant of the Il-96, designated the Il-96-400TZ, was proposed, with an initial order for two aircraft placed by the Russian Ministry of Defense.[18] The new tanker would have been able to transfer more than 65 tons (IL-78M 40 tons) of fuel at a distance of up to 3500 km (Il-78M 3000 km). Universal aviation refueling systems ORM-1, proven on existing combat aircraft tankers Il-78/78М, would have been installed on the aircraft.[19] According to Alexei Krivoruchko, Russian Deputy Minister of Defense, factory trials of the Il-96-400TZ are expected to be completed in May, 2020.[20]
+
+Twin engine
+To reduce fuel consumption and maintenance costs, Ilyushin is studying a twin-engined development, powered by over 340 kN (76,000 lbf) Aviadvigatel PD-35s developed by 2025 from the PD-14, or foreign powerplants.[21]
+Accidents and incidents
+In the entire history of operation with the IL-96, there have been no accidents causing the deaths of passengers or crew.
+
+In 2005, Russia indefinitely grounded Ilyushin 96-300 passenger aircraft after transport inspectors pointed out malfunctions in the jets’ braking systems. The decision came just weeks after a technical glitch in an Ilyushin 96-300 forced Russian President Vladimir Putin to fly in a back-up plane during a visit to Finland.[25]
+On 3 June 2014, RA-96010 of Aeroflot, which had been retired from service, was damaged beyond economical repair in a fire while parked in storage at Sheremetyevo International Airport, Moscow.[26]
+Avionics
+The airplane has the following systems installed, providing compliance with ICAO recommendations and Eurocontrol requirements:
+
+Integrated communication and navigation control panel and flight management system
+Upgraded EFIS with LCD indicators
+Inertial navigation system
+Ground proximity warning system
+TCAS
+SELCAL
+Weather radar
+Aircraft Communications Addressing and Reporting System with satellite communication.
+Flight Data Recorder and Cockpit Voice Recorder
+See also
+Related development
+
+Ilyushin Il-86
+Aircraft of comparable role, configuration, and era
+
+Airbus A330
+Airbus A340
+Airbus A350
+Boeing 767-400
+Boeing 777-200
+Boeing 787-10
+McDonnell Douglas MD-11
+Related lists
+
+List of civil aircraft
+List of jet airliners
