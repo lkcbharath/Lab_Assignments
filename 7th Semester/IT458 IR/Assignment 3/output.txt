@@ -1,0 +1,420 @@
+Query Q: 
+(levett, 1), (stoic, 1), (internet, 1), (girlfriend, 1), (kalayaan, 3), 
+Original BM modelling:
+Constant values:
+K1: 3, K2: 1.4, K3: 100
+Scores:
+Document Chosen				BM1			BM11			BM15
+Dilpazier Aslam.txt                     6.46828462519127    	8.011096520613693   	5.761462503205051   
+coup_d'état.txt                         0.0                 	-0.9463109934297164 	-0.9463109934297164 
+Henry Failing.txt                       0.0                 	1.6393576073083223  	1.6393576073083223  
+KLF2.txt                                0.0                 	1.9264301215953812  	1.9264301215953812  
+Kyle Turley.txt                         0.0                 	-1.2268322330644783 	-1.2268322330644783 
+Creatine kinase.txt                     0.0                 	2.8806018183281035  	2.8806018183281035  
+Environmental certification.txt         0.0                 	-0.26842752323751223	-0.26842752323751223
+Sustainable distribution.txt            0.0                 	0.34090501524299105 	0.34090501524299105 
+Scottish National Dictionary A.txt      0.0                 	5.350645805496889   	5.350645805496889   
+whatsapp.txt                            6.46828462519127    	2.6915723697010683  	4.668639739649949   
+Thomas Müller.txt                       6.625708843064465   	2.4549536949563557  	3.900287890741662   
+mohammad_asghar.txt                     0.0                 	2.8017399632851783  	2.8017399632851783  
+Moufang polygon.txt                     0.0                 	3.4069101606479184  	3.4069101606479184  
+Paul Ritter.txt                         0.0                 	-0.6931542225776397 	-0.6931542225776397 
+Andrew Sentance.txt                     0.0                 	2.283090180663693   	2.283090180663693   
+Protagoras.txt                          0.0                 	1.101957531832276   	1.101957531832276   
+maruti_suzuki.txt                       0.0                 	-1.207381252400558  	-1.207381252400558  
+Technological Educational Inst.txt      0.0                 	-0.1504266830274975 	-0.1504266830274975 
+Grand duke.txt                          0.0                 	0.9520642350351052  	0.9520642350351052  
+The Age of Extremes.txt                 0.0                 	-0.8685905437116183 	-0.8685905437116183 
+Old Pasadena.txt                        0.0                 	-0.22599150532296336	-0.22599150532296336
+Biogenic silica.txt                     0.0                 	0.05185270255859151 	0.05185270255859151 
+Bay State Games.txt                     0.0                 	0.4555041932993936  	0.4555041932993936  
+chillum_maryland.txt                    0.0                 	-0.6838864683364806 	-0.6838864683364806 
+Government of the Republic of .txt      0.0                 	0.28491648517410556 	0.28491648517410556 
+Donny van de Beek.txt                   0.0                 	1.6306838147445355  	1.6306838147445355  
+John Rudge (banker).txt                 0.0                 	3.245664636544581   	3.245664636544581   
+Juande Ramos.txt                        0.0                 	1.9079303234096348  	1.9079303234096348  
+LW9.txt                                 0.0                 	1.889507047351168   	1.889507047351168   
+George Young (diplomat).txt             0.0                 	2.384430640917874   	2.384430640917874   
+Petr Kvíčala.txt                        0.0                 	-0.2946810917061225 	-0.2946810917061225 
+SEPnet.txt                              0.0                 	2.7131396675818897  	2.7131396675818897  
+New York Journal-American.txt           0.0                 	0.017313861701345933	0.017313861701345933
+android_os.txt                          6.46828462519127    	-0.8352686479592233 	2.533198160651369   
+south_china_sea.txt                     6.643856189774724   	11.73156465931884   	16.446750383583435  
+Meadow's law.txt                        0.0                 	2.333485337068282   	2.333485337068282   
+Kylian Mbappé.txt                       0.0                 	-0.8334038722265663 	-0.8334038722265663 
+Center for Media, Religion and.txt      6.46828462519127    	3.8487578308787693  	3.4512481846519014  
+michael_jordan.txt                      13.093993468255736  	-0.20773144890487005	4.6440673494850095  
+Agroecology in West Africa.txt          0.0                 	0.6005234167086636  	0.6005234167086636  
+A. E. Levett.txt                        6.643856189774724   	25.189070804375515  	23.901451511397845  
+Birrbay.txt                             0.0                 	0.6957825662694823  	0.6957825662694823  
+Lola Astanova.txt                       0.0                 	2.1741139557965057  	2.1741139557965057  
+Flash point.txt                         0.0                 	2.9147895689883856  	2.9147895689883856  
+Saturn Corporation.txt                  0.0                 	0.08089585924565276 	0.08089585924565276 
+Sam Kratz.txt                           0.0                 	1.2417763630959797  	1.2417763630959797  
+National Institute of Technolo.txt      0.0                 	-1.4540299220015098 	-1.4540299220015098 
+Alyssa Mastromonaco.txt                 0.0                 	2.4049648260998     	2.4049648260998     
+Betty Beaumont.txt                      0.0                 	-1.7806536614390753 	-1.7806536614390753 
+Chang Apana.txt                         0.0                 	1.9823934463914399  	1.9823934463914399  
+Metonic cycle.txt                       0.0                 	2.374197136407751   	2.374197136407751   
+ieee.txt                                0.0                 	0.3283888732598483  	0.3283888732598483  
+Free riding.txt                         0.0                 	4.0065170351971116  	4.0065170351971116  
+Greenleaf Lake State Recreatio.txt      0.0                 	2.223329721146315   	2.223329721146315   
+WICS.txt                                0.0                 	0.19347631440214874 	0.19347631440214874 
+Johann Ludwig Bach.txt                  0.0                 	-0.6977779081105256 	-0.6977779081105256 
+microsoft_windows.txt                   6.46828462519127    	4.811626453281393   	6.1417375163057795  
+Pirmasens.txt                           0.0                 	0.08673322176698005 	0.08673322176698005 
+iet.txt                                 0.0                 	-1.1322566773376657 	-1.1322566773376657 
+FV432.txt                               0.0                 	0.6410584606632711  	0.6410584606632711  
+E-commerce.txt                          6.46828462519127    	6.632351059072073   	7.66148665717852    
+stack_overflow.txt                      0.0                 	2.0012041506549534  	2.0012041506549534  
+ubuntu.txt                              6.46828462519127    	-0.3675648857203824 	0.7330998568731517  
+Walter Steinitz.txt                     0.0                 	1.3701741916010242  	1.3701741916010242  
+Andre Dawson.txt                        0.0                 	0.33464160473707993 	0.33464160473707993 
+Rival Schools: United by Fate.txt       0.0                 	1.3296222009050123  	1.3296222009050123  
+Ilyushin Il-96.txt                      0.0                 	0.6888992245288587  	0.6888992245288587  
+gmail.txt                               6.46828462519127    	3.4920938701300273  	5.092317786993407   
+fritz_grobba.txt                        0.0                 	0.3977608151252548  	0.3977608151252548  
+USS Sable (IX-81).txt                   0.0                 	0.4169089669810098  	0.4169089669810098  
+Briviesca.txt                           0.0                 	-1.2767987323821763 	-1.2767987323821763 
+c++.txt                                 0.0                 	-1.9817457954618425 	-1.9817457954618425 
+George Jarkesy.txt                      0.0                 	1.2894612499156242  	1.2894612499156242  
+Terry Mills (Australian politi.txt      0.0                 	2.0868365696648095  	2.0868365696648095  
+Andrew Jenkins.txt                      0.0                 	1.8346916333514893  	1.8346916333514893  
+Jamaican pound.txt                      0.0                 	3.245664636544581   	3.245664636544581   
+Impact of the COVID-19 pandemi.txt      0.0                 	-2.090649503435121  	-2.090649503435121  
+Sameena Ali-Khan.txt                    0.0                 	2.077241481262473   	2.077241481262473   
+the_cut_berkshire.txt                   0.0                 	0.46197581660199805 	0.46197581660199805 
+Dispositio.txt                          0.0                 	2.6261267818550325  	2.6261267818550325  
+Antimicrobial resistance in Au.txt      0.0                 	2.0964519644879     	2.0964519644879     
+William Carey University.txt            0.0                 	0.4233137310777785  	0.4233137310777785  
+Storage water heater.txt                0.0                 	2.2035801847906384  	2.2035801847906384  
+Iveco.txt                               0.0                 	-0.6182416130301479 	-0.6182416130301479 
+Umberto Eco.txt                         0.0                 	-2.623070930688432  	-2.623070930688432  
+Dragonchain.txt                         6.46828462519127    	4.457931021963964   	4.484134321663127   
+TV detector van.txt                     0.0                 	-0.7933329963971901 	-0.7933329963971901 
+acm.txt                                 6.46828462519127    	1.7959765304402813  	2.172515635796999   
+Operation Tailwind.txt                  0.0                 	0.5339123423573437  	0.5339123423573437  
+Hamilton Rowan Gamble.txt               0.0                 	2.223329721146315   	2.223329721146315   
+Kilwa Sultanate.txt                     0.0                 	-1.867900873417193  	-1.867900873417193  
+website.txt                             6.46828462519127    	6.462946383066484   	7.175875882134013   
+Oakland firestorm of 1991.txt           0.0                 	-0.07315697444864362	-0.07315697444864362
+jbl.txt                                 0.0                 	0.5871071374985657  	0.5871071374985657  
+ms_dhoni.txt                            0.0                 	-2.449294082147981  	-2.449294082147981  
+Typhoon Sudal.txt                       0.0                 	0.0345408868849372  	0.0345408868849372  
+btech.txt                               0.0                 	2.937713142896778   	2.937713142896778   
+Carl E. Walz.txt                        0.0                 	2.374197136407751   	2.374197136407751   
+Natalya Golitsyna.txt                   0.0                 	0.02878915480405208 	0.02878915480405208 
+universe.txt                            6.643856189774724   	-0.28900172887091014	2.97870743212977    
+
+Simplified BM modelling:
+Constant values:
+K1: 1.2, K2: 0, K3: inf
+Scores:
+Document Chosen				BM1			BM11			BM15
+Dilpazier Aslam.txt                     6.46828462519127    	4.167812466114742   	2.823749360308273   
+coup_d'état.txt                         0.0                 	0.0                 	0.0                 
+Henry Failing.txt                       0.0                 	0.0                 	0.0                 
+KLF2.txt                                0.0                 	0.0                 	0.0                 
+Kyle Turley.txt                         0.0                 	0.0                 	0.0                 
+Creatine kinase.txt                     0.0                 	0.0                 	0.0                 
+Environmental certification.txt         0.0                 	0.0                 	0.0                 
+Sustainable distribution.txt            0.0                 	0.0                 	0.0                 
+Scottish National Dictionary A.txt      0.0                 	0.0                 	0.0                 
+whatsapp.txt                            6.46828462519127    	4.172188744421446   	5.009877897321129   
+Thomas Müller.txt                       6.625708843064465   	4.164513727257927   	5.300123724569014   
+mohammad_asghar.txt                     0.0                 	0.0                 	0.0                 
+Moufang polygon.txt                     0.0                 	0.0                 	0.0                 
+Paul Ritter.txt                         0.0                 	0.0                 	0.0                 
+Andrew Sentance.txt                     0.0                 	0.0                 	0.0                 
+Protagoras.txt                          0.0                 	0.0                 	0.0                 
+maruti_suzuki.txt                       0.0                 	0.0                 	0.0                 
+Technological Educational Inst.txt      0.0                 	0.0                 	0.0                 
+Grand duke.txt                          0.0                 	0.0                 	0.0                 
+The Age of Extremes.txt                 0.0                 	0.0                 	0.0                 
+Old Pasadena.txt                        0.0                 	0.0                 	0.0                 
+Biogenic silica.txt                     0.0                 	0.0                 	0.0                 
+Bay State Games.txt                     0.0                 	0.0                 	0.0                 
+chillum_maryland.txt                    0.0                 	0.0                 	0.0                 
+Government of the Republic of .txt      0.0                 	0.0                 	0.0                 
+Donny van de Beek.txt                   0.0                 	0.0                 	0.0                 
+John Rudge (banker).txt                 0.0                 	0.0                 	0.0                 
+Juande Ramos.txt                        0.0                 	0.0                 	0.0                 
+LW9.txt                                 0.0                 	0.0                 	0.0                 
+George Young (diplomat).txt             0.0                 	0.0                 	0.0                 
+Petr Kvíčala.txt                        0.0                 	0.0                 	0.0                 
+SEPnet.txt                              0.0                 	0.0                 	0.0                 
+New York Journal-American.txt           0.0                 	0.0                 	0.0                 
+android_os.txt                          6.46828462519127    	3.009639193771802   	4.778652763598616   
+south_china_sea.txt                     6.643856189774724   	4.795190488879321   	6.051662119822493   
+Meadow's law.txt                        0.0                 	0.0                 	0.0                 
+Kylian Mbappé.txt                       0.0                 	0.0                 	0.0                 
+Center for Media, Religion and.txt      6.46828462519127    	3.1021583755781785  	2.823749360308273   
+michael_jordan.txt                      13.093993468255736  	3.908728692411693   	8.123873084877287   
+Agroecology in West Africa.txt          0.0                 	0.0                 	0.0                 
+A. E. Levett.txt                        6.643856189774724   	12.994110281112222  	12.679673012961414  
+Birrbay.txt                             0.0                 	0.0                 	0.0                 
+Lola Astanova.txt                       0.0                 	0.0                 	0.0                 
+Flash point.txt                         0.0                 	0.0                 	0.0                 
+Saturn Corporation.txt                  0.0                 	0.0                 	0.0                 
+Sam Kratz.txt                           0.0                 	0.0                 	0.0                 
+National Institute of Technolo.txt      0.0                 	0.0                 	0.0                 
+Alyssa Mastromonaco.txt                 0.0                 	0.0                 	0.0                 
+Betty Beaumont.txt                      0.0                 	0.0                 	0.0                 
+Chang Apana.txt                         0.0                 	0.0                 	0.0                 
+Metonic cycle.txt                       0.0                 	0.0                 	0.0                 
+ieee.txt                                0.0                 	0.0                 	0.0                 
+Free riding.txt                         0.0                 	0.0                 	0.0                 
+Greenleaf Lake State Recreatio.txt      0.0                 	0.0                 	0.0                 
+WICS.txt                                0.0                 	0.0                 	0.0                 
+Johann Ludwig Bach.txt                  0.0                 	0.0                 	0.0                 
+microsoft_windows.txt                   6.46828462519127    	4.826910002971066   	5.303139042530172   
+Pirmasens.txt                           0.0                 	0.0                 	0.0                 
+iet.txt                                 0.0                 	0.0                 	0.0                 
+FV432.txt                               0.0                 	0.0                 	0.0                 
+E-commerce.txt                          6.46828462519127    	5.595216686511149   	5.876451371452352   
+stack_overflow.txt                      0.0                 	0.0                 	0.0                 
+ubuntu.txt                              6.46828462519127    	1.9280474939028398  	2.823749360308273   
+Walter Steinitz.txt                     0.0                 	0.0                 	0.0                 
+Andre Dawson.txt                        0.0                 	0.0                 	0.0                 
+Rival Schools: United by Fate.txt       0.0                 	0.0                 	0.0                 
+Ilyushin Il-96.txt                      0.0                 	0.0                 	0.0                 
+gmail.txt                               6.46828462519127    	4.351529225022183   	5.009877897321129   
+fritz_grobba.txt                        0.0                 	0.0                 	0.0                 
+USS Sable (IX-81).txt                   0.0                 	0.0                 	0.0                 
+Briviesca.txt                           0.0                 	0.0                 	0.0                 
+c++.txt                                 0.0                 	0.0                 	0.0                 
+George Jarkesy.txt                      0.0                 	0.0                 	0.0                 
+Terry Mills (Australian politi.txt      0.0                 	0.0                 	0.0                 
+Andrew Jenkins.txt                      0.0                 	0.0                 	0.0                 
+Jamaican pound.txt                      0.0                 	0.0                 	0.0                 
+Impact of the COVID-19 pandemi.txt      0.0                 	0.0                 	0.0                 
+Sameena Ali-Khan.txt                    0.0                 	0.0                 	0.0                 
+the_cut_berkshire.txt                   0.0                 	0.0                 	0.0                 
+Dispositio.txt                          0.0                 	0.0                 	0.0                 
+Antimicrobial resistance in Au.txt      0.0                 	0.0                 	0.0                 
+William Carey University.txt            0.0                 	0.0                 	0.0                 
+Storage water heater.txt                0.0                 	0.0                 	0.0                 
+Iveco.txt                               0.0                 	0.0                 	0.0                 
+Umberto Eco.txt                         0.0                 	0.0                 	0.0                 
+Dragonchain.txt                         6.46828462519127    	3.8685506560268914  	3.8826553704238753  
+TV detector van.txt                     0.0                 	0.0                 	0.0                 
+acm.txt                                 6.46828462519127    	2.5395677871694944  	2.823749360308273   
+Operation Tailwind.txt                  0.0                 	0.0                 	0.0                 
+Hamilton Rowan Gamble.txt               0.0                 	0.0                 	0.0                 
+Kilwa Sultanate.txt                     0.0                 	0.0                 	0.0                 
+website.txt                             6.46828462519127    	5.167098334343221   	5.401955297981044   
+Oakland firestorm of 1991.txt           0.0                 	0.0                 	0.0                 
+jbl.txt                                 0.0                 	0.0                 	0.0                 
+ms_dhoni.txt                            0.0                 	0.0                 	0.0                 
+Typhoon Sudal.txt                       0.0                 	0.0                 	0.0                 
+btech.txt                               0.0                 	0.0                 	0.0                 
+Carl E. Walz.txt                        0.0                 	0.0                 	0.0                 
+Natalya Golitsyna.txt                   0.0                 	0.0                 	0.0                 
+universe.txt                            6.643856189774724   	3.264731093939023   	6.051662119822493   
+
+BM25 Modelling:
+With b: 0.2 and K1: 1.3, scores:
+Document Chosen				BM25
+Dilpazier Aslam.txt                     2.3992797187913877  
+coup_d'état.txt                         0.0                 
+Henry Failing.txt                       0.0                 
+KLF2.txt                                0.0                 
+Kyle Turley.txt                         0.0                 
+Creatine kinase.txt                     0.0                 
+Environmental certification.txt         0.0                 
+Sustainable distribution.txt            0.0                 
+Scottish National Dictionary A.txt      0.0                 
+whatsapp.txt                            4.841743710073616   
+Thomas Müller.txt                       4.503402298444516   
+mohammad_asghar.txt                     0.0                 
+Moufang polygon.txt                     0.0                 
+Paul Ritter.txt                         0.0                 
+Andrew Sentance.txt                     0.0                 
+Protagoras.txt                          0.0                 
+maruti_suzuki.txt                       0.0                 
+Technological Educational Inst.txt      0.0                 
+Grand duke.txt                          0.0                 
+The Age of Extremes.txt                 0.0                 
+Old Pasadena.txt                        0.0                 
+Biogenic silica.txt                     0.0                 
+Bay State Games.txt                     0.0                 
+chillum_maryland.txt                    0.0                 
+Government of the Republic of .txt      0.0                 
+Donny van de Beek.txt                   0.0                 
+John Rudge (banker).txt                 0.0                 
+Juande Ramos.txt                        0.0                 
+LW9.txt                                 0.0                 
+George Young (diplomat).txt             0.0                 
+Petr Kvíčala.txt                        0.0                 
+SEPnet.txt                              0.0                 
+New York Journal-American.txt           0.0                 
+android_os.txt                          4.5521156776545935  
+south_china_sea.txt                     5.141968473959415   
+Meadow's law.txt                        0.0                 
+Kylian Mbappé.txt                       0.0                 
+Center for Media, Religion and.txt      2.3992797187913877  
+michael_jordan.txt                      6.902682017235904   
+Agroecology in West Africa.txt          0.0                 
+A. E. Levett.txt                        12.994630904878367  
+Birrbay.txt                             0.0                 
+Lola Astanova.txt                       0.0                 
+Flash point.txt                         0.0                 
+Saturn Corporation.txt                  0.0                 
+Sam Kratz.txt                           0.0                 
+National Institute of Technolo.txt      0.0                 
+Alyssa Mastromonaco.txt                 0.0                 
+Betty Beaumont.txt                      0.0                 
+Chang Apana.txt                         0.0                 
+Metonic cycle.txt                       0.0                 
+ieee.txt                                0.0                 
+Free riding.txt                         0.0                 
+Greenleaf Lake State Recreatio.txt      0.0                 
+WICS.txt                                0.0                 
+Johann Ludwig Bach.txt                  0.0                 
+microsoft_windows.txt                   5.221414722637106   
+Pirmasens.txt                           0.0                 
+iet.txt                                 0.0                 
+FV432.txt                               0.0                 
+E-commerce.txt                          6.006414830413254   
+stack_overflow.txt                      0.0                 
+ubuntu.txt                              2.3992797187913877  
+Walter Steinitz.txt                     0.0                 
+Andre Dawson.txt                        0.0                 
+Rival Schools: United by Fate.txt       0.0                 
+Ilyushin Il-96.txt                      0.0                 
+gmail.txt                               4.841743710073616   
+fritz_grobba.txt                        0.0                 
+USS Sable (IX-81).txt                   0.0                 
+Briviesca.txt                           0.0                 
+c++.txt                                 0.0                 
+George Jarkesy.txt                      0.0                 
+Terry Mills (Australian politi.txt      0.0                 
+Andrew Jenkins.txt                      0.0                 
+Jamaican pound.txt                      0.0                 
+Impact of the COVID-19 pandemi.txt      0.0                 
+Sameena Ali-Khan.txt                    0.0                 
+the_cut_berkshire.txt                   0.0                 
+Dispositio.txt                          0.0                 
+Antimicrobial resistance in Au.txt      0.0                 
+William Carey University.txt            0.0                 
+Storage water heater.txt                0.0                 
+Iveco.txt                               0.0                 
+Umberto Eco.txt                         0.0                 
+Dragonchain.txt                         3.504067467339783   
+TV detector van.txt                     0.0                 
+acm.txt                                 2.3992797187913877  
+Operation Tailwind.txt                  0.0                 
+Hamilton Rowan Gamble.txt               0.0                 
+Kilwa Sultanate.txt                     0.0                 
+website.txt                             5.352579984593077   
+Oakland firestorm of 1991.txt           0.0                 
+jbl.txt                                 0.0                 
+ms_dhoni.txt                            0.0                 
+Typhoon Sudal.txt                       0.0                 
+btech.txt                               0.0                 
+Carl E. Walz.txt                        0.0                 
+Natalya Golitsyna.txt                   0.0                 
+universe.txt                            5.141968473959415   
+
+With b: 0.8 and K1: 1.8, scores:
+Document Chosen				BM25
+Dilpazier Aslam.txt                     1.5645184280049194  
+coup_d'état.txt                         0.0                 
+Henry Failing.txt                       0.0                 
+KLF2.txt                                0.0                 
+Kyle Turley.txt                         0.0                 
+Creatine kinase.txt                     0.0                 
+Environmental certification.txt         0.0                 
+Sustainable distribution.txt            0.0                 
+Scottish National Dictionary A.txt      0.0                 
+whatsapp.txt                            4.36647934644513    
+Thomas Müller.txt                       2.9365712673907525  
+mohammad_asghar.txt                     0.0                 
+Moufang polygon.txt                     0.0                 
+Paul Ritter.txt                         0.0                 
+Andrew Sentance.txt                     0.0                 
+Protagoras.txt                          0.0                 
+maruti_suzuki.txt                       0.0                 
+Technological Educational Inst.txt      0.0                 
+Grand duke.txt                          0.0                 
+The Age of Extremes.txt                 0.0                 
+Old Pasadena.txt                        0.0                 
+Biogenic silica.txt                     0.0                 
+Bay State Games.txt                     0.0                 
+chillum_maryland.txt                    0.0                 
+Government of the Republic of .txt      0.0                 
+Donny van de Beek.txt                   0.0                 
+John Rudge (banker).txt                 0.0                 
+Juande Ramos.txt                        0.0                 
+LW9.txt                                 0.0                 
+George Young (diplomat).txt             0.0                 
+Petr Kvíčala.txt                        0.0                 
+SEPnet.txt                              0.0                 
+New York Journal-American.txt           0.0                 
+android_os.txt                          3.9269236930609135  
+south_china_sea.txt                     3.35296646352776    
+Meadow's law.txt                        0.0                 
+Kylian Mbappé.txt                       0.0                 
+Center for Media, Religion and.txt      1.5645184280049194  
+michael_jordan.txt                      4.501089695395672   
+Agroecology in West Africa.txt          0.0                 
+A. E. Levett.txt                        14.496223329780136  
+Birrbay.txt                             0.0                 
+Lola Astanova.txt                       0.0                 
+Flash point.txt                         0.0                 
+Saturn Corporation.txt                  0.0                 
+Sam Kratz.txt                           0.0                 
+National Institute of Technolo.txt      0.0                 
+Alyssa Mastromonaco.txt                 0.0                 
+Betty Beaumont.txt                      0.0                 
+Chang Apana.txt                         0.0                 
+Metonic cycle.txt                       0.0                 
+ieee.txt                                0.0                 
+Free riding.txt                         0.0                 
+Greenleaf Lake State Recreatio.txt      0.0                 
+WICS.txt                                0.0                 
+Johann Ludwig Bach.txt                  0.0                 
+microsoft_windows.txt                   5.006996293161114   
+Pirmasens.txt                           0.0                 
+iet.txt                                 0.0                 
+FV432.txt                               0.0                 
+E-commerce.txt                          6.627241576603254   
+stack_overflow.txt                      0.0                 
+ubuntu.txt                              1.5645184280049194  
+Walter Steinitz.txt                     0.0                 
+Andre Dawson.txt                        0.0                 
+Rival Schools: United by Fate.txt       0.0                 
+Ilyushin Il-96.txt                      0.0                 
+gmail.txt                               4.36647934644513    
+fritz_grobba.txt                        0.0                 
+USS Sable (IX-81).txt                   0.0                 
+Briviesca.txt                           0.0                 
+c++.txt                                 0.0                 
+George Jarkesy.txt                      0.0                 
+Terry Mills (Australian politi.txt      0.0                 
+Andrew Jenkins.txt                      0.0                 
+Jamaican pound.txt                      0.0                 
+Impact of the COVID-19 pandemi.txt      0.0                 
+Sameena Ali-Khan.txt                    0.0                 
+the_cut_berkshire.txt                   0.0                 
+Dispositio.txt                          0.0                 
+Antimicrobial resistance in Au.txt      0.0                 
+William Carey University.txt            0.0                 
+Storage water heater.txt                0.0                 
+Iveco.txt                               0.0                 
+Umberto Eco.txt                         0.0                 
+Dragonchain.txt                         2.612150864692141   
+TV detector van.txt                     0.0                 
+acm.txt                                 1.5645184280049194  
+Operation Tailwind.txt                  0.0                 
+Hamilton Rowan Gamble.txt               0.0                 
+Kilwa Sultanate.txt                     0.0                 
+website.txt                             5.247546382248078   
+Oakland firestorm of 1991.txt           0.0                 
+jbl.txt                                 0.0                 
+ms_dhoni.txt                            0.0                 
+Typhoon Sudal.txt                       0.0                 
+btech.txt                               0.0                 
+Carl E. Walz.txt                        0.0                 
+Natalya Golitsyna.txt                   0.0                 
+universe.txt                            3.35296646352776

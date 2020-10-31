@@ -35,6 +35,15 @@ def main():
         min_sup_card_satisfied = True
 
         remove_indices = []
+        for index, column in dataset_frame.iteritems():
+            sup = column.sum()
+            if sup < min_sup:
+                min_sup_card_satisfied = False
+                remove_indices.append(index)
+
+        dataset_frame = dataset_frame.drop(remove_indices, axis=1)
+
+        remove_indices = []
         for index, row in dataset_frame.iterrows():
             card = row.sum()
             if card < min_card:
@@ -42,15 +51,6 @@ def main():
                 remove_indices.append(index)
 
         dataset_frame = dataset_frame.drop(remove_indices, axis=0)
-        
-        remove_indices = []
-        for index, column in dataset_frame.iteritems():
-            sup = column.sum()
-            if sup < min_sup:
-                min_sup_card_satisfied = False
-                remove_indices.append(index)
-        
-        dataset_frame = dataset_frame.drop(remove_indices, axis=1)
 
     print('\nPreprocessed Bit Vector:')
     print(dataset_frame)
@@ -74,9 +74,12 @@ def main():
                 bit_vector += '1'
             else:
                 bit_vector += '0'
-                
+
         card = len(selected_indices)
-        if card > min_card:
+
+        level_of_tree = len(list(indices))
+        no_of_items = len(selected_indices)
+        if (card > min_card) and (no_of_items >= min_sup):
             indices_string = ', '.join([str(i) for i in indices])
             feature_string = ', '.join(selected_indices)
             print('Enumerated rows: (' + indices_string + '); Features: ' + feature_string + '; Bit Vector: ' + bit_vector)

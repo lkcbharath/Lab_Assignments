@@ -1,0 +1,55 @@
+Krüppel-like Factor 2 (KLF2), also known as lung Krüppel-like Factor (LKLF), is a protein that in humans is encoded by the KLF2 gene on chromosome 19.[5][6] It is a member of the Krüppel-like factor family of zinc finger transcription factors, and it has been implicated in a variety of biochemical processes in the human body, including lung development, embryonic erythropoiesis, epithelial integrity, T-cell viability, and adipogenesis.[7]
+
+
+Discovery
+Erythroid Krüppel-like Factor (EKLF or KLF1) was the first Krüppel-like Factor discovered. It was found to be vitally important for embryonic erythropoiesis in promoting the switch from fetal hemoglobin (Hemoglobin F) to adult hemoglobin (Hemoglobin A) gene expression by binding to highly conserved CACCC domains.[8] EKLF ablation in mouse embryos produces a lethal anemic phenotype, causing death by embryonic day 14, and natural mutations lead to β+ thalassemia in humans.[9] However, expression of embryonic hemoglobin and fetal hemoglobin genes is normal in EKLF-deficient mice, and since all genes on the human β-globin locus exhibit the CACCC elements, researchers began searching for other Krüppel-like factors.[10]
+
+KLF2, initially called lung Krüppel-like Factor due to its high expression in the adult mouse lung, was first isolated in 1995 by using the zinc finger domain of EKLF as a hybridization probe.[11] By transactivation assay in mouse fibroblasts, KLF2 was also noticed to bind to the β-globin gene promoter containing the CACCC sequence shown to be the binding site for EKLF, confirming KLF2 as a member of the Krüppel-like Factor family.[11] Since then, many other KLF proteins have been discovered.
+
+Structure
+The main distinguishing feature of the KLF family is the presence of three highly conserved Cysteine2/Histidine2 zinc fingers of either 21 or 23 amino acid residues in length, located at the C-terminus of the protein. These amino acid sequences each chelate a single zinc ion, coordinated between the two cysteine and two histidine residues. These zinc fingers are joined by a conserved seven-amino acid sequence; TGEKP(Y/F)X. The zinc fingers enable all KLF proteins to bind to CACCC gene promoters, so although they may complete varied functions (due to lack of homology away from the zinc fingers), they all recognize similar binding domains.[7]
+
+KLF2 also exhibits these structural features. The mRNA transcript is approximately 1.5 kilobases in length, and the 37.7 kDa protein contains 354 amino acids.[11] KLF2 also shares some homology with EKLF at the N-terminus with a proline-rich region presumed to function as the transactivation domain.[11]
+
+Gene expression
+KLF2 was first discovered, and is highly expressed in, the adult mouse lung, but it is also expressed temporally during embryogenesis in erythroid cells, endothelium, lymphoid cells, the spleen, and white adipose tissue.[7][11] It is expressed as early as embryonic day 9.5 in the endothelium.
+
+KLF2 has a particularly interesting expression profile in erythroid cells. It is minimally expressed in the primitive and fetal definitive erythroid cells, but is highly expressed in adult definitive erythroid cells, particularly in the proerythroblast and the polychromatic and orthochromatic normoblasts.[12]
+
+Mouse knockout
+Homologous recombination of embryonic stem cells was used to generate KLF2-deficient mouse embryos. Both vasculogenesis and angiogenesis were normal in the embryos, but they died by embryonic day 14.5 from severe hemorrhaging. The vasculature displayed defective morphology, with thin tunica media and aneurysmal dilation that led to rupturing. Aortic vascular smooth muscle cells failed to organize into a normal tunica media, and pericytes were low in number. These KLF2-deficient mice thus demonstrated the important role of KLF2 in blood vessel stabilization during embryogenesis.[13]
+
+Due to embryonic lethality in KLF2-deficient embryos, it is difficult to examine the role of KLF2 in normal post-natal physiology, such as in lung development and function.[14]
+
+Function
+Lung development
+Lung buds removed from KLF2-deficient mouse embryos and cultured from normal tracheobronchial trees. In order to circumvent embryonic lethality usually observed in KLF2-deficient embryos, KLF2 homozygous null mouse embryonic stem cells were constructed and used to produce chimeric animals. These KLF2-deficient embryonic stem cells contribute significantly to development of skeletal muscle, spleen, heart, liver, kidney, stomach, brain, uterus, testis, and skin, but not to the development of the lung. These embryos had lungs arrested in the late canalicular stage of lung development, with undilated acinar tubules. In contrast, wild type embryos are born in the saccular stage of lung development with expanded alveoli. This suggests that KLF2 is an important transcription factor required in late gestation for lung development.[7]
+
+Embryonic erythropoiesis
+KLF2 is now believed to play an important role in embryonic erythropoiesis, specifically in regulating embryonic and fetal β-like globin gene expression. In a murine KLF2-deficient embryo, expression of β-like globin genes normally expressed in primitive erythroid cells was significantly decreased, although adult β-globin gene expression was unaffected.[15]
+
+The role of KLF2 in human β-like globin gene expression was further elucidated by transfection of a murine KLF2-deficient embryo with the human β-globin locus. It was found that KLF2 was important for ε-globin (found in embryonic hemoglobin) and γ-globin (found in fetal hemoglobin) gene expression. However, as before, KLF2 plays no role in adult β-globin gene expression; this is regulated by EKLF.[15]
+
+However, KLF2 and EKLF have been found to interact in embryonic erythropoiesis. Deletion of both KLF2 and EKLF in mouse embryos results in fatal anemia earlier than in either single deletion at embryonic day 10.5. This indicates that KLF2 and EKLF interact in embryonic and fetal β-like globin gene expression.[16] It has been shown using conditional knockout mice that both KLF2 and EKLF bind directly to β-like globin promoters.[17] There is also evidence to suggest that KLF2 and EKLF synergistically bind to the Myc promoter, a transcription factor that is associated with gene expression of α-globin and β-globin in embryonic proerythroblasts.[18]
+
+Endothelial physiology
+KLF2 expression is induced by fluid laminar flow shear stress, as is caused by blood flow in normal endothelium.[19][20]
+
+This activates mechanosensitive channels, which in turn activates two pathways; the MEK5/ERK5 pathway, which activates MEF2, a transcription factor that upregulates KLF2 gene expression; and PI3K inhibition, which increases the stability of KLF2 mRNA. Binding of cytokines such as TNFα and IL-1β to their receptors activates transcription factor p65, which also induces KLF2 expression. KLF2 then has four key functions in endothelium:
+
+By inhibiting activation of p65 by transcription coactivator p300, VCAM1 and SELE expression is downregulated, genes that encode endothelial cell adhesion molecules, causing decreased lymphocyte and leukocyte activation and hence decreasing inflammation
+It upregulates THBD (thrombomodulin) and NOS3 (endothelial nitric oxide synthase) expression, having an anti-thrombotic effect
+Through the upregulation of NOS3, as well as NPPC (natriuretic precursor peptide C), KLF2 has a vasodilatory effect
+KLF2 also inhibits VEGFR2 (VEGF receptor 2) expression, having an anti-angiogenic effect[21]
+Thus KLF2 has an important role in regulating normal endothelium physiology. It is hypothesized that myeloid-specific KLF2 plays a protective role in atherosclerosis.[22] Gene expression changes in endothelial cells induced by KLF2 have been demonstrated to be atheroprotective.[20]
+
+T-cell differentiation
+KLF2 has an important function in T-lymphocyte differentiation. T-cells are activated and more prone to apoptosis without KLF2, suggesting that KLF2 regulates T-cell quiescence and survival.[7] KLF2-deficient thymocytes also do not express several receptors required for thymus emigration and differentiation into mature T-cells, such as sphingosine-1 phosphate receptor 1.[23]
+
+Adipogenesis
+KLF2 is a negative regulator of adipocyte differentiation. KLF2 is expressed in preadipocytes, but not mature adipocytes, and it potently inhibits PPAR-γ (peroxisome proliferator-activated receptor-γ) expression by inhibiting promoter activity. This prevents differentiation of preadipocytes into adipocytes, and thus prevents adipogenesis.[24]
+
+See also
+Krüppel-like factors
+Erythroid Krüppel-like factor
+Zinc finger transcription factors
