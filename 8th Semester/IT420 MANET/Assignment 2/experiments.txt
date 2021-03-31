@@ -1,0 +1,8 @@
+./waf --run "assignment2 --numNodes=10 --numPackets=5 --distance=100 --speed=50 --experimentnum=1"
+./waf --run "assignment2 --numNodes=10 --numPackets=5 --distance=500 --speed=100 --experimentnum=2"
+./waf --run "assignment2 --numNodes=10 --numPackets=5 --distance=500 --speed=500 --experimentnum=3"
+./waf --run "assignment2 --numNodes=20 --numPackets=15 --distance=500 --speed=100 --experimentnum=4"
+./waf --run "assignment2 --numNodes=20 --numPackets=20 --distance=1000 --speed=500 --experimentnum=5"
+./waf --run "assignment2 --numNodes=20 --numPackets=30 --distance=500 --speed=500 --experimentnum=6"
+./waf --run "assignment2 --numNodes=30 --numPackets=30 --distance=500 --speed=100 --experimentnum=7"
+
